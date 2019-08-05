@@ -1,3 +1,5 @@
 theme: jekyll-theme-midnight
 title: 'Matt Normans Research'
 show_downloads: false
+github:
+  is_project_page: false
