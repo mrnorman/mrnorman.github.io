@@ -3,6 +3,7 @@ show_downloads: false
 title: Matt Norman's Research
 description:
 github:
+  is_user_page: true
   is_project_page: false
   repository_url: https://github.com/mrnorman
 
