@@ -17,6 +17,7 @@ title: Matt Norman's Research
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[normanmr@ornl.gov](mailto:normanmr@ornl.gov)
     
 ## Education
+
 | Ph.D, Atmospheric Science  | North Caroline State University | 2010 |
 | -------------------------- | ------------------------------- | ---- |
 | M.S, Atmospheric Science   | North Caroline State University | 2008 |
