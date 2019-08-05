@@ -1,5 +1,8 @@
 theme: jekyll-theme-slate
-title: "Matt Norman's Research"
 show_downloads: false
-markdown: kramdown
-is_project_page: false
+title: Matt Norman's Research
+description:
+github:
+  is_project_page: false
+  repository_url: https://github.com/mrnorman
+
