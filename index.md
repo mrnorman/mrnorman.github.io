@@ -6,7 +6,7 @@ title: Matt Norman's Research
 
 <br />
 
-<img src="https://mrnorman.github.io/norman-300.jpg" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matthew R. Norman<br />
+<img src="https://mrnorman.github.io/norman-300.jpg" align="left" width=220>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matthew R. Norman<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computational Climate Scientist<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Scientific Computing Group](https://www.olcf.ornl.gov/about-olcf/olcf-groups/scientific-computing){:target="_blank"}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Oak Ridge Leadership Computing Facility](https://www.olcf.ornl.gov){:target="_blank"}<br />
@@ -14,8 +14,8 @@ title: Matt Norman's Research
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PO Box 2008, MS6016<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oak Ridge, TN 37831-6016<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;865.576.1757<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[normanmr@ornl.gov](mailto:normanmr@ornl.gov)
-    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[normanmr@ornl.gov](mailto:normanmr@ornl.gov)<br />
+
 ## Education
 
 | Ph.D, Atmospheric Science  | North Caroline State University | 2010 |
