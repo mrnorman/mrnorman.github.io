@@ -6,7 +6,7 @@ title: Matt Norman's Research
 
 <br />
 
-<img src="https://mrnorman.github.io/norman-200.jpg" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matthew R. Norman<br />
+<img src="https://mrnorman.github.io/norman-300.jpg" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matthew R. Norman<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computational Climate Scientist<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Scientific Computing Group](https://www.olcf.ornl.gov/about-olcf/olcf-groups/scientific-computing){:target="_blank"}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Oak Ridge Leadership Computing Facility](https://www.olcf.ornl.gov){:target="_blank"}<br />
