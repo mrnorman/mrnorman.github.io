@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page
 title: "Matt Norman's Research Website"
 permalink: "/"
 ---
