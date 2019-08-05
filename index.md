@@ -17,11 +17,11 @@ title: Matt Norman's Research
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[normanmr@ornl.gov](mailto:normanmr@ornl.gov)
     
 ## Education
-Ph.D, Atmospheric Science | North Caroline State University | 2010
---------------------------|---------------------------------|-----
-M.S, Atmospheric Science  | North Caroline State University | 2008
-B.S., Meteorology         | North Caroline State University | 2006
-B.S., Computer Science    | North Caroline State University | 2006
+| Ph.D, Atmospheric Science  | North Caroline State University | 2010 |
+| -------------------------- | ------------------------------- | ---- |
+| M.S, Atmospheric Science   | North Caroline State University | 2008 |
+| B.S., Meteorology          | North Caroline State University | 2006 |
+| B.S., Computer Science     | North Caroline State University | 2006 |
 
 ## Bio
 Norman is a computational climate scientist in the Scientific Computing Group at Oak Ridge National Laboratory (ORNL). He received his Ph.D. at North Carolina State University in Atmospheric Science under the U.S. Department of Energy's Computational Science Graduate Fellowship (CSGF), and his advisor was Fredrich Semazzi. During his graduate studies, Norman was awarded as an Advanced Study Program graduate visitor for an eight month visit at the National Center for Atmospheric Research (NCAR) under Ramachandran Nair in the Institude for Mathematics Appliced to Geosciences (IMAGe). He also interned at the NCAR Summer Internships in Parallel Computational Science (SIParCS). Directly after obtaining his Ph.D, he was hired as staff in at ORNL to work on numerical algorithms and GPU programming for numerical climate models.
