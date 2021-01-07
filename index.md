@@ -8,7 +8,7 @@ title: Matt Norman's Research
 
 <img src="https://mrnorman.github.io/norman-200.jpg" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matthew R. Norman<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computational Climate Scientist<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Group Leader for [Advanced Computing for Life Sciences and Engineering](https://www.olcf.ornl.gov/about-olcf/staff-sections/science-engagement/advanced-computing-for-life-sciences-engineering/){:target="_blank"}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Advanced Computing for Life Sciences and Engineering](https://www.olcf.ornl.gov/about-olcf/staff-sections/science-engagement/advanced-computing-for-life-sciences-engineering/){:target="_blank"}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Oak Ridge Leadership Computing Facility](https://www.olcf.ornl.gov){:target="_blank"}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Oak Ridge National Laboratory](https://www.ornl.gov){:target="_blank"}<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PO Box 2008, MS6016<br />
