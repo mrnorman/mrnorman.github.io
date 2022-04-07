@@ -36,3 +36,8 @@ In the OLCF, Norman serves as a liaison for weather and climate model developers
 * Norman, Matthew R. "[A WENO-limited, ADER-DT, finite-volume scheme for efficient, robust, and communication-avoiding multi-dimensional transport.](weno_ader_transport_jcp.pdf){:target="_blank"}" Journal of Computational Physics 274 (2014): 1-18.
 * Norman, Matthew R., Azamat Mametjanov, and Mark Taylor. "[Exascale Programming Approaches for Accelerated Climate Modeling for Energy.](https://books.google.com/books?hl=en&lr=&id=smlQDwAAQBAJ&oi=fnd&pg=PA187&ots=Erjun5d4YN&sig=awoi7MIMYmQU6ddv5bIZNfVeMUw#v=onepage&q&f=false){:target="_blank"}" Exascale Scientific Applications. Chapman and Hall/CRC, 2017. 187-206.
 * Norman, Matthew R., and Ramachandran D. Nair. "[A Positive‐Definite, WENO‐Limited, High‐Order Finite Volume Solver for 2‐D Transport on the Cubed Sphere Using an ADER Time Discretization.](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2017MS001247){:target="_blank"}" Journal of Advances in Modeling Earth Systems 10.7 (2018): 1587-1612.
+
+
+<img src="https://mrnorman.github.io/supercell_miniWeatherML.gif" />
+
+The above image is from an idealized supercell simulation using the [miniWeatherML](https://github.com/mrnorman/miniWeatherML){:target="_blank"} code.
