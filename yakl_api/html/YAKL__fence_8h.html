@@ -101,7 +101,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5debd8fe5fff4f37c06e55648d138e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the host code until all device code has completed.  <a href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">More...</a><br /></td></tr>
 <tr class="separator:a5debd8fe5fff4f37c06e55648d138e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a823fefa19bd87dca7a0c66094130d6db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a823fefa19bd87dca7a0c66094130d6db">yakl::fence_inner</a> (InnerHandler &amp;handler)</td></tr>
-<tr class="memdesc:a823fefa19bd87dca7a0c66094130d6db"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called inside yakl::parallel_outer <em>only</em>. Block the inner-level parallelism until all inner threads have reached this point. In CUDA and HIP, this is __syncthreads(). Click for more info.  <a href="namespaceyakl.html#a823fefa19bd87dca7a0c66094130d6db">More...</a><br /></td></tr>
+<tr class="memdesc:a823fefa19bd87dca7a0c66094130d6db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block inner threads until all inner threads have completed.  <a href="namespaceyakl.html#a823fefa19bd87dca7a0c66094130d6db">More...</a><br /></td></tr>
 <tr class="separator:a823fefa19bd87dca7a0c66094130d6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

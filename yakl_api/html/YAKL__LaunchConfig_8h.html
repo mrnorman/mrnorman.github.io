@@ -94,8 +94,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1InnerHandlerEmpty.html">yakl::InnerHandlerEmpty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is necessary for coordination of two-level parallelism.  <a href="structyakl_1_1InnerHandlerEmpty.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html">yakl::LaunchConfig&lt; VL, B4B &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels. It contains two optional template parameters: (1) <code>VL</code>: When passed to <code>parallel_for</code>, this defines the inner looping size on the device (e.g. "block size" for CUDA and HIP. When passed to <code>parallel_outer</code>, this defines the maximum inner looping size on the device. (2) <code>B4B</code>: If this is set to <code>true</code>, then this tells <code>parallel_for</code> and <code>parallel_outer</code> to run the kernel serially (only when the <code>-DYAKL_B4B</code> CPP macro is defined) to enable bitwise determinism when desired for kernels with <a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69" title="Atomically perform update += value.">yakl::atomicAdd</a> in them.  <a href="structyakl_1_1LaunchConfig.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels.  <a href="structyakl_1_1LaunchConfig.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -106,6 +109,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a9d0e22704e1de301961bf131053aed15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="YAKL__LaunchConfig_8h.html#a9d0e22704e1de301961bf131053aed15">YAKL_DEFAULT_VECTOR_LEN</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memdesc:a9d0e22704e1de301961bf131053aed15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each hardware backend has its own default length for inner loop sizes.  <a href="YAKL__LaunchConfig_8h.html#a9d0e22704e1de301961bf131053aed15">More...</a><br /></td></tr>
 <tr class="separator:a9d0e22704e1de301961bf131053aed15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -113,18 +117,20 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a82d096ec8a882129a4c2b84f0f636d60"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a82d096ec8a882129a4c2b84f0f636d60">yakl::DefaultLaunchConfig</a> = LaunchConfig&lt;&gt;</td></tr>
 <tr class="memdesc:a82d096ec8a882129a4c2b84f0f636d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">This launch configuration sets vector length to the device default and <code>B4B</code> to <code>false</code>.  <a href="namespaceyakl.html#a82d096ec8a882129a4c2b84f0f636d60">More...</a><br /></td></tr>
 <tr class="separator:a82d096ec8a882129a4c2b84f0f636d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b33cfecadff879247cf80a54e825acd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a9b33cfecadff879247cf80a54e825acd">yakl::DefaultLaunchConfigB4b</a> = LaunchConfig&lt; <a class="el" href="YAKL__LaunchConfig_8h.html#a9d0e22704e1de301961bf131053aed15">YAKL_DEFAULT_VECTOR_LEN</a>, true &gt;</td></tr>
+<tr class="memdesc:a9b33cfecadff879247cf80a54e825acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">launch configuration sets B4B == true with the default <code>VecLen</code>.  <a href="namespaceyakl.html#a9b33cfecadff879247cf80a54e825acd">More...</a><br /></td></tr>
+<tr class="separator:a9b33cfecadff879247cf80a54e825acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fb5d8e747b5e4eff60360ad77fc402"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structyakl_1_1InnerHandlerEmpty.html">yakl::InnerHandlerEmpty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a84fb5d8e747b5e4eff60360ad77fc402">yakl::InnerHandler</a></td></tr>
+<tr class="memdesc:a84fb5d8e747b5e4eff60360ad77fc402"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is necessary for coordination of two-level parallelism.  <a href="namespaceyakl.html#a84fb5d8e747b5e4eff60360ad77fc402">More...</a><br /></td></tr>
+<tr class="separator:a84fb5d8e747b5e4eff60360ad77fc402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fff077cfae8547c78e7c76bdd45a465"><td class="memTemplParams" colspan="2">template&lt;int VecLen = YAKL_DEFAULT_VECTOR_LEN&gt; </td></tr>
 <tr class="memitem:a0fff077cfae8547c78e7c76bdd45a465"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a0fff077cfae8547c78e7c76bdd45a465">yakl::LaunchConfigB4b</a> = LaunchConfig&lt; VecLen, true &gt;</td></tr>
 <tr class="memdesc:a0fff077cfae8547c78e7c76bdd45a465"><td class="mdescLeft">&#160;</td><td class="mdescRight">launch configuration sets B4B == true with a user-specified <code>VecLen</code>.  <a href="namespaceyakl.html#a0fff077cfae8547c78e7c76bdd45a465">More...</a><br /></td></tr>
 <tr class="separator:a0fff077cfae8547c78e7c76bdd45a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b33cfecadff879247cf80a54e825acd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a9b33cfecadff879247cf80a54e825acd">yakl::DefaultLaunchConfigB4b</a> = LaunchConfig&lt; <a class="el" href="YAKL__LaunchConfig_8h.html#a9d0e22704e1de301961bf131053aed15">YAKL_DEFAULT_VECTOR_LEN</a>, true &gt;</td></tr>
-<tr class="memdesc:a9b33cfecadff879247cf80a54e825acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">launch configuration sets B4B == true with the default <code>VecLen</code>.  <a href="namespaceyakl.html#a9b33cfecadff879247cf80a54e825acd">More...</a><br /></td></tr>
-<tr class="separator:a9b33cfecadff879247cf80a54e825acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84fb5d8e747b5e4eff60360ad77fc402"><td class="memItemLeft" align="right" valign="top">typedef struct yakl::InnerHandlerEmpty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a84fb5d8e747b5e4eff60360ad77fc402">yakl::InnerHandler</a></td></tr>
-<tr class="memdesc:a84fb5d8e747b5e4eff60360ad77fc402"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is necessary for coordination of two-level parallelism. A <a class="el" href="namespaceyakl.html#a84fb5d8e747b5e4eff60360ad77fc402" title="This class is necessary for coordination of two-level parallelism. A yakl::InnerHandler object must b...">yakl::InnerHandler</a> object must be accepted as a parameter in the functor passed to <code>parallel_outer</code>, and it must be passed as a parameter to <code>parallel_inner</code>, <code>fence_inner</code>, and <code>single_inner</code>. An object of this class should never need to be explicitly created by the user.  <a href="namespaceyakl.html#a84fb5d8e747b5e4eff60360ad77fc402">More...</a><br /></td></tr>
-<tr class="separator:a84fb5d8e747b5e4eff60360ad77fc402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>YAKL kernel launch configuration class </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9d0e22704e1de301961bf131053aed15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d0e22704e1de301961bf131053aed15">&#9670;&nbsp;</a></span>YAKL_DEFAULT_VECTOR_LEN</h2>
 
@@ -136,6 +142,8 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Each hardware backend has its own default length for inner loop sizes. </p>
 
 </div>
 </div>

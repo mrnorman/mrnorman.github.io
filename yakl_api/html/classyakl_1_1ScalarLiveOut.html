@@ -67,58 +67,83 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classyakl_1_1ScalarLiveOut-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::ScalarLiveOut&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>Class to handle scalars that exist before kernels, are written to by kernels, and read after the kernel terminates.  
+ <a href="classyakl_1_1ScalarLiveOut.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="YAKL__ScalarLiveOut_8h_source.html">YAKL_ScalarLiveOut.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for yakl::ScalarLiveOut&lt; T &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classyakl_1_1ScalarLiveOut__coll__graph.png" border="0" usemap="#yakl_1_1ScalarLiveOut_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="yakl_1_1ScalarLiveOut_3_01T_01_4_coll__map" id="yakl_1_1ScalarLiveOut_3_01T_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="5,109,192,136"/>
-<area shape="rect" href="classyakl_1_1Array.html" title=" " alt="" coords="14,5,183,47"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c38eb490d5d3e8385ace8af857d87ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a3c38eb490d5d3e8385ace8af857d87ea">ScalarLiveOut</a> ()</td></tr>
+<tr class="memdesc:a3c38eb490d5d3e8385ace8af857d87ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor allocates room on the device for one scalar of type <code>T</code>  <a href="classyakl_1_1ScalarLiveOut.html#a3c38eb490d5d3e8385ace8af857d87ea">More...</a><br /></td></tr>
 <tr class="separator:a3c38eb490d5d3e8385ace8af857d87ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73053093c9f72c12526d8c48250c07e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a73053093c9f72c12526d8c48250c07e3">ScalarLiveOut</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:a73053093c9f72c12526d8c48250c07e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies and moves are shallow, not deep copy.  <a href="classyakl_1_1ScalarLiveOut.html#a73053093c9f72c12526d8c48250c07e3">More...</a><br /></td></tr>
+<tr class="separator:a73053093c9f72c12526d8c48250c07e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9665c36fa730b3fd01794b37dae9346d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a9665c36fa730b3fd01794b37dae9346d">ScalarLiveOut</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> const &amp;rhs)</td></tr>
+<tr class="memdesc:a9665c36fa730b3fd01794b37dae9346d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies and moves are shallow, not deep copy.  <a href="classyakl_1_1ScalarLiveOut.html#a9665c36fa730b3fd01794b37dae9346d">More...</a><br /></td></tr>
+<tr class="separator:a9665c36fa730b3fd01794b37dae9346d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f86887ee863b2a9c545b4aac276a501"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a5f86887ee863b2a9c545b4aac276a501">ScalarLiveOut</a> (T val)</td></tr>
+<tr class="memdesc:a5f86887ee863b2a9c545b4aac276a501"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] This constructor allocates room on the device for one scalar of type <code>T</code> and initializes it on device with the provided value.  <a href="classyakl_1_1ScalarLiveOut.html#a5f86887ee863b2a9c545b4aac276a501">More...</a><br /></td></tr>
 <tr class="separator:a5f86887ee863b2a9c545b4aac276a501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ae64d4d407627b170c4226c45b4cac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#aa1ae64d4d407627b170c4226c45b4cac">~ScalarLiveOut</a> ()</td></tr>
+<tr class="memdesc:aa1ae64d4d407627b170c4226c45b4cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates the scalar value on the device.  <a href="classyakl_1_1ScalarLiveOut.html#aa1ae64d4d407627b170c4226c45b4cac">More...</a><br /></td></tr>
 <tr class="separator:aa1ae64d4d407627b170c4226c45b4cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9665c36fa730b3fd01794b37dae9346d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a9665c36fa730b3fd01794b37dae9346d">ScalarLiveOut</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> const &amp;rhs)</td></tr>
-<tr class="separator:a9665c36fa730b3fd01794b37dae9346d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03694ed23b4c006b92cfed7995b402d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#ad03694ed23b4c006b92cfed7995b402d">operator=</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> const &amp;rhs)</td></tr>
-<tr class="separator:ad03694ed23b4c006b92cfed7995b402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73053093c9f72c12526d8c48250c07e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a73053093c9f72c12526d8c48250c07e3">ScalarLiveOut</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&amp;rhs)</td></tr>
-<tr class="separator:a73053093c9f72c12526d8c48250c07e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1d60cd4c266dedfb6cd78042fe4c862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#aa1d60cd4c266dedfb6cd78042fe4c862">operator=</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&amp;rhs)</td></tr>
-<tr class="separator:aa1d60cd4c266dedfb6cd78042fe4c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff3714af2438dda2ab7a57909e85a57f"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:aff3714af2438dda2ab7a57909e85a57f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#aff3714af2438dda2ab7a57909e85a57f">operator=</a> (TLOC rhs) const</td></tr>
-<tr class="separator:aff3714af2438dda2ab7a57909e85a57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492c8a6282b39b5fad4e93e89d8cd0cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a492c8a6282b39b5fad4e93e89d8cd0cb">operator()</a> () const</td></tr>
-<tr class="separator:a492c8a6282b39b5fad4e93e89d8cd0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad9ad553d3e8fc3a54f369687b1ec42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a3ad9ad553d3e8fc3a54f369687b1ec42">get</a> () const</td></tr>
+<tr class="memdesc:a3ad9ad553d3e8fc3a54f369687b1ec42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a modifiable reference to the underlying data on the device.  <a href="classyakl_1_1ScalarLiveOut.html#a3ad9ad553d3e8fc3a54f369687b1ec42">More...</a><br /></td></tr>
 <tr class="separator:a3ad9ad553d3e8fc3a54f369687b1ec42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3392d3055b87064c22f074fe3daa5bf2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a3392d3055b87064c22f074fe3daa5bf2">hostRead</a> () const</td></tr>
+<tr class="memdesc:a3392d3055b87064c22f074fe3daa5bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a host copy of the data. This is blocking.  <a href="classyakl_1_1ScalarLiveOut.html#a3392d3055b87064c22f074fe3daa5bf2">More...</a><br /></td></tr>
 <tr class="separator:a3392d3055b87064c22f074fe3daa5bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987d0bebdd9dcf098ec16661f08379ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a987d0bebdd9dcf098ec16661f08379ad">hostWrite</a> (T val)</td></tr>
+<tr class="memdesc:a987d0bebdd9dcf098ec16661f08379ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] Writes a value to the device-resident underlying data  <a href="classyakl_1_1ScalarLiveOut.html#a987d0bebdd9dcf098ec16661f08379ad">More...</a><br /></td></tr>
 <tr class="separator:a987d0bebdd9dcf098ec16661f08379ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a318fb75a32c948d1922d747d5fa2a2b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1Array.html">Array</a>&lt; T, 1, <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce">memDevice</a>, <a class="el" href="namespaceyakl.html#a59a958dd81c018c1859580dcb453d31d">styleC</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a318fb75a32c948d1922d747d5fa2a2b2">data</a></td></tr>
-<tr class="separator:a318fb75a32c948d1922d747d5fa2a2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492c8a6282b39b5fad4e93e89d8cd0cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#a492c8a6282b39b5fad4e93e89d8cd0cb">operator()</a> () const</td></tr>
+<tr class="memdesc:a492c8a6282b39b5fad4e93e89d8cd0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a modifiable reference to the underlying data on the device.  <a href="classyakl_1_1ScalarLiveOut.html#a492c8a6282b39b5fad4e93e89d8cd0cb">More...</a><br /></td></tr>
+<tr class="separator:a492c8a6282b39b5fad4e93e89d8cd0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d60cd4c266dedfb6cd78042fe4c862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#aa1d60cd4c266dedfb6cd78042fe4c862">operator=</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:aa1d60cd4c266dedfb6cd78042fe4c862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies and moves are shallow, not deep copy.  <a href="classyakl_1_1ScalarLiveOut.html#aa1d60cd4c266dedfb6cd78042fe4c862">More...</a><br /></td></tr>
+<tr class="separator:aa1d60cd4c266dedfb6cd78042fe4c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03694ed23b4c006b92cfed7995b402d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#ad03694ed23b4c006b92cfed7995b402d">operator=</a> (<a class="el" href="classyakl_1_1ScalarLiveOut.html">ScalarLiveOut</a> const &amp;rhs)</td></tr>
+<tr class="memdesc:ad03694ed23b4c006b92cfed7995b402d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies and moves are shallow, not deep copy.  <a href="classyakl_1_1ScalarLiveOut.html#ad03694ed23b4c006b92cfed7995b402d">More...</a><br /></td></tr>
+<tr class="separator:ad03694ed23b4c006b92cfed7995b402d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3714af2438dda2ab7a57909e85a57f"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:aff3714af2438dda2ab7a57909e85a57f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ScalarLiveOut.html#aff3714af2438dda2ab7a57909e85a57f">operator=</a> (TLOC rhs) const</td></tr>
+<tr class="memdesc:aff3714af2438dda2ab7a57909e85a57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a value to the <a class="el" href="classyakl_1_1ScalarLiveOut.html" title="Class to handle scalars that exist before kernels, are written to by kernels, and read after the kern...">ScalarLiveOut</a> object on the device.  <a href="classyakl_1_1ScalarLiveOut.html#aff3714af2438dda2ab7a57909e85a57f">More...</a><br /></td></tr>
+<tr class="separator:aff3714af2438dda2ab7a57909e85a57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class yakl::ScalarLiveOut&lt; T &gt;</h3>
+
+<p>Class to handle scalars that exist before kernels, are written to by kernels, and read after the kernel terminates. </p>
+<p>Handles the case where a scalar value is written to in a kernel and must be read on the host after the kernel completes. Passing a value to the constructor will initialize the device pointer with that data from the host. Using the = operator will assign to the value inside a kernel. This is the most common operation. To access the value as a reference that is writable, use the operator() (e.g., in an atomic operation perhaps). To read on the host afterward, using <a class="el" href="classyakl_1_1ScalarLiveOut.html#a3392d3055b87064c22f074fe3daa5bf2" title="Returns a host copy of the data. This is blocking.">hostRead()</a> To write after construction, use <a class="el" href="classyakl_1_1ScalarLiveOut.html#a987d0bebdd9dcf098ec16661f08379ad" title="[ASYNCHRONOUS] Writes a value to the device-resident underlying data">hostWrite()</a></p>
+<div class="fragment"><div class="line">ScalarLiveOut&lt;float&gt; <a class="code" href="namespaceyakl_1_1intrinsics.html#aa4295f4cc9fb733c6f4a73253d49c067">sum</a>(0.);</div>
+<div class="line"><span class="comment">// You&#39;d use a reduction for this in reality. This is just for demonstration.</span></div>
+<div class="line"><a class="code" href="namespaceyakl_1_1c.html#a81973df01907f317999d46b3d030a26f">parallel_for</a>( Bounds&lt;2&gt;(ny,nx) , <a class="code" href="YAKL__defines_8h.html#af085ba3fa0c920e495675e86a53f7bbb">YAKL_LAMBDA</a> (<span class="keywordtype">int</span> j, <span class="keywordtype">int</span> i) {</div>
+<div class="line">  <span class="comment">// sum() obtains a modifiable reference to the data contained by the ScalarLiveOut object</span></div>
+<div class="line">  <a class="code" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">atomicAdd</a>( <a class="code" href="namespaceyakl_1_1intrinsics.html#aa4295f4cc9fb733c6f4a73253d49c067">sum</a>() , 1. );</div>
+<div class="line">});</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code" href="namespaceyakl_1_1intrinsics.html#aa4295f4cc9fb733c6f4a73253d49c067">sum</a>.hostRead() != ny*nx) <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a>(<span class="stringliteral">&quot;ERROR: Wrong sum&quot;</span>);</div>
+</div><!-- fragment --><div class="fragment"><div class="line">ScalarLiveOut&lt;bool&gt; data_is_bad(<span class="keyword">false</span>);</div>
+<div class="line"><a class="code" href="namespaceyakl_1_1c.html#a81973df01907f317999d46b3d030a26f">parallel_for</a>( Bounds&lt;2&gt;(ny,nx) , <a class="code" href="YAKL__defines_8h.html#af085ba3fa0c920e495675e86a53f7bbb">YAKL_LAMBDA</a> (<span class="keywordtype">int</span> j, <span class="keywordtype">int</span> i) {</div>
+<div class="line">  <span class="comment">// operator= always assigns on the device</span></div>
+<div class="line">  <span class="keywordflow">if</span> (density(j,i) &lt; 0) data_is_bad = <span class="keyword">true</span>;</div>
+<div class="line">});</div>
+<div class="line"><span class="keywordflow">if</span> (data_is_bad.hostRead()) <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a>(<span class="stringliteral">&quot;ERROR: Data is bad&quot;</span>);</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The type of the scalar value </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c38eb490d5d3e8385ace8af857d87ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c38eb490d5d3e8385ace8af857d87ea">&#9670;&nbsp;</a></span>ScalarLiveOut() <span class="overload">[1/4]</span></h2>
 
@@ -143,6 +168,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default constructor allocates room on the device for one scalar of type <code>T</code> </p>
 
 </div>
 </div>
@@ -172,6 +199,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>[ASYNCHRONOUS] This constructor allocates room on the device for one scalar of type <code>T</code> and initializes it on device with the provided value. </p>
+
 </div>
 </div>
 <a id="aa1ae64d4d407627b170c4226c45b4cac"></a>
@@ -198,6 +227,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Deallocates the scalar value on the device. </p>
 
 </div>
 </div>
@@ -227,6 +258,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Copies and moves are shallow, not deep copy. </p>
+
 </div>
 </div>
 <a id="a73053093c9f72c12526d8c48250c07e3"></a>
@@ -254,6 +287,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Copies and moves are shallow, not deep copy. </p>
 
 </div>
 </div>
@@ -283,6 +318,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns a modifiable reference to the underlying data on the device. </p>
+
 </div>
 </div>
 <a id="a3392d3055b87064c22f074fe3daa5bf2"></a>
@@ -309,6 +346,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns a host copy of the data. This is blocking. </p>
 
 </div>
 </div>
@@ -338,6 +377,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>[ASYNCHRONOUS] Writes a value to the device-resident underlying data </p>
+
 </div>
 </div>
 <a id="a492c8a6282b39b5fad4e93e89d8cd0cb"></a>
@@ -364,6 +405,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns a modifiable reference to the underlying data on the device. </p>
 
 </div>
 </div>
@@ -393,6 +436,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Copies and moves are shallow, not deep copy. </p>
+
 </div>
 </div>
 <a id="ad03694ed23b4c006b92cfed7995b402d"></a>
@@ -420,6 +465,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Copies and moves are shallow, not deep copy. </p>
 
 </div>
 </div>
@@ -451,22 +498,7 @@ template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a318fb75a32c948d1922d747d5fa2a2b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318fb75a32c948d1922d747d5fa2a2b2">&#9670;&nbsp;</a></span>data</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyakl_1_1Array.html">Array</a>&lt;T,1,<a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce">memDevice</a>,<a class="el" href="namespaceyakl.html#a59a958dd81c018c1859580dcb453d31d">styleC</a>&gt; <a class="el" href="classyakl_1_1ScalarLiveOut.html">yakl::ScalarLiveOut</a>&lt; T &gt;::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Assign a value to the <a class="el" href="classyakl_1_1ScalarLiveOut.html" title="Class to handle scalars that exist before kernels, are written to by kernels, and read after the kern...">ScalarLiveOut</a> object on the device. </p>
 
 </div>
 </div>
@@ -474,6 +506,11 @@ template&lt;class T &gt; </div>
 <li>YAKL/src/<a class="el" href="YAKL__ScalarLiveOut_8h_source.html">YAKL_ScalarLiveOut.h</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="anamespaceyakl_1_1c_html_a81973df01907f317999d46b3d030a26f"><div class="ttname"><a href="namespaceyakl_1_1c.html#a81973df01907f317999d46b3d030a26f">yakl::c::parallel_for</a></div><div class="ttdeci">void parallel_for(char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</div><div class="ttdoc">[ASYNCHRONOUS] Launch the passed functor in parallel.</div></div>
+<div class="ttc" id="anamespaceyakl_html_a9cda355f1f737b5b613b6463232f3e69"><div class="ttname"><a href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">yakl::atomicAdd</a></div><div class="ttdeci">YAKL_INLINE void atomicAdd(T &amp;update, T value)</div><div class="ttdoc">Atomically perform update += value.</div><div class="ttdef"><b>Definition:</b> YAKL_atomics.h:310</div></div>
+<div class="ttc" id="anamespaceyakl_1_1intrinsics_html_aa4295f4cc9fb733c6f4a73253d49c067"><div class="ttname"><a href="namespaceyakl_1_1intrinsics.html#aa4295f4cc9fb733c6f4a73253d49c067">yakl::intrinsics::sum</a></div><div class="ttdeci">T sum(Array&lt; T, rank, memHost, myStyle &gt; const &amp;arr)</div><div class="ttdef"><b>Definition:</b> YAKL_intrinsics_sum.h:9</div></div>
+<div class="ttc" id="anamespaceyakl_html_a26dec4d21029959d4e9714098f1d22ff"><div class="ttname"><a href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a></div><div class="ttdeci">YAKL_INLINE void yakl_throw(const char *msg)</div><div class="ttdoc">Throw an error message. Works from the host or device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:16</div></div>
+<div class="ttc" id="aYAKL__defines_8h_html_af085ba3fa0c920e495675e86a53f7bbb"><div class="ttname"><a href="YAKL__defines_8h.html#af085ba3fa0c920e495675e86a53f7bbb">YAKL_LAMBDA</a></div><div class="ttdeci">#define YAKL_LAMBDA</div><div class="ttdoc">Used to create C++ lambda expressions passed to parallel_for and parallel_outer</div><div class="ttdef"><b>Definition:</b> YAKL_defines.h:89</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

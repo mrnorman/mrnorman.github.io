@@ -67,14 +67,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structyakl_1_1LaunchConfig-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::LaunchConfig&lt; VL, B4B &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels. It contains two optional template parameters: (1) <code>VL</code>: When passed to <code>parallel_for</code>, this defines the inner looping size on the device (e.g. "block size" for CUDA and HIP. When passed to <code>parallel_outer</code>, this defines the maximum inner looping size on the device. (2) <code>B4B</code>: If this is set to <code>true</code>, then this tells <code>parallel_for</code> and <code>parallel_outer</code> to run the kernel serially (only when the <code>-DYAKL_B4B</code> CPP macro is defined) to enable bitwise determinism when desired for kernels with <a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69" title="Atomically perform update += value.">yakl::atomicAdd</a> in them.  
+<p>This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels.  
  <a href="structyakl_1_1LaunchConfig.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="YAKL__LaunchConfig_8h_source.html">YAKL_LaunchConfig.h</a>&gt;</code></p>
@@ -82,31 +81,39 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a548e6b07dacc365e1d6bdab94b31033e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a548e6b07dacc365e1d6bdab94b31033e">LaunchConfig</a> ()</td></tr>
+<tr class="memdesc:a548e6b07dacc365e1d6bdab94b31033e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structyakl_1_1LaunchConfig.html#aebc6373e02628e90f1e682ac8567a52d" title="This sets the actual inner looping size whereas the template parameter VL sets the maximum inner loop...">set_inner_size()</a> defaults to YAKL_DEFAULT_VECTOR_LEN  <a href="structyakl_1_1LaunchConfig.html#a548e6b07dacc365e1d6bdab94b31033e">More...</a><br /></td></tr>
 <tr class="separator:a548e6b07dacc365e1d6bdab94b31033e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e714c21c9e9452c0fe8cc30a2a769df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a6e714c21c9e9452c0fe8cc30a2a769df">LaunchConfig</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:a6e714c21c9e9452c0fe8cc30a2a769df"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved.  <a href="structyakl_1_1LaunchConfig.html#a6e714c21c9e9452c0fe8cc30a2a769df">More...</a><br /></td></tr>
+<tr class="separator:a6e714c21c9e9452c0fe8cc30a2a769df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273055b10bb7833943fc3b415946b794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a273055b10bb7833943fc3b415946b794">LaunchConfig</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> const &amp;rhs)</td></tr>
+<tr class="memdesc:a273055b10bb7833943fc3b415946b794"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved.  <a href="structyakl_1_1LaunchConfig.html#a273055b10bb7833943fc3b415946b794">More...</a><br /></td></tr>
+<tr class="separator:a273055b10bb7833943fc3b415946b794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a18941ded6d528df560bab0c7baaf5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a9a18941ded6d528df560bab0c7baaf5d">~LaunchConfig</a> ()</td></tr>
 <tr class="separator:a9a18941ded6d528df560bab0c7baaf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a273055b10bb7833943fc3b415946b794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a273055b10bb7833943fc3b415946b794">LaunchConfig</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> const &amp;rhs)</td></tr>
-<tr class="separator:a273055b10bb7833943fc3b415946b794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e714c21c9e9452c0fe8cc30a2a769df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a6e714c21c9e9452c0fe8cc30a2a769df">LaunchConfig</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> &amp;&amp;rhs)</td></tr>
-<tr class="separator:a6e714c21c9e9452c0fe8cc30a2a769df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa905745b066071f641ce6b0ae2742b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#acfa905745b066071f641ce6b0ae2742b">operator=</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> const &amp;rhs)</td></tr>
-<tr class="separator:acfa905745b066071f641ce6b0ae2742b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35524e0fc7833c0b39184c8b50f7c222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a35524e0fc7833c0b39184c8b50f7c222">operator=</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:a35524e0fc7833c0b39184c8b50f7c222"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved.  <a href="structyakl_1_1LaunchConfig.html#a35524e0fc7833c0b39184c8b50f7c222">More...</a><br /></td></tr>
 <tr class="separator:a35524e0fc7833c0b39184c8b50f7c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa905745b066071f641ce6b0ae2742b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#acfa905745b066071f641ce6b0ae2742b">operator=</a> (<a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a> const &amp;rhs)</td></tr>
+<tr class="memdesc:acfa905745b066071f641ce6b0ae2742b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved.  <a href="structyakl_1_1LaunchConfig.html#acfa905745b066071f641ce6b0ae2742b">More...</a><br /></td></tr>
+<tr class="separator:acfa905745b066071f641ce6b0ae2742b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebc6373e02628e90f1e682ac8567a52d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#aebc6373e02628e90f1e682ac8567a52d">set_inner_size</a> (int num)</td></tr>
-<tr class="memdesc:aebc6373e02628e90f1e682ac8567a52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the <b>actuall</b> inner looping size whereas the template parameter <code>VL</code> sets the maximum inner looping size.  <a href="structyakl_1_1LaunchConfig.html#aebc6373e02628e90f1e682ac8567a52d">More...</a><br /></td></tr>
+<tr class="memdesc:aebc6373e02628e90f1e682ac8567a52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the <b>actual</b> inner looping size whereas the template parameter <code>VL</code> sets the maximum inner looping size.  <a href="structyakl_1_1LaunchConfig.html#aebc6373e02628e90f1e682ac8567a52d">More...</a><br /></td></tr>
 <tr class="separator:aebc6373e02628e90f1e682ac8567a52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a225a5f18ac4518f74c69c6469e480c48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html#a225a5f18ac4518f74c69c6469e480c48">inner_size</a></td></tr>
-<tr class="separator:a225a5f18ac4518f74c69c6469e480c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt;<br />
 struct yakl::LaunchConfig&lt; VL, B4B &gt;</h3>
 
-<p>This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels. It contains two optional template parameters: (1) <code>VL</code>: When passed to <code>parallel_for</code>, this defines the inner looping size on the device (e.g. "block size" for CUDA and HIP. When passed to <code>parallel_outer</code>, this defines the maximum inner looping size on the device. (2) <code>B4B</code>: If this is set to <code>true</code>, then this tells <code>parallel_for</code> and <code>parallel_outer</code> to run the kernel serially (only when the <code>-DYAKL_B4B</code> CPP macro is defined) to enable bitwise determinism when desired for kernels with <a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69" title="Atomically perform update += value.">yakl::atomicAdd</a> in them. </p>
+<p>This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels. </p>
+<p>It contains two optional template parameters: (1) <code>VL</code>: When passed to <code>parallel_for</code>, this defines the inner looping size on the device (e.g. "block size" for CUDA and HIP. When passed to <code>parallel_outer</code>, this defines the maximum inner looping size on the device. (2) <code>B4B</code>: If this is set to <code>true</code>, then this tells <code>parallel_for</code> and <code>parallel_outer</code> to run the kernel serially (only when the <code>-DYAKL_B4B</code> CPP macro is defined) to enable bitwise determinism when desired for kernels with <a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69" title="Atomically perform update += value.">yakl::atomicAdd</a> in them.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VL</td><td>For <code>parallel_for</code>, this is the inner looping size. For <code>parallel_outer</code>, this is the <b>maximum</b> inner looping size. </td></tr>
+    <tr><td class="paramname">B4B</td><td>If the CPP macro <code>YAKL_B4B</code> is also defined, <code>B4B == true</code> will force the kernel to run in serial, typically used for kernels that contain <a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69" title="Atomically perform update += value.">yakl::atomicAdd</a> to maintain bitwise determinism run-to-run. If <code>YAKL_B4B</code> is not defined, the kernel runs normally. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a548e6b07dacc365e1d6bdab94b31033e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a548e6b07dacc365e1d6bdab94b31033e">&#9670;&nbsp;</a></span>LaunchConfig() <span class="overload">[1/3]</span></h2>
@@ -132,6 +139,8 @@ template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="structyakl_1_1LaunchConfig.html#aebc6373e02628e90f1e682ac8567a52d" title="This sets the actual inner looping size whereas the template parameter VL sets the maximum inner loop...">set_inner_size()</a> defaults to YAKL_DEFAULT_VECTOR_LEN </p>
 
 </div>
 </div>
@@ -188,6 +197,8 @@ template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved. </p>
+
 </div>
 </div>
 <a id="a6e714c21c9e9452c0fe8cc30a2a769df"></a>
@@ -215,6 +226,8 @@ template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved. </p>
 
 </div>
 </div>
@@ -245,6 +258,8 @@ template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved. </p>
+
 </div>
 </div>
 <a id="acfa905745b066071f641ce6b0ae2742b"></a>
@@ -272,6 +287,8 @@ template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="structyakl_1_1LaunchConfig.html" title="This class informs YAKL parallel_for and parallel_outer routines how to launch kernels.">LaunchConfig</a> objects may be copied or moved. </p>
 
 </div>
 </div>
@@ -301,24 +318,7 @@ template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This sets the <b>actuall</b> inner looping size whereas the template parameter <code>VL</code> sets the maximum inner looping size. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a225a5f18ac4518f74c69c6469e480c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a225a5f18ac4518f74c69c6469e480c48">&#9670;&nbsp;</a></span>inner_size</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int VL = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="structyakl_1_1LaunchConfig.html">yakl::LaunchConfig</a>&lt; VL, B4B &gt;::inner_size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>This sets the <b>actual</b> inner looping size whereas the template parameter <code>VL</code> sets the maximum inner looping size. </p>
 
 </div>
 </div>

@@ -95,13 +95,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1LBnd.html">yakl::fortran::LBnd</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds.html">yakl::fortran::Bounds&lt; N, simple &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01true_01_4.html">yakl::fortran::Bounds&lt; N, true &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a set of Fortran-style tightly-nested loops.  <a href="classyakl_1_1fortran_1_1Bounds.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html">yakl::fortran::Bounds&lt; N, false &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a set of Fortran-style tightly-nested loops where at least one loop has a lower bound other than <code>1</code> or a stride other than <code>1</code>.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01true_01_4.html">yakl::fortran::Bounds&lt; N, true &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a set of Fortran-style tightly-nested loops where all loops have lower bounds of <code>1</code> strides of <code>1</code>.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01true_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1LBnd.html">yakl::fortran::LBnd</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a single Fortran-style loop bound (lower bound default of <code>1</code>)  <a href="classyakl_1_1fortran_1_1LBnd.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -109,15 +113,19 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceyakl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html">yakl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceyakl_1_1fortran"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html">yakl::fortran</a></td></tr>
+<tr class="memdesc:namespaceyakl_1_1fortran"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains <code><a class="el" href="classyakl_1_1fortran_1_1Bounds.html" title="Describes a set of Fortran-style tightly-nested loops.">Bounds</a></code> class, and <code><a class="el" href="namespaceyakl_1_1fortran.html#a2a63e3b0057ff99c787ac655a287a53a" title="[ASYNCHRONOUS] Launch the passed functor in parallel.">parallel_for()</a></code> routines using Fortran-style indexing and ordering. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a71961d36a029a02c29f15082a0ed4b23"><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
 <tr class="memitem:a71961d36a029a02c29f15082a0ed4b23"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#a71961d36a029a02c29f15082a0ed4b23">yakl::fortran::SimpleBounds</a> = Bounds&lt; N, true &gt;</td></tr>
+<tr class="memdesc:a71961d36a029a02c29f15082a0ed4b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make it easy for the user to specify that all lower bounds are one and all strides are one.  <a href="namespaceyakl_1_1fortran.html#a71961d36a029a02c29f15082a0ed4b23">More...</a><br /></td></tr>
 <tr class="separator:a71961d36a029a02c29f15082a0ed4b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines Fortran-style loop bounds and functor calling functionality (index computations). </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

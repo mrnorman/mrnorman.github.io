@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['parallelmax_849',['ParallelMax',['../namespaceyakl.html#a963e440ba3b79d2250aea69749f844fd',1,'yakl']]],
-  ['parallelmin_850',['ParallelMin',['../namespaceyakl.html#aae2cdeccf05329f3fcc2ab27d8cf0399',1,'yakl']]],
-  ['parallelprod_851',['ParallelProd',['../namespaceyakl.html#a6bbeb29ba06bb6b58bb0a5672575fd3a',1,'yakl']]],
-  ['parallelsum_852',['ParallelSum',['../namespaceyakl.html#a6a0eae445a17795ed61a17745902a7bf',1,'yakl']]]
+  ['sarray_703',['SArray',['../namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2',1,'yakl']]],
+  ['simplebounds_704',['SimpleBounds',['../namespaceyakl_1_1c.html#a2c3ef1f3e0d0ebe0a7e13100db4bc5c7',1,'yakl::c::SimpleBounds()'],['../namespaceyakl_1_1fortran.html#a71961d36a029a02c29f15082a0ed4b23',1,'yakl::fortran::SimpleBounds()']]]
 ];

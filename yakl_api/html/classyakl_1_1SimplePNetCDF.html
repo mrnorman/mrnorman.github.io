@@ -67,12 +67,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classyakl_1_1SimplePNetCDF-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::SimplePNetCDF Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Simple way to write <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects to NetCDF files in parallel.  
+ <a href="classyakl_1_1SimplePNetCDF.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="YAKL__pnetcdf_8h_source.html">YAKL_pnetcdf.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -82,70 +84,75 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab765423e4390122ebdfb978586a67f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d94889a9a5d9acf398cbe17f80aade"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ac7d94889a9a5d9acf398cbe17f80aade">~SimplePNetCDF</a> ()</td></tr>
 <tr class="separator:ac7d94889a9a5d9acf398cbe17f80aade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a918903a293235dea66bd1b635f62afd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a918903a293235dea66bd1b635f62afd1">SimplePNetCDF</a> (<a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> &amp;&amp;in)=delete</td></tr>
-<tr class="separator:a918903a293235dea66bd1b635f62afd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad56a639d75643431457a31196a2f1b41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ad56a639d75643431457a31196a2f1b41">SimplePNetCDF</a> (<a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> const &amp;in)=delete</td></tr>
-<tr class="separator:ad56a639d75643431457a31196a2f1b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2105e01c48ff658fcb67bc7db1d12e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ac2105e01c48ff658fcb67bc7db1d12e2">operator=</a> (<a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> &amp;&amp;in)=delete</td></tr>
-<tr class="separator:ac2105e01c48ff658fcb67bc7db1d12e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89cd6bd7e67a2282a2d92929594a853e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a89cd6bd7e67a2282a2d92929594a853e">operator=</a> (<a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> const &amp;in)=delete</td></tr>
-<tr class="separator:a89cd6bd7e67a2282a2d92929594a853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b8f2d5d6e70dc6fb621739544a6b9ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a8b8f2d5d6e70dc6fb621739544a6b9ae">open</a> (std::string fname)</td></tr>
-<tr class="separator:a8b8f2d5d6e70dc6fb621739544a6b9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec67f824a5dc47e3c11714e61a81dceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#aec67f824a5dc47e3c11714e61a81dceb">create</a> (std::string fname, int flag=-1)</td></tr>
-<tr class="separator:aec67f824a5dc47e3c11714e61a81dceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce9969db1928239c122d0863816076f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a9ce9969db1928239c122d0863816076f">begin_indep_data</a> ()</td></tr>
+<tr class="memdesc:a9ce9969db1928239c122d0863816076f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin independent data writing mode (non-collective data writing)  <a href="classyakl_1_1SimplePNetCDF.html#a9ce9969db1928239c122d0863816076f">More...</a><br /></td></tr>
+<tr class="separator:a9ce9969db1928239c122d0863816076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd26a96f3b1a6b49505f0ad172b5bd7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#afd26a96f3b1a6b49505f0ad172b5bd7d">close</a> ()</td></tr>
+<tr class="memdesc:afd26a96f3b1a6b49505f0ad172b5bd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a file.  <a href="classyakl_1_1SimplePNetCDF.html#afd26a96f3b1a6b49505f0ad172b5bd7d">More...</a><br /></td></tr>
 <tr class="separator:afd26a96f3b1a6b49505f0ad172b5bd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66e017d35fc544c8fb2d058e74e10d33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a66e017d35fc544c8fb2d058e74e10d33">get_dim_id</a> (std::string dimName) const</td></tr>
-<tr class="separator:a66e017d35fc544c8fb2d058e74e10d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a554bcd62cac90872aed93d39044877a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a554bcd62cac90872aed93d39044877a0">get_var_id</a> (std::string varName) const</td></tr>
-<tr class="separator:a554bcd62cac90872aed93d39044877a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4017f96b79ba5e46f255b1ff5e11c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#afe4017f96b79ba5e46f255b1ff5e11c4">var_exists</a> (std::string varName) const</td></tr>
-<tr class="separator:afe4017f96b79ba5e46f255b1ff5e11c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad7c04df17b4f5abd9bfcec7678edeeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#aad7c04df17b4f5abd9bfcec7678edeeb">dim_exists</a> (std::string dimName) const</td></tr>
-<tr class="separator:aad7c04df17b4f5abd9bfcec7678edeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807af185abbe77ec2c38679dbf0a5515"><td class="memItemLeft" align="right" valign="top">MPI_Offset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a807af185abbe77ec2c38679dbf0a5515">get_dim_size</a> (std::string dimName) const</td></tr>
-<tr class="separator:a807af185abbe77ec2c38679dbf0a5515"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ec86ca95e9dea298ec59867bd129d8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a99ec86ca95e9dea298ec59867bd129d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a99ec86ca95e9dea298ec59867bd129d8">create_var</a> (std::string varName, std::vector&lt; std::string &gt; dnames)</td></tr>
-<tr class="separator:a99ec86ca95e9dea298ec59867bd129d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec67f824a5dc47e3c11714e61a81dceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#aec67f824a5dc47e3c11714e61a81dceb">create</a> (std::string fname, int flag=-1)</td></tr>
+<tr class="memdesc:aec67f824a5dc47e3c11714e61a81dceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a file with an optional flag parameter.  <a href="classyakl_1_1SimplePNetCDF.html#aec67f824a5dc47e3c11714e61a81dceb">More...</a><br /></td></tr>
+<tr class="separator:aec67f824a5dc47e3c11714e61a81dceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46131e7b8f93d6fe335e9d618ad6b12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a46131e7b8f93d6fe335e9d618ad6b12f">create_dim</a> (std::string dimName, MPI_Offset len)</td></tr>
+<tr class="memdesc:a46131e7b8f93d6fe335e9d618ad6b12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dimension with the given size.  <a href="classyakl_1_1SimplePNetCDF.html#a46131e7b8f93d6fe335e9d618ad6b12f">More...</a><br /></td></tr>
 <tr class="separator:a46131e7b8f93d6fe335e9d618ad6b12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba5fe4f19f06a3ae6eb14c3d32e5101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#abba5fe4f19f06a3ae6eb14c3d32e5101">create_unlim_dim</a> (std::string dimName)</td></tr>
+<tr class="memdesc:abba5fe4f19f06a3ae6eb14c3d32e5101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an unlimited dimension.  <a href="classyakl_1_1SimplePNetCDF.html#abba5fe4f19f06a3ae6eb14c3d32e5101">More...</a><br /></td></tr>
 <tr class="separator:abba5fe4f19f06a3ae6eb14c3d32e5101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb886431ff64bac1520165fe97b42b30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#adb886431ff64bac1520165fe97b42b30">enddef</a> ()</td></tr>
-<tr class="separator:adb886431ff64bac1520165fe97b42b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce9969db1928239c122d0863816076f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a9ce9969db1928239c122d0863816076f">begin_indep_data</a> ()</td></tr>
-<tr class="separator:a9ce9969db1928239c122d0863816076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ec86ca95e9dea298ec59867bd129d8"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a99ec86ca95e9dea298ec59867bd129d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a99ec86ca95e9dea298ec59867bd129d8">create_var</a> (std::string varName, std::vector&lt; std::string &gt; dnames)</td></tr>
+<tr class="memdesc:a99ec86ca95e9dea298ec59867bd129d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a variable with the given dimension names.  <a href="classyakl_1_1SimplePNetCDF.html#a99ec86ca95e9dea298ec59867bd129d8">More...</a><br /></td></tr>
+<tr class="separator:a99ec86ca95e9dea298ec59867bd129d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7c04df17b4f5abd9bfcec7678edeeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#aad7c04df17b4f5abd9bfcec7678edeeb">dim_exists</a> (std::string dimName) const</td></tr>
+<tr class="memdesc:aad7c04df17b4f5abd9bfcec7678edeeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a dimension exists.  <a href="classyakl_1_1SimplePNetCDF.html#aad7c04df17b4f5abd9bfcec7678edeeb">More...</a><br /></td></tr>
+<tr class="separator:aad7c04df17b4f5abd9bfcec7678edeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa83cb984e63a56fdd00d9a994c884601"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#aa83cb984e63a56fdd00d9a994c884601">end_indep_data</a> ()</td></tr>
+<tr class="memdesc:aa83cb984e63a56fdd00d9a994c884601"><td class="mdescLeft">&#160;</td><td class="mdescRight">End independent data writing mode (non-collective data writing)  <a href="classyakl_1_1SimplePNetCDF.html#aa83cb984e63a56fdd00d9a994c884601">More...</a><br /></td></tr>
 <tr class="separator:aa83cb984e63a56fdd00d9a994c884601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb886431ff64bac1520165fe97b42b30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#adb886431ff64bac1520165fe97b42b30">enddef</a> ()</td></tr>
+<tr class="memdesc:adb886431ff64bac1520165fe97b42b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">End "define mode".  <a href="classyakl_1_1SimplePNetCDF.html#adb886431ff64bac1520165fe97b42b30">More...</a><br /></td></tr>
+<tr class="separator:adb886431ff64bac1520165fe97b42b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e017d35fc544c8fb2d058e74e10d33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a66e017d35fc544c8fb2d058e74e10d33">get_dim_id</a> (std::string dimName) const</td></tr>
+<tr class="memdesc:a66e017d35fc544c8fb2d058e74e10d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dimension ID of a dimension name.  <a href="classyakl_1_1SimplePNetCDF.html#a66e017d35fc544c8fb2d058e74e10d33">More...</a><br /></td></tr>
+<tr class="separator:a66e017d35fc544c8fb2d058e74e10d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807af185abbe77ec2c38679dbf0a5515"><td class="memItemLeft" align="right" valign="top">MPI_Offset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a807af185abbe77ec2c38679dbf0a5515">get_dim_size</a> (std::string dimName) const</td></tr>
+<tr class="memdesc:a807af185abbe77ec2c38679dbf0a5515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a dimension name.  <a href="classyakl_1_1SimplePNetCDF.html#a807af185abbe77ec2c38679dbf0a5515">More...</a><br /></td></tr>
+<tr class="separator:a807af185abbe77ec2c38679dbf0a5515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554bcd62cac90872aed93d39044877a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a554bcd62cac90872aed93d39044877a0">get_var_id</a> (std::string varName) const</td></tr>
+<tr class="memdesc:a554bcd62cac90872aed93d39044877a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get variable ID of a variable name.  <a href="classyakl_1_1SimplePNetCDF.html#a554bcd62cac90872aed93d39044877a0">More...</a><br /></td></tr>
+<tr class="separator:a554bcd62cac90872aed93d39044877a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8f2d5d6e70dc6fb621739544a6b9ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a8b8f2d5d6e70dc6fb621739544a6b9ae">open</a> (std::string fname)</td></tr>
+<tr class="memdesc:a8b8f2d5d6e70dc6fb621739544a6b9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file.  <a href="classyakl_1_1SimplePNetCDF.html#a8b8f2d5d6e70dc6fb621739544a6b9ae">More...</a><br /></td></tr>
+<tr class="separator:a8b8f2d5d6e70dc6fb621739544a6b9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4017f96b79ba5e46f255b1ff5e11c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#afe4017f96b79ba5e46f255b1ff5e11c4">var_exists</a> (std::string varName) const</td></tr>
+<tr class="memdesc:afe4017f96b79ba5e46f255b1ff5e11c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a variable exists.  <a href="classyakl_1_1SimplePNetCDF.html#afe4017f96b79ba5e46f255b1ff5e11c4">More...</a><br /></td></tr>
+<tr class="separator:afe4017f96b79ba5e46f255b1ff5e11c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac970dcc9ff4b77768cd2c1fedc33fdf1"><td class="memTemplParams" colspan="2">template&lt;class T , int rank, int myMem, int myStyle&gt; </td></tr>
 <tr class="memitem:ac970dcc9ff4b77768cd2c1fedc33fdf1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ac970dcc9ff4b77768cd2c1fedc33fdf1">write</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; T, rank, myMem, myStyle &gt; const &amp;arr, std::string varName)</td></tr>
+<tr class="memdesc:ac970dcc9ff4b77768cd2c1fedc33fdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serially write an entire <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> at once.  <a href="classyakl_1_1SimplePNetCDF.html#ac970dcc9ff4b77768cd2c1fedc33fdf1">More...</a><br /></td></tr>
 <tr class="separator:ac970dcc9ff4b77768cd2c1fedc33fdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a912de5e895e6ad12834987cc5484c61e"><td class="memTemplParams" colspan="2">template&lt;class T , int rank, int myMem, int myStyle&gt; </td></tr>
-<tr class="memitem:a912de5e895e6ad12834987cc5484c61e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a912de5e895e6ad12834987cc5484c61e">write_all</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; T, rank, myMem, myStyle &gt; const &amp;arr, std::string varName, std::vector&lt; MPI_Offset &gt; start)</td></tr>
-<tr class="separator:a912de5e895e6ad12834987cc5484c61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="memTemplParams" colspan="2">template&lt;class T , typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ab4660d7a236b0fbbd4b14a0d6a0ef131">write1</a> (T val, std::string varName, int ind, std::string ulDimName=&quot;unlim&quot;)</td></tr>
-<tr class="separator:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b487867bdd85a79a51bbc5f030b8305"><td class="memTemplParams" colspan="2">template&lt;class T , int rank, int myMem, int myStyle&gt; </td></tr>
 <tr class="memitem:a2b487867bdd85a79a51bbc5f030b8305"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a2b487867bdd85a79a51bbc5f030b8305">write1</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; T, rank, myMem, myStyle &gt; const &amp;arr, std::string varName, int ind, std::string ulDimName=&quot;unlim&quot;)</td></tr>
+<tr class="memdesc:a2b487867bdd85a79a51bbc5f030b8305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serially write one entry of an <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> into the unlimited index.  <a href="classyakl_1_1SimplePNetCDF.html#a2b487867bdd85a79a51bbc5f030b8305">More...</a><br /></td></tr>
 <tr class="separator:a2b487867bdd85a79a51bbc5f030b8305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="memTemplParams" colspan="2">template&lt;class T , typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ab4660d7a236b0fbbd4b14a0d6a0ef131">write1</a> (T val, std::string varName, int ind, std::string ulDimName=&quot;unlim&quot;)</td></tr>
+<tr class="memdesc:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serially write one entry of a scalar into the unlimited index.  <a href="classyakl_1_1SimplePNetCDF.html#ab4660d7a236b0fbbd4b14a0d6a0ef131">More...</a><br /></td></tr>
+<tr class="separator:ab4660d7a236b0fbbd4b14a0d6a0ef131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d3fba13c5820a7e0239efb2bac27b84"><td class="memTemplParams" colspan="2">template&lt;class T , int rank, int myMem, int myStyle&gt; </td></tr>
 <tr class="memitem:a7d3fba13c5820a7e0239efb2bac27b84"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a7d3fba13c5820a7e0239efb2bac27b84">write1_all</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; T, rank, myMem, myStyle &gt; const &amp;arr, std::string varName, int ind, std::vector&lt; MPI_Offset &gt; start_in, std::string ulDimName=&quot;unlim&quot;)</td></tr>
+<tr class="memdesc:a7d3fba13c5820a7e0239efb2bac27b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collectively write one entry of an <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> into the unlimited index.  <a href="classyakl_1_1SimplePNetCDF.html#a7d3fba13c5820a7e0239efb2bac27b84">More...</a><br /></td></tr>
 <tr class="separator:a7d3fba13c5820a7e0239efb2bac27b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f37ea9b73ffeda72e7a8d3c0167dd7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a51f37ea9b73ffeda72e7a8d3c0167dd7"><td class="memTemplItemLeft" align="right" valign="top">nc_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a51f37ea9b73ffeda72e7a8d3c0167dd7">getType</a> () const</td></tr>
-<tr class="separator:a51f37ea9b73ffeda72e7a8d3c0167dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ab13427e834a085ac3f2a0daca9819647"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#ab13427e834a085ac3f2a0daca9819647">ncid</a></td></tr>
-<tr class="separator:ab13427e834a085ac3f2a0daca9819647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912de5e895e6ad12834987cc5484c61e"><td class="memTemplParams" colspan="2">template&lt;class T , int rank, int myMem, int myStyle&gt; </td></tr>
+<tr class="memitem:a912de5e895e6ad12834987cc5484c61e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html#a912de5e895e6ad12834987cc5484c61e">write_all</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; T, rank, myMem, myStyle &gt; const &amp;arr, std::string varName, std::vector&lt; MPI_Offset &gt; start)</td></tr>
+<tr class="memdesc:a912de5e895e6ad12834987cc5484c61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collectively write an entire <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> at once.  <a href="classyakl_1_1SimplePNetCDF.html#a912de5e895e6ad12834987cc5484c61e">More...</a><br /></td></tr>
+<tr class="separator:a912de5e895e6ad12834987cc5484c61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Simple way to write <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects to NetCDF files in parallel. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab765423e4390122ebdfb978586a67f03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab765423e4390122ebdfb978586a67f03">&#9670;&nbsp;</a></span>SimplePNetCDF() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab765423e4390122ebdfb978586a67f03">&#9670;&nbsp;</a></span>SimplePNetCDF()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,58 +201,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a918903a293235dea66bd1b635f62afd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a918903a293235dea66bd1b635f62afd1">&#9670;&nbsp;</a></span>SimplePNetCDF() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">yakl::SimplePNetCDF::SimplePNetCDF </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad56a639d75643431457a31196a2f1b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad56a639d75643431457a31196a2f1b41">&#9670;&nbsp;</a></span>SimplePNetCDF() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">yakl::SimplePNetCDF::SimplePNetCDF </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> const &amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9ce9969db1928239c122d0863816076f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ce9969db1928239c122d0863816076f">&#9670;&nbsp;</a></span>begin_indep_data()</h2>
@@ -269,6 +224,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Begin independent data writing mode (non-collective data writing) </p>
 
 </div>
 </div>
@@ -294,6 +251,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Close a file. </p>
 
 </div>
 </div>
@@ -331,6 +290,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Create a file with an optional flag parameter. </p>
+
 </div>
 </div>
 <a id="a46131e7b8f93d6fe335e9d618ad6b12f"></a>
@@ -367,6 +328,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Create a dimension with the given size. </p>
+
 </div>
 </div>
 <a id="abba5fe4f19f06a3ae6eb14c3d32e5101"></a>
@@ -392,6 +355,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Create an unlimited dimension. </p>
 
 </div>
 </div>
@@ -431,6 +396,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Create a variable with the given dimension names. </p>
+
 </div>
 </div>
 <a id="aad7c04df17b4f5abd9bfcec7678edeeb"></a>
@@ -457,6 +424,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Determine if a dimension exists. </p>
+
 </div>
 </div>
 <a id="aa83cb984e63a56fdd00d9a994c884601"></a>
@@ -482,6 +451,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>End independent data writing mode (non-collective data writing) </p>
+
 </div>
 </div>
 <a id="adb886431ff64bac1520165fe97b42b30"></a>
@@ -506,6 +477,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>End "define mode". </p>
 
 </div>
 </div>
@@ -533,6 +506,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get dimension ID of a dimension name. </p>
+
 </div>
 </div>
 <a id="a807af185abbe77ec2c38679dbf0a5515"></a>
@@ -558,6 +533,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the size of a dimension name. </p>
 
 </div>
 </div>
@@ -585,32 +562,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a51f37ea9b73ffeda72e7a8d3c0167dd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51f37ea9b73ffeda72e7a8d3c0167dd7">&#9670;&nbsp;</a></span>getType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">nc_type yakl::SimplePNetCDF::getType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Get variable ID of a variable name. </p>
 
 </div>
 </div>
@@ -638,57 +590,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ac2105e01c48ff658fcb67bc7db1d12e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2105e01c48ff658fcb67bc7db1d12e2">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a>&amp; yakl::SimplePNetCDF::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89cd6bd7e67a2282a2d92929594a853e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89cd6bd7e67a2282a2d92929594a853e">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a>&amp; yakl::SimplePNetCDF::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a> const &amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Open a file. </p>
 
 </div>
 </div>
@@ -715,6 +617,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Determine if a variable exists. </p>
 
 </div>
 </div>
@@ -753,6 +657,8 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Serially write an entire <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> at once. </p>
 
 </div>
 </div>
@@ -804,6 +710,8 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Serially write one entry of an <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> into the unlimited index. </p>
+
 </div>
 </div>
 <a id="ab4660d7a236b0fbbd4b14a0d6a0ef131"></a>
@@ -853,6 +761,8 @@ template&lt;class T , typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;:
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Serially write one entry of a scalar into the unlimited index. </p>
 
 </div>
 </div>
@@ -910,6 +820,8 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Collectively write one entry of an <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> into the unlimited index. </p>
+
 </div>
 </div>
 <a id="a912de5e895e6ad12834987cc5484c61e"></a>
@@ -954,28 +866,7 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab13427e834a085ac3f2a0daca9819647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab13427e834a085ac3f2a0daca9819647">&#9670;&nbsp;</a></span>ncid</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yakl::SimplePNetCDF::ncid</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Collectively write an entire <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> at once. </p>
 
 </div>
 </div>

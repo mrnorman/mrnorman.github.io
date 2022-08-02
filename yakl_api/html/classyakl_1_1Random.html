@@ -67,82 +67,59 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classyakl_1_1Random-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::Random Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>Non-cryptographic pseudo-random number generator with a very small internal state.  
+ <a href="classyakl_1_1Random.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="YAKL__random_8h_source.html">YAKL_random.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for yakl::Random:</div>
-<div class="dyncontent">
-<div class="center"><img src="classyakl_1_1Random__coll__graph.png" border="0" usemap="#yakl_1_1Random_coll__map" alt="Collaboration graph"/></div>
-<map name="yakl_1_1Random_coll__map" id="yakl_1_1Random_coll__map">
-<area shape="rect" title=" " alt="" coords="27,95,139,121"/>
-<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>State</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7bb4820b9a2bf996a155b88410d929c5"><td class="memItemLeft" align="right" valign="top">typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a></td></tr>
-<tr class="separator:a7bb4820b9a2bf996a155b88410d929c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af11f0f2e90a9317538a390a1fb847f62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#af11f0f2e90a9317538a390a1fb847f62">Random</a> ()</td></tr>
+<tr class="memdesc:af11f0f2e90a9317538a390a1fb847f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a prng object with the seed 1368976481. Warm-up of 20 iterations.  <a href="classyakl_1_1Random.html#af11f0f2e90a9317538a390a1fb847f62">More...</a><br /></td></tr>
 <tr class="separator:af11f0f2e90a9317538a390a1fb847f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a603d74fe7580a7a11bf182f5b9a3bd57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a603d74fe7580a7a11bf182f5b9a3bd57">Random</a> (<a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a> seed)</td></tr>
-<tr class="separator:a603d74fe7580a7a11bf182f5b9a3bd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a749810c55f35ea57a4eaa2573a5b96e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a749810c55f35ea57a4eaa2573a5b96e0">Random</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> const &amp;in)</td></tr>
-<tr class="separator:a749810c55f35ea57a4eaa2573a5b96e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf7d8b0b924029197b7a353b9f50173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#adaf7d8b0b924029197b7a353b9f50173">Random</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&amp;in)</td></tr>
+<tr class="memdesc:adaf7d8b0b924029197b7a353b9f50173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object.  <a href="classyakl_1_1Random.html#adaf7d8b0b924029197b7a353b9f50173">More...</a><br /></td></tr>
 <tr class="separator:adaf7d8b0b924029197b7a353b9f50173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac748a909e8b1420f6d2569f9d3ae6129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#ac748a909e8b1420f6d2569f9d3ae6129">operator=</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> const &amp;in)</td></tr>
-<tr class="separator:ac748a909e8b1420f6d2569f9d3ae6129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf70afd8536511b06db4a3f53d35bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#aaaf70afd8536511b06db4a3f53d35bed">operator=</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&amp;in)</td></tr>
-<tr class="separator:aaaf70afd8536511b06db4a3f53d35bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21f77cfb7685bf0810b198c687ed4fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#af21f77cfb7685bf0810b198c687ed4fc">set_seed</a> (<a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a> seed)</td></tr>
-<tr class="separator:af21f77cfb7685bf0810b198c687ed4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82da67e188c6f67c499d31c3174f9927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a82da67e188c6f67c499d31c3174f9927">gen</a> ()</td></tr>
+<tr class="memitem:a749810c55f35ea57a4eaa2573a5b96e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a749810c55f35ea57a4eaa2573a5b96e0">Random</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> const &amp;in)</td></tr>
+<tr class="memdesc:a749810c55f35ea57a4eaa2573a5b96e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object.  <a href="classyakl_1_1Random.html#a749810c55f35ea57a4eaa2573a5b96e0">More...</a><br /></td></tr>
+<tr class="separator:a749810c55f35ea57a4eaa2573a5b96e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603d74fe7580a7a11bf182f5b9a3bd57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a603d74fe7580a7a11bf182f5b9a3bd57">Random</a> (u8 seed)</td></tr>
+<tr class="memdesc:a603d74fe7580a7a11bf182f5b9a3bd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a prng object with the specified seed. Warm-up of 20 iterations.  <a href="classyakl_1_1Random.html#a603d74fe7580a7a11bf182f5b9a3bd57">More...</a><br /></td></tr>
+<tr class="separator:a603d74fe7580a7a11bf182f5b9a3bd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82da67e188c6f67c499d31c3174f9927"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a82da67e188c6f67c499d31c3174f9927">gen</a> ()</td></tr>
+<tr class="memdesc:a82da67e188c6f67c499d31c3174f9927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random unsigned integer between zero and <code>std::numeric_limits&lt;u8&gt;::max() - 1</code>  <a href="classyakl_1_1Random.html#a82da67e188c6f67c499d31c3174f9927">More...</a><br /></td></tr>
 <tr class="separator:a82da67e188c6f67c499d31c3174f9927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e242af5a142801d8beb52b146ad56bc"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a5e242af5a142801d8beb52b146ad56bc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a5e242af5a142801d8beb52b146ad56bc">genFP</a> ()</td></tr>
+<tr class="memdesc:a5e242af5a142801d8beb52b146ad56bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random floating point value between <code>0</code> and <code>1</code>  <a href="classyakl_1_1Random.html#a5e242af5a142801d8beb52b146ad56bc">More...</a><br /></td></tr>
 <tr class="separator:a5e242af5a142801d8beb52b146ad56bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7400d29ee3b56c2ccf0a126f00f5b68e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a7400d29ee3b56c2ccf0a126f00f5b68e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a7400d29ee3b56c2ccf0a126f00f5b68e">genFP</a> (T lb, T ub)</td></tr>
+<tr class="memdesc:a7400d29ee3b56c2ccf0a126f00f5b68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random floating point value between <code>lb</code> and <code>ub</code>  <a href="classyakl_1_1Random.html#a7400d29ee3b56c2ccf0a126f00f5b68e">More...</a><br /></td></tr>
 <tr class="separator:a7400d29ee3b56c2ccf0a126f00f5b68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a43582f6f42f84fd1f81bf92f3b5e1e5f"><td class="memItemLeft" align="right" valign="top">State&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#a43582f6f42f84fd1f81bf92f3b5e1e5f">state</a></td></tr>
-<tr class="separator:a43582f6f42f84fd1f81bf92f3b5e1e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf70afd8536511b06db4a3f53d35bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#aaaf70afd8536511b06db4a3f53d35bed">operator=</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&amp;in)</td></tr>
+<tr class="memdesc:aaaf70afd8536511b06db4a3f53d35bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object.  <a href="classyakl_1_1Random.html#aaaf70afd8536511b06db4a3f53d35bed">More...</a><br /></td></tr>
+<tr class="separator:aaaf70afd8536511b06db4a3f53d35bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac748a909e8b1420f6d2569f9d3ae6129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Random.html">Random</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#ac748a909e8b1420f6d2569f9d3ae6129">operator=</a> (<a class="el" href="classyakl_1_1Random.html">Random</a> const &amp;in)</td></tr>
+<tr class="memdesc:ac748a909e8b1420f6d2569f9d3ae6129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object.  <a href="classyakl_1_1Random.html#ac748a909e8b1420f6d2569f9d3ae6129">More...</a><br /></td></tr>
+<tr class="separator:ac748a909e8b1420f6d2569f9d3ae6129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21f77cfb7685bf0810b198c687ed4fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html#af21f77cfb7685bf0810b198c687ed4fc">set_seed</a> (u8 seed)</td></tr>
+<tr class="memdesc:af21f77cfb7685bf0810b198c687ed4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a seed. Warm-up of 20 iterations.  <a href="classyakl_1_1Random.html#af21f77cfb7685bf0810b198c687ed4fc">More...</a><br /></td></tr>
+<tr class="separator:af21f77cfb7685bf0810b198c687ed4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a7bb4820b9a2bf996a155b88410d929c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb4820b9a2bf996a155b88410d929c5">&#9670;&nbsp;</a></span>u8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned long long <a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">yakl::Random::u8</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Non-cryptographic pseudo-random number generator with a very small internal state. </p>
+<p>Based on the algorithm here: <a href="https://burtleburtle.net/bob/rand/smallprng.html">https://burtleburtle.net/bob/rand/smallprng.html</a> The author wrote the following statement on the website (Accessed Aug 1 2022): </p><blockquote class="doxtable">
+<p>I wrote this PRNG. I place it in the public domain. Same goes for at least the implementation of all those tests linked to above. </p>
+</blockquote>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af11f0f2e90a9317538a390a1fb847f62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af11f0f2e90a9317538a390a1fb847f62">&#9670;&nbsp;</a></span>Random() <span class="overload">[1/4]</span></h2>
 
@@ -166,6 +143,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes a prng object with the seed 1368976481. Warm-up of 20 iterations. </p>
+
 </div>
 </div>
 <a id="a603d74fe7580a7a11bf182f5b9a3bd57"></a>
@@ -180,7 +159,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> yakl::Random::Random </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a>&#160;</td>
+          <td class="paramtype">u8&#160;</td>
           <td class="paramname"><em>seed</em></td><td>)</td>
           <td></td>
         </tr>
@@ -191,6 +170,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initializes a prng object with the specified seed. Warm-up of 20 iterations. </p>
 
 </div>
 </div>
@@ -218,6 +199,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copies a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object. </p>
+
 </div>
 </div>
 <a id="adaf7d8b0b924029197b7a353b9f50173"></a>
@@ -244,6 +227,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Moves a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -257,7 +242,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a> yakl::Random::gen </td>
+          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> u8 yakl::Random::gen </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -269,6 +254,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generates a random unsigned integer between zero and <code>std::numeric_limits&lt;u8&gt;::max() - 1</code> </p>
 
 </div>
 </div>
@@ -296,6 +283,14 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generates a random floating point value between <code>0</code> and <code>1</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The type of the floating point number </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -335,6 +330,16 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Generates a random floating point value between <code>lb</code> and <code>ub</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>The type of the floating point number </td></tr>
+    <tr><td class="paramname">lb</td><td>Lower bound of the random number </td></tr>
+    <tr><td class="paramname">ub</td><td>Upper bound of the random number </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aaaf70afd8536511b06db4a3f53d35bed"></a>
@@ -360,6 +365,8 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Moves a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object. </p>
 
 </div>
 </div>
@@ -387,6 +394,8 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Copies a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object. </p>
+
 </div>
 </div>
 <a id="af21f77cfb7685bf0810b198c687ed4fc"></a>
@@ -401,7 +410,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void yakl::Random::set_seed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Random.html#a7bb4820b9a2bf996a155b88410d929c5">u8</a>&#160;</td>
+          <td class="paramtype">u8&#160;</td>
           <td class="paramname"><em>seed</em></td><td>)</td>
           <td></td>
         </tr>
@@ -413,20 +422,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a43582f6f42f84fd1f81bf92f3b5e1e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43582f6f42f84fd1f81bf92f3b5e1e5f">&#9670;&nbsp;</a></span>state</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">State yakl::Random::state</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Assigns a seed. Warm-up of 20 iterations. </p>
 
 </div>
 </div>

@@ -67,40 +67,48 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::fortran::Bounds&lt; N, false &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>Describes a set of Fortran-style tightly-nested loops where at least one loop has a lower bound other than <code>1</code> or a stride other than <code>1</code>.  
+ <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="YAKL__Bounds__fortran_8h_source.html">YAKL_Bounds_fortran.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a039dbf302a2676d71d2fccc414dfd414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a039dbf302a2676d71d2fccc414dfd414">Bounds</a> (<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b0, <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b1=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>(), <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b2=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>(), <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b3=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>(), <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b4=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>(), <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b5=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>(), <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b6=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>(), <a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a> const &amp;b7=<a class="el" href="classyakl_1_1fortran_1_1LBnd.html">LBnd</a>())</td></tr>
+<tr class="memdesc:a039dbf302a2676d71d2fccc414dfd414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the bounds for each loop for a set of <code>1</code> to <code>8</code> tightly-nested loops.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a039dbf302a2676d71d2fccc414dfd414">More...</a><br /></td></tr>
 <tr class="separator:a039dbf302a2676d71d2fccc414dfd414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c8fec2f523d95a8024fa2791a243cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a17c8fec2f523d95a8024fa2791a243cd">lbound</a> (int i) const</td></tr>
-<tr class="separator:a17c8fec2f523d95a8024fa2791a243cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b976cd3fcfad469c77b0c348ba258ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a5b976cd3fcfad469c77b0c348ba258ca">dim</a> (int i) const</td></tr>
+<tr class="memdesc:a5b976cd3fcfad469c77b0c348ba258ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of iterations for this loop index.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a5b976cd3fcfad469c77b0c348ba258ca">More...</a><br /></td></tr>
 <tr class="separator:a5b976cd3fcfad469c77b0c348ba258ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c8fec2f523d95a8024fa2791a243cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a17c8fec2f523d95a8024fa2791a243cd">lbound</a> (int i) const</td></tr>
+<tr class="memdesc:a17c8fec2f523d95a8024fa2791a243cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower loop bound for this loop index.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a17c8fec2f523d95a8024fa2791a243cd">More...</a><br /></td></tr>
+<tr class="separator:a17c8fec2f523d95a8024fa2791a243cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94cf2f5aee07499f38e6d87041083a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a94cf2f5aee07499f38e6d87041083a1c">stride</a> (int i) const</td></tr>
+<tr class="memdesc:a94cf2f5aee07499f38e6d87041083a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stride for this loop index.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a94cf2f5aee07499f38e6d87041083a1c">More...</a><br /></td></tr>
 <tr class="separator:a94cf2f5aee07499f38e6d87041083a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace161e9e7e20c267b30e259ee3fc18c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#ace161e9e7e20c267b30e259ee3fc18c6">unpackIndices</a> (<a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> iGlob, int indices[N]) const</td></tr>
+<tr class="memdesc:ace161e9e7e20c267b30e259ee3fc18c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a global index into <code>N</code> loop indices given bounds and strides.  <a href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#ace161e9e7e20c267b30e259ee3fc18c6">More...</a><br /></td></tr>
 <tr class="separator:ace161e9e7e20c267b30e259ee3fc18c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aca926b307d163be3d80c5d93a28e262b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#aca926b307d163be3d80c5d93a28e262b">nIter</a></td></tr>
-<tr class="separator:aca926b307d163be3d80c5d93a28e262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adecd6b262f03cd1d62da1959962af724"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#adecd6b262f03cd1d62da1959962af724">lbounds</a> [N]</td></tr>
-<tr class="separator:adecd6b262f03cd1d62da1959962af724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c0434aa16409498fdedd8b7b8dbe6c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a9c0434aa16409498fdedd8b7b8dbe6c1">dims</a> [N]</td></tr>
-<tr class="separator:a9c0434aa16409498fdedd8b7b8dbe6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47f6fecb116fafc1a781ce6173dc3db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#a47f6fecb116fafc1a781ce6173dc3db7">strides</a> [N]</td></tr>
-<tr class="separator:a47f6fecb116fafc1a781ce6173dc3db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;int N&gt;<br />
+class yakl::fortran::Bounds&lt; N, false &gt;</h3>
+
+<p>Describes a set of Fortran-style tightly-nested loops where at least one loop has a lower bound other than <code>1</code> or a stride other than <code>1</code>. </p>
+<p>Also contains functions to unpack indices from a single global index given the loop bounds and strides. Order is always left-most loop is the slowest varying, and right-most loop is the fastest varying.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>The nuber of tightly nested loops being described </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a039dbf302a2676d71d2fccc414dfd414"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a039dbf302a2676d71d2fccc414dfd414">&#9670;&nbsp;</a></span>Bounds()</h2>
 
@@ -173,6 +181,14 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Declares the bounds for each loop for a set of <code>1</code> to <code>8</code> tightly-nested loops. </p>
+<p>Order is always left-most loop is the slowest varying, and right-most loop is the fastest varying. Number of loop bounds passed to the constructor <b>must</b> match the number of loops, <code>N</code>. Recall only positive strides are allowed because <b>requiring</b> a negative stride implies the loop order matters, which means your kernel is not trivially parallel, and <code><a class="el" href="namespaceyakl_1_1c.html#a81973df01907f317999d46b3d030a26f" title="[ASYNCHRONOUS] Launch the passed functor in parallel.">yakl::c::parallel_for</a></code> should not be used.</p>
+<p>Each parameter accepts either:</p><ul>
+<li>A single integer, for which lower bound defaults to <code>1</code>, and stride defaults to <code>1</code></li>
+<li>An initializer list with two entries: <code>{lower_bound,upper_bound}</code> (<b>inclusive</b>), and stride defaults to <code>1</code></li>
+<li>An initializer list with three entries: <code>{lower,upper,stride}</code>, where stride is positive </li>
+</ul>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -202,6 +218,8 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the total number of iterations for this loop index. </p>
+
 </div>
 </div>
 <a id="a17c8fec2f523d95a8024fa2791a243cd"></a>
@@ -230,6 +248,8 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the lower loop bound for this loop index. </p>
+
 </div>
 </div>
 <a id="a94cf2f5aee07499f38e6d87041083a1c"></a>
@@ -257,6 +277,8 @@ template&lt;int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the stride for this loop index. </p>
 
 </div>
 </div>
@@ -296,70 +318,7 @@ template&lt;int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9c0434aa16409498fdedd8b7b8dbe6c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c0434aa16409498fdedd8b7b8dbe6c1">&#9670;&nbsp;</a></span>dims</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> <a class="el" href="classyakl_1_1fortran_1_1Bounds.html">yakl::fortran::Bounds</a>&lt; N, false &gt;::dims[N]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adecd6b262f03cd1d62da1959962af724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adecd6b262f03cd1d62da1959962af724">&#9670;&nbsp;</a></span>lbounds</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classyakl_1_1fortran_1_1Bounds.html">yakl::fortran::Bounds</a>&lt; N, false &gt;::lbounds[N]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aca926b307d163be3d80c5d93a28e262b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca926b307d163be3d80c5d93a28e262b">&#9670;&nbsp;</a></span>nIter</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> <a class="el" href="classyakl_1_1fortran_1_1Bounds.html">yakl::fortran::Bounds</a>&lt; N, false &gt;::nIter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47f6fecb116fafc1a781ce6173dc3db7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47f6fecb116fafc1a781ce6173dc3db7">&#9670;&nbsp;</a></span>strides</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> <a class="el" href="classyakl_1_1fortran_1_1Bounds.html">yakl::fortran::Bounds</a>&lt; N, false &gt;::strides[N]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Unpack a global index into <code>N</code> loop indices given bounds and strides. </p>
 
 </div>
 </div>
