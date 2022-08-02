@@ -67,13 +67,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structyakl_1_1Bnd-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::Bnd Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Describes a single bound for creating Fortran-style <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects.  
+<p>Describes a single bound for creating Fortran-style <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects. You can create and object of this class with a single integer, in which case the lower bound default to one, or you can use a pair of values, e.g., <code>{lower,upper}</code>, which will assign these as lower and upper bounds.  
  <a href="structyakl_1_1Bnd.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="YAKL__Array_8h_source.html">YAKL_Array.h</a>&gt;</code></p>
@@ -82,14 +83,20 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af8e33bd5e53245e27adecc5a7f766fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Bnd.html#af8e33bd5e53245e27adecc5a7f766fe4">Bnd</a> ()</td></tr>
 <tr class="separator:af8e33bd5e53245e27adecc5a7f766fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13438173fa74a8ba6ada012862bbd3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Bnd.html#ac13438173fa74a8ba6ada012862bbd3b">Bnd</a> (int l_in, int u_in)</td></tr>
-<tr class="separator:ac13438173fa74a8ba6ada012862bbd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1185aa6d29699354a60ddb8e1eba0699"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Bnd.html#a1185aa6d29699354a60ddb8e1eba0699">Bnd</a> (int u_in)</td></tr>
 <tr class="separator:a1185aa6d29699354a60ddb8e1eba0699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13438173fa74a8ba6ada012862bbd3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Bnd.html#ac13438173fa74a8ba6ada012862bbd3b">Bnd</a> (int l_in, int u_in)</td></tr>
+<tr class="separator:ac13438173fa74a8ba6ada012862bbd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3b3175630825a143f4e0663ed875d65b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Bnd.html#a3b3175630825a143f4e0663ed875d65b">l</a></td></tr>
+<tr class="separator:a3b3175630825a143f4e0663ed875d65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a59ea065d4c68f938371885e359059"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Bnd.html#ac2a59ea065d4c68f938371885e359059">u</a></td></tr>
+<tr class="separator:ac2a59ea065d4c68f938371885e359059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Describes a single bound for creating Fortran-style <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects. </p>
-<p>You can create and object of this class with a single integer, in which case the lower bound default to one, or you can use a pair of values, e.g., <code>{lower,upper}</code>, which will assign these as lower and upper bounds. </p>
+<div class="textblock"><p>Describes a single bound for creating Fortran-style <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects. You can create and object of this class with a single integer, in which case the lower bound default to one, or you can use a pair of values, e.g., <code>{lower,upper}</code>, which will assign these as lower and upper bounds. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af8e33bd5e53245e27adecc5a7f766fe4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8e33bd5e53245e27adecc5a7f766fe4">&#9670;&nbsp;</a></span>Bnd() <span class="overload">[1/3]</span></h2>
@@ -174,6 +181,35 @@ Public Member Functions</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3b3175630825a143f4e0663ed875d65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3175630825a143f4e0663ed875d65b">&#9670;&nbsp;</a></span>l</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int yakl::Bnd::l</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2a59ea065d4c68f938371885e359059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a59ea065d4c68f938371885e359059">&#9670;&nbsp;</a></span>u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int yakl::Bnd::u</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

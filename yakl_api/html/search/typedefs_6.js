@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['type_704',['type',['../classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71',1,'yakl::ArrayBase::type()'],['../classyakl_1_1Array_3_01T_00_01rank_00_01myMem_00_01styleC_01_4.html#ad139bae81491baf46c8e9879867f3487',1,'yakl::Array&lt; T, rank, myMem, styleC &gt;::type()'],['../classyakl_1_1CSArray.html#a3be8af4001c4c4f03718a3d3b19fb126',1,'yakl::CSArray::type()'],['../classyakl_1_1Array_3_01T_00_01rank_00_01myMem_00_01styleFortran_01_4.html#aa2236f8110705198a15f67a69bdcd47a',1,'yakl::Array&lt; T, rank, myMem, styleFortran &gt;::type()'],['../classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3',1,'yakl::FSArray::type()']]]
+  ['sarray_853',['SArray',['../namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2',1,'yakl']]],
+  ['simplebounds_854',['SimpleBounds',['../namespaceyakl_1_1c.html#a2c3ef1f3e0d0ebe0a7e13100db4bc5c7',1,'yakl::c::SimpleBounds()'],['../namespaceyakl_1_1fortran.html#a71961d36a029a02c29f15082a0ed4b23',1,'yakl::fortran::SimpleBounds()']]]
 ];

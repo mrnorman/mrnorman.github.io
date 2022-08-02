@@ -67,13 +67,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classyakl_1_1Dims-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::Dims Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class holds C-style dimensions for using in <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects.  
+<p>This class holds C-style dimensions for using in <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects. You can pass an initializer list <code>{...}</code> or std::vector as a parameter to this type, and it can be converted to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">yakl::Dims</a> object.  
  <a href="classyakl_1_1Dims.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="YAKL__Array_8h_source.html">YAKL_Array.h</a>&gt;</code></p>
@@ -82,56 +83,62 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:addf76472a642a26498c6b1bbaea3abf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#addf76472a642a26498c6b1bbaea3abf7">Dims</a> ()</td></tr>
 <tr class="separator:addf76472a642a26498c6b1bbaea3abf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="memTemplParams" colspan="2">template&lt;class INT , unsigned int RANK, typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ae0c230e7f8e6265ac0fea3eabd194f04">Dims</a> (<a class="el" href="classyakl_1_1CSArray.html">CSArray</a>&lt; INT, 1, RANK &gt; const dims)</td></tr>
-<tr class="memdesc:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor allows converting a <a class="el" href="classyakl_1_1CSArray.html" title="C-style array on the stack similar in nature to, e.g., float arr[ny][nx];">CSArray</a> object to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">yakl::Dims</a> object.  <a href="classyakl_1_1Dims.html#ae0c230e7f8e6265ac0fea3eabd194f04">More...</a><br /></td></tr>
-<tr class="separator:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c439749eb7efa7283fddbc2dd38f5b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a8c439749eb7efa7283fddbc2dd38f5b6">Dims</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&amp;dims)</td></tr>
-<tr class="separator:a8c439749eb7efa7283fddbc2dd38f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989b77ef666cad50d490b6f49e427638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a989b77ef666cad50d490b6f49e427638">Dims</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> const &amp;dims)</td></tr>
-<tr class="separator:a989b77ef666cad50d490b6f49e427638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a662034af0e9fba21b14fdef110b3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a89a662034af0e9fba21b14fdef110b3c">Dims</a> (int i0)</td></tr>
-<tr class="memdesc:a89a662034af0e9fba21b14fdef110b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 1-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#a89a662034af0e9fba21b14fdef110b3c">More...</a><br /></td></tr>
+<tr class="memdesc:a89a662034af0e9fba21b14fdef110b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 1-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#a89a662034af0e9fba21b14fdef110b3c">More...</a><br /></td></tr>
 <tr class="separator:a89a662034af0e9fba21b14fdef110b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecd54120ceacc8070dcb9cf710c8ee9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#aecd54120ceacc8070dcb9cf710c8ee9d">Dims</a> (int i0, int i1)</td></tr>
-<tr class="memdesc:aecd54120ceacc8070dcb9cf710c8ee9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 2-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#aecd54120ceacc8070dcb9cf710c8ee9d">More...</a><br /></td></tr>
+<tr class="memdesc:aecd54120ceacc8070dcb9cf710c8ee9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 2-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#aecd54120ceacc8070dcb9cf710c8ee9d">More...</a><br /></td></tr>
 <tr class="separator:aecd54120ceacc8070dcb9cf710c8ee9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3566cd267f587524fff985df25d59dcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a3566cd267f587524fff985df25d59dcf">Dims</a> (int i0, int i1, int i2)</td></tr>
-<tr class="memdesc:a3566cd267f587524fff985df25d59dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 3-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#a3566cd267f587524fff985df25d59dcf">More...</a><br /></td></tr>
+<tr class="memdesc:a3566cd267f587524fff985df25d59dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 3-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#a3566cd267f587524fff985df25d59dcf">More...</a><br /></td></tr>
 <tr class="separator:a3566cd267f587524fff985df25d59dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10b2a788f6e05e837b6085cb8f3aa24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ab10b2a788f6e05e837b6085cb8f3aa24">Dims</a> (int i0, int i1, int i2, int i3)</td></tr>
-<tr class="memdesc:ab10b2a788f6e05e837b6085cb8f3aa24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 4-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#ab10b2a788f6e05e837b6085cb8f3aa24">More...</a><br /></td></tr>
+<tr class="memdesc:ab10b2a788f6e05e837b6085cb8f3aa24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 4-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#ab10b2a788f6e05e837b6085cb8f3aa24">More...</a><br /></td></tr>
 <tr class="separator:ab10b2a788f6e05e837b6085cb8f3aa24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21596e1ffa75fae9d6d746911fe89423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a21596e1ffa75fae9d6d746911fe89423">Dims</a> (int i0, int i1, int i2, int i3, int i4)</td></tr>
-<tr class="memdesc:a21596e1ffa75fae9d6d746911fe89423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 5-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#a21596e1ffa75fae9d6d746911fe89423">More...</a><br /></td></tr>
+<tr class="memdesc:a21596e1ffa75fae9d6d746911fe89423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 5-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#a21596e1ffa75fae9d6d746911fe89423">More...</a><br /></td></tr>
 <tr class="separator:a21596e1ffa75fae9d6d746911fe89423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189040b6558a5ed4b05992fd56722739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a189040b6558a5ed4b05992fd56722739">Dims</a> (int i0, int i1, int i2, int i3, int i4, int i5)</td></tr>
-<tr class="memdesc:a189040b6558a5ed4b05992fd56722739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 6-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#a189040b6558a5ed4b05992fd56722739">More...</a><br /></td></tr>
+<tr class="memdesc:a189040b6558a5ed4b05992fd56722739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 6-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#a189040b6558a5ed4b05992fd56722739">More...</a><br /></td></tr>
 <tr class="separator:a189040b6558a5ed4b05992fd56722739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72211b7bae0ceadc289da498f156c715"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a72211b7bae0ceadc289da498f156c715">Dims</a> (int i0, int i1, int i2, int i3, int i4, int i5, int i6)</td></tr>
-<tr class="memdesc:a72211b7bae0ceadc289da498f156c715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 7-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#a72211b7bae0ceadc289da498f156c715">More...</a><br /></td></tr>
+<tr class="memdesc:a72211b7bae0ceadc289da498f156c715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 7-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#a72211b7bae0ceadc289da498f156c715">More...</a><br /></td></tr>
 <tr class="separator:a72211b7bae0ceadc289da498f156c715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5be46686a31ed4e539f39771569f664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ab5be46686a31ed4e539f39771569f664">Dims</a> (int i0, int i1, int i2, int i3, int i4, int i5, int i6, int i7)</td></tr>
-<tr class="memdesc:ab5be46686a31ed4e539f39771569f664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an 8-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object)  <a href="classyakl_1_1Dims.html#ab5be46686a31ed4e539f39771569f664">More...</a><br /></td></tr>
+<tr class="memdesc:ab5be46686a31ed4e539f39771569f664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an 8-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object)  <a href="classyakl_1_1Dims.html#ab5be46686a31ed4e539f39771569f664">More...</a><br /></td></tr>
 <tr class="separator:ab5be46686a31ed4e539f39771569f664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f03cd97fe8405312498f4ba829827ae"><td class="memTemplParams" colspan="2">template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a6f03cd97fe8405312498f4ba829827ae"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a6f03cd97fe8405312498f4ba829827ae">Dims</a> (std::vector&lt; INT &gt; const dims)</td></tr>
-<tr class="memdesc:a6f03cd97fe8405312498f4ba829827ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor allows converting a std::vector or initializer list to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">yakl::Dims</a> object.  <a href="classyakl_1_1Dims.html#a6f03cd97fe8405312498f4ba829827ae">More...</a><br /></td></tr>
-<tr class="separator:a6f03cd97fe8405312498f4ba829827ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8a84fdae0a4af9ee238d06ef1ece0fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#af8a84fdae0a4af9ee238d06ef1ece0fa">operator=</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&amp;dims)</td></tr>
-<tr class="separator:af8a84fdae0a4af9ee238d06ef1ece0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989b77ef666cad50d490b6f49e427638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a989b77ef666cad50d490b6f49e427638">Dims</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> const &amp;dims)</td></tr>
+<tr class="separator:a989b77ef666cad50d490b6f49e427638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2df78874279780459fd8bb22a80d009"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#af2df78874279780459fd8bb22a80d009">operator=</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> const &amp;dims)</td></tr>
 <tr class="separator:af2df78874279780459fd8bb22a80d009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c439749eb7efa7283fddbc2dd38f5b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a8c439749eb7efa7283fddbc2dd38f5b6">Dims</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&amp;dims)</td></tr>
+<tr class="separator:a8c439749eb7efa7283fddbc2dd38f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a84fdae0a4af9ee238d06ef1ece0fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#af8a84fdae0a4af9ee238d06ef1ece0fa">operator=</a> (<a class="el" href="classyakl_1_1Dims.html">Dims</a> &amp;&amp;dims)</td></tr>
+<tr class="separator:af8a84fdae0a4af9ee238d06ef1ece0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f03cd97fe8405312498f4ba829827ae"><td class="memTemplParams" colspan="2">template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, bool &gt;::type  = false&gt; </td></tr>
+<tr class="memitem:a6f03cd97fe8405312498f4ba829827ae"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a6f03cd97fe8405312498f4ba829827ae">Dims</a> (std::vector&lt; INT &gt; const dims)</td></tr>
+<tr class="memdesc:a6f03cd97fe8405312498f4ba829827ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor allows converting a std::vector or initializer list to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">yakl::Dims</a> object.  <a href="classyakl_1_1Dims.html#a6f03cd97fe8405312498f4ba829827ae">More...</a><br /></td></tr>
+<tr class="separator:a6f03cd97fe8405312498f4ba829827ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="memTemplParams" colspan="2">template&lt;class INT , unsigned int RANK, typename std::enable_if&lt; std::is_integral&lt; INT &gt;::value, bool &gt;::type  = false&gt; </td></tr>
+<tr class="memitem:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ae0c230e7f8e6265ac0fea3eabd194f04">Dims</a> (<a class="el" href="classyakl_1_1CSArray.html">CSArray</a>&lt; INT, 1, RANK &gt; const dims)</td></tr>
+<tr class="memdesc:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor allows converting a <a class="el" href="classyakl_1_1CSArray.html" title="This creates a C-style &quot;Stack Array&quot; (CSArray) class, which is typedefined to yakl::SArray....">CSArray</a> object to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">yakl::Dims</a> object.  <a href="classyakl_1_1Dims.html#ae0c230e7f8e6265ac0fea3eabd194f04">More...</a><br /></td></tr>
+<tr class="separator:ae0c230e7f8e6265ac0fea3eabd194f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d15cf7ba390637a4b8c86618dc3358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ad7d15cf7ba390637a4b8c86618dc3358">operator[]</a> (int i) const</td></tr>
 <tr class="memdesc:ad7d15cf7ba390637a4b8c86618dc3358"><td class="mdescLeft">&#160;</td><td class="mdescRight">These objects are always indexed with square bracket notation like a std::vector or std::array.  <a href="classyakl_1_1Dims.html#ad7d15cf7ba390637a4b8c86618dc3358">More...</a><br /></td></tr>
 <tr class="separator:ad7d15cf7ba390637a4b8c86618dc3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95ed75f563547cd20215383fc5ef8f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ab95ed75f563547cd20215383fc5ef8f8">size</a> () const</td></tr>
 <tr class="memdesc:ab95ed75f563547cd20215383fc5ef8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of dimensions.  <a href="classyakl_1_1Dims.html#ab95ed75f563547cd20215383fc5ef8f8">More...</a><br /></td></tr>
 <tr class="separator:ab95ed75f563547cd20215383fc5ef8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae64d06b405a998808d15e19659844b2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#ae64d06b405a998808d15e19659844b2c">data</a> [8]</td></tr>
+<tr class="separator:ae64d06b405a998808d15e19659844b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbd63363e2d1684426df9b73a1f20ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html#a3dbd63363e2d1684426df9b73a1f20ec">rank</a></td></tr>
+<tr class="separator:a3dbd63363e2d1684426df9b73a1f20ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class holds C-style dimensions for using in <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects. </p>
-<p>You can pass an initializer list <code>{...}</code> or std::vector as a parameter to this type, and it can be converted to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">yakl::Dims</a> object. </p>
+<div class="textblock"><p>This class holds C-style dimensions for using in <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects. You can pass an initializer list <code>{...}</code> or std::vector as a parameter to this type, and it can be converted to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">yakl::Dims</a> object. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="addf76472a642a26498c6b1bbaea3abf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addf76472a642a26498c6b1bbaea3abf7">&#9670;&nbsp;</a></span>Dims() <span class="overload">[1/13]</span></h2>
@@ -182,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 1-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 1-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -220,7 +227,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 2-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 2-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -264,7 +271,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 3-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 3-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -314,7 +321,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 4-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 4-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -370,7 +377,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 5-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 5-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -432,7 +439,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 6-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 6-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -500,7 +507,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a 7-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct a 7-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -574,7 +581,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct an 8-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">Dims</a> object) </p>
+<p>Construct an 8-D <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">Dims</a> object) </p>
 
 </div>
 </div>
@@ -656,7 +663,7 @@ template&lt;class INT , typename std::enable_if&lt; std::is_integral&lt; INT &gt
 </table>
 </div><div class="memdoc">
 
-<p>This constructor allows converting a std::vector or initializer list to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">yakl::Dims</a> object. </p>
+<p>This constructor allows converting a std::vector or initializer list to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">yakl::Dims</a> object. </p>
 
 </div>
 </div>
@@ -686,7 +693,7 @@ template&lt;class INT , unsigned int RANK, typename std::enable_if&lt; std::is_i
 </table>
 </div><div class="memdoc">
 
-<p>This constructor allows converting a <a class="el" href="classyakl_1_1CSArray.html" title="C-style array on the stack similar in nature to, e.g., float arr[ny][nx];">CSArray</a> object to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects.">yakl::Dims</a> object. </p>
+<p>This constructor allows converting a <a class="el" href="classyakl_1_1CSArray.html" title="This creates a C-style &quot;Stack Array&quot; (CSArray) class, which is typedefined to yakl::SArray....">CSArray</a> object to a <a class="el" href="classyakl_1_1Dims.html" title="This class holds C-style dimensions for using in yakl::Array objects. You can pass an initializer lis...">yakl::Dims</a> object. </p>
 
 </div>
 </div>
@@ -795,6 +802,35 @@ template&lt;class INT , unsigned int RANK, typename std::enable_if&lt; std::is_i
 </div><div class="memdoc">
 
 <p>Get the number of dimensions. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae64d06b405a998808d15e19659844b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64d06b405a998808d15e19659844b2c">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int yakl::Dims::data[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dbd63363e2d1684426df9b73a1f20ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dbd63363e2d1684426df9b73a1f20ec">&#9670;&nbsp;</a></span>rank</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int yakl::Dims::rank</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

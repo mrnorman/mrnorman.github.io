@@ -1,4 +1,4 @@
 <map id="yakl::Array&lt; T, rank, myMem, styleFortran &gt;" name="yakl::Array&lt; T, rank, myMem, styleFortran &gt;">
-<area shape="rect" id="node1" title="This implements the yakl:Array class with yakl::styleFortran behavior." alt="" coords="24,95,205,136"/>
+<area shape="rect" id="node1" title="This implements the yakl:Array class with yakl::styleFortran behavior, meaning all lower bounds defau..." alt="" coords="24,95,205,136"/>
 <area shape="rect" id="node2" href="$classyakl_1_1ArrayBase.html" title=" " alt="" coords="5,5,224,47"/>
 </map>

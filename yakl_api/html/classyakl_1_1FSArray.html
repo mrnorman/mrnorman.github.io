@@ -76,39 +76,32 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Fortran-style array on the stack similar in nature to, e.g., <code>float arr[ny][nx];</code>  
+<p>This creates a Fortran-style "Stack Array" (<a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">FSArray</a>) class. It should be thought of as similar in nature to a C-style multi-dimensional array, <code>float arr[n1][n2][n3];</code>, except that it uses column-majore index ordering (left-most index varies the fastest), and it has lower bounds that default to <code>1</code> but can also be arbitrary. An example of declaring a yakl:<a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">FSArray</a> object is <code><a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a>&lt;float,3,<a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">SB</a>&lt;n1&gt;,<a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">SB</a>&lt;0,n2+1&gt;,<a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">SB</a>&lt;n3&gt;&gt; arr;</code> The syntax is a bit ugly, but it's necessary to allow lower bounds other than <code>1</code>. The array declared just now will have lower bounds of 1, 0, and 1, respectively, and upper bounds of n1, n2+1, n3, respectively. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Dimensions sizes must be known at compile time, and data is placed on the stack of whatever context it is declared. When declared in a device <code>parallel_for</code> kernel, it is a thread-private array, meaning every thread has a separate copy of the array.  
  <a href="classyakl_1_1FSArray.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="YAKL__FSArray_8h_source.html">YAKL_FSArray.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad103a25d8d8d3f3aebc5cfdac912a472"><td class="memItemLeft" align="right" valign="top">typedef std::add_const&lt; <a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a> &gt;::<a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ad103a25d8d8d3f3aebc5cfdac912a472">const_value_type</a></td></tr>
-<tr class="memdesc:ad103a25d8d8d3f3aebc5cfdac912a472"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the type <code>T</code> with <code>const</code> added to it (if the original type has <code>volatile</code>, then so will this type).  <a href="classyakl_1_1FSArray.html#ad103a25d8d8d3f3aebc5cfdac912a472">More...</a><br /></td></tr>
-<tr class="separator:ad103a25d8d8d3f3aebc5cfdac912a472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fae4c235a46ac5fcfb904f3bd2e230"><td class="memItemLeft" align="right" valign="top">typedef std::remove_const&lt; <a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a> &gt;::<a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#aa2fae4c235a46ac5fcfb904f3bd2e230">non_const_value_type</a></td></tr>
-<tr class="memdesc:aa2fae4c235a46ac5fcfb904f3bd2e230"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the type <code>T</code> with <code>const</code> removed from it (if the original type has <code>volatile</code>, then so will this type).  <a href="classyakl_1_1FSArray.html#aa2fae4c235a46ac5fcfb904f3bd2e230">More...</a><br /></td></tr>
-<tr class="separator:aa2fae4c235a46ac5fcfb904f3bd2e230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab127e53d87ca1c3118aa5164f7d279e3"><td class="memItemLeft" align="right" valign="top">typedef std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a></td></tr>
 <tr class="memdesc:ab127e53d87ca1c3118aa5164f7d279e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the type <code>T</code> without <code>const</code> and <code>volatile</code> modifiers.  <a href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">More...</a><br /></td></tr>
 <tr class="separator:ab127e53d87ca1c3118aa5164f7d279e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37253b605db9c62e1fbdc0084978df7b"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a37253b605db9c62e1fbdc0084978df7b">value_type</a></td></tr>
 <tr class="memdesc:a37253b605db9c62e1fbdc0084978df7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the type <code>T</code> exactly as it was defined upon array object creation.  <a href="classyakl_1_1FSArray.html#a37253b605db9c62e1fbdc0084978df7b">More...</a><br /></td></tr>
 <tr class="separator:a37253b605db9c62e1fbdc0084978df7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad103a25d8d8d3f3aebc5cfdac912a472"><td class="memItemLeft" align="right" valign="top">typedef std::add_const&lt; <a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a> &gt;::<a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ad103a25d8d8d3f3aebc5cfdac912a472">const_value_type</a></td></tr>
+<tr class="memdesc:ad103a25d8d8d3f3aebc5cfdac912a472"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the type <code>T</code> with <code>const</code> added to it (if the original type has <code>volatile</code>, then so will this type.  <a href="classyakl_1_1FSArray.html#ad103a25d8d8d3f3aebc5cfdac912a472">More...</a><br /></td></tr>
+<tr class="separator:ad103a25d8d8d3f3aebc5cfdac912a472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fae4c235a46ac5fcfb904f3bd2e230"><td class="memItemLeft" align="right" valign="top">typedef std::remove_const&lt; <a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a> &gt;::<a class="el" href="classyakl_1_1FSArray.html#ab127e53d87ca1c3118aa5164f7d279e3">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#aa2fae4c235a46ac5fcfb904f3bd2e230">non_const_value_type</a></td></tr>
+<tr class="memdesc:aa2fae4c235a46ac5fcfb904f3bd2e230"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the type <code>T</code> with <code>const</code> removed from it (if the original type has <code>volatile</code>, then so will this type.  <a href="classyakl_1_1FSArray.html#aa2fae4c235a46ac5fcfb904f3bd2e230">More...</a><br /></td></tr>
+<tr class="separator:aa2fae4c235a46ac5fcfb904f3bd2e230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab3814a874ee4797dca289d70b235aad5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab3814a874ee4797dca289d70b235aad5">FSArray</a> ()</td></tr>
-<tr class="memdesc:ab3814a874ee4797dca289d70b235aad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">No constructor arguments allowed.  <a href="classyakl_1_1FSArray.html#ab3814a874ee4797dca289d70b235aad5">More...</a><br /></td></tr>
-<tr class="separator:ab3814a874ee4797dca289d70b235aad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af471894811eca8c1b18363c6faa53562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#af471894811eca8c1b18363c6faa53562">FSArray</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> &amp;&amp;in)</td></tr>
-<tr class="memdesc:af471894811eca8c1b18363c6faa53562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy and move constructors deep copy all data.  <a href="classyakl_1_1FSArray.html#af471894811eca8c1b18363c6faa53562">More...</a><br /></td></tr>
-<tr class="separator:af471894811eca8c1b18363c6faa53562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03d1bbf11a61f5fd227c186c952e5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#af03d1bbf11a61f5fd227c186c952e5e8">FSArray</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> const &amp;in)</td></tr>
-<tr class="memdesc:af03d1bbf11a61f5fd227c186c952e5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy and move constructors deep copy all data.  <a href="classyakl_1_1FSArray.html#af03d1bbf11a61f5fd227c186c952e5e8">More...</a><br /></td></tr>
-<tr class="separator:af03d1bbf11a61f5fd227c186c952e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4501988d0f061474216442336718f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ae4501988d0f061474216442336718f4a">~FSArray</a> ()</td></tr>
-<tr class="separator:ae4501988d0f061474216442336718f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#abb0f56b2756d6ac8f343b318e45cf8b4">operator=</a> (TLOC val)</td></tr>
+<tr class="memdesc:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a single arithmetic value to the entire array.  <a href="classyakl_1_1FSArray.html#abb0f56b2756d6ac8f343b318e45cf8b4">More...</a><br /></td></tr>
+<tr class="separator:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7b738ead16bc47db692b840e6663a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a3a7b738ead16bc47db692b840e6663a8">data</a> () const</td></tr>
 <tr class="memdesc:a3a7b738ead16bc47db692b840e6663a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying raw data pointer.  <a href="classyakl_1_1FSArray.html#a3a7b738ead16bc47db692b840e6663a8">More...</a><br /></td></tr>
 <tr class="separator:a3a7b738ead16bc47db692b840e6663a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,57 +109,59 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8e7d09c64deb37ccc65eeea8411bf107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying raw data pointer.  <a href="classyakl_1_1FSArray.html#a8e7d09c64deb37ccc65eeea8411bf107">More...</a><br /></td></tr>
 <tr class="separator:a8e7d09c64deb37ccc65eeea8411bf107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0bf6a9266a6283149519c201accd222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1FSArray.html">FSArray</a>&lt; int, 1, <a class="el" href="classyakl_1_1SB.html">SB</a>&lt; rank &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#aa0bf6a9266a6283149519c201accd222">get_dimensions</a> () const</td></tr>
-<tr class="memdesc:aa0bf6a9266a6283149519c201accd222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimensions of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object.  <a href="classyakl_1_1FSArray.html#aa0bf6a9266a6283149519c201accd222">More...</a><br /></td></tr>
+<tr class="memdesc:aa0bf6a9266a6283149519c201accd222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimensions of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object.  <a href="classyakl_1_1FSArray.html#aa0bf6a9266a6283149519c201accd222">More...</a><br /></td></tr>
 <tr class="separator:aa0bf6a9266a6283149519c201accd222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad063760064dd66154c263e5c1fc59aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1FSArray.html">FSArray</a>&lt; int, 1, <a class="el" href="classyakl_1_1SB.html">SB</a>&lt; rank &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ad063760064dd66154c263e5c1fc59aea">get_lbounds</a> () const</td></tr>
-<tr class="memdesc:ad063760064dd66154c263e5c1fc59aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lower bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object.  <a href="classyakl_1_1FSArray.html#ad063760064dd66154c263e5c1fc59aea">More...</a><br /></td></tr>
+<tr class="memdesc:ad063760064dd66154c263e5c1fc59aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lower bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object.  <a href="classyakl_1_1FSArray.html#ad063760064dd66154c263e5c1fc59aea">More...</a><br /></td></tr>
 <tr class="separator:ad063760064dd66154c263e5c1fc59aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a697e0e6edeeab525bcfb2ff92ade4cb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1FSArray.html">FSArray</a>&lt; int, 1, <a class="el" href="classyakl_1_1SB.html">SB</a>&lt; rank &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a697e0e6edeeab525bcfb2ff92ade4cb4">get_ubounds</a> () const</td></tr>
-<tr class="memdesc:a697e0e6edeeab525bcfb2ff92ade4cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the upper bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object.  <a href="classyakl_1_1FSArray.html#a697e0e6edeeab525bcfb2ff92ade4cb4">More...</a><br /></td></tr>
+<tr class="memdesc:a697e0e6edeeab525bcfb2ff92ade4cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the upper bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object.  <a href="classyakl_1_1FSArray.html#a697e0e6edeeab525bcfb2ff92ade4cb4">More...</a><br /></td></tr>
 <tr class="separator:a697e0e6edeeab525bcfb2ff92ade4cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac428ea81400c9c0c21f3635271742da8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ac428ea81400c9c0c21f3635271742da8">operator()</a> (int const i0) const</td></tr>
-<tr class="memdesc:ac428ea81400c9c0c21f3635271742da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the indexed element (1-D).  <a href="classyakl_1_1FSArray.html#ac428ea81400c9c0c21f3635271742da8">More...</a><br /></td></tr>
-<tr class="separator:ac428ea81400c9c0c21f3635271742da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13177d34ebbf2a7924dc3119931f6fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a13177d34ebbf2a7924dc3119931f6fc5">operator()</a> (int const i0, int const i1) const</td></tr>
-<tr class="memdesc:a13177d34ebbf2a7924dc3119931f6fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the indexed element (2-D).  <a href="classyakl_1_1FSArray.html#a13177d34ebbf2a7924dc3119931f6fc5">More...</a><br /></td></tr>
-<tr class="separator:a13177d34ebbf2a7924dc3119931f6fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00dafe98cca2e5ed43919988d0502636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a00dafe98cca2e5ed43919988d0502636">operator()</a> (int const i0, int const i1, int const i2) const</td></tr>
-<tr class="memdesc:a00dafe98cca2e5ed43919988d0502636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the indexed element (3-D).  <a href="classyakl_1_1FSArray.html#a00dafe98cca2e5ed43919988d0502636">More...</a><br /></td></tr>
-<tr class="separator:a00dafe98cca2e5ed43919988d0502636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad68bfcebfce9a31d3253894d85707e0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ad68bfcebfce9a31d3253894d85707e0f">operator()</a> (int const i0, int const i1, int const i2, int const i3) const</td></tr>
-<tr class="memdesc:ad68bfcebfce9a31d3253894d85707e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the indexed element (4-D).  <a href="classyakl_1_1FSArray.html#ad68bfcebfce9a31d3253894d85707e0f">More...</a><br /></td></tr>
-<tr class="separator:ad68bfcebfce9a31d3253894d85707e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ab3814a874ee4797dca289d70b235aad5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab3814a874ee4797dca289d70b235aad5">FSArray</a> ()</td></tr>
+<tr class="memdesc:ab3814a874ee4797dca289d70b235aad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">All copy and move constructors do a deep copy of all of the data, so they should be considered as possibly expensive.  <a href="classyakl_1_1FSArray.html#ab3814a874ee4797dca289d70b235aad5">More...</a><br /></td></tr>
+<tr class="separator:ab3814a874ee4797dca289d70b235aad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af471894811eca8c1b18363c6faa53562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#af471894811eca8c1b18363c6faa53562">FSArray</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> &amp;&amp;in)</td></tr>
+<tr class="separator:af471894811eca8c1b18363c6faa53562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03d1bbf11a61f5fd227c186c952e5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#af03d1bbf11a61f5fd227c186c952e5e8">FSArray</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> const &amp;in)</td></tr>
+<tr class="separator:af03d1bbf11a61f5fd227c186c952e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1223180ff5de83711ecf96b9c317cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1FSArray.html">FSArray</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a8f1223180ff5de83711ecf96b9c317cf">operator=</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> &amp;&amp;in)</td></tr>
-<tr class="memdesc:a8f1223180ff5de83711ecf96b9c317cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy and move constructors deep copy all data.  <a href="classyakl_1_1FSArray.html#a8f1223180ff5de83711ecf96b9c317cf">More...</a><br /></td></tr>
 <tr class="separator:a8f1223180ff5de83711ecf96b9c317cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e83cb06372efd2b3c1f001653253bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1FSArray.html">FSArray</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ae3e83cb06372efd2b3c1f001653253bb">operator=</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> const &amp;in)</td></tr>
-<tr class="memdesc:ae3e83cb06372efd2b3c1f001653253bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy and move constructors deep copy all data.  <a href="classyakl_1_1FSArray.html#ae3e83cb06372efd2b3c1f001653253bb">More...</a><br /></td></tr>
 <tr class="separator:ae3e83cb06372efd2b3c1f001653253bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#abb0f56b2756d6ac8f343b318e45cf8b4">operator=</a> (TLOC val)</td></tr>
-<tr class="memdesc:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a single arithmetic value to the entire array.  <a href="classyakl_1_1FSArray.html#abb0f56b2756d6ac8f343b318e45cf8b4">More...</a><br /></td></tr>
-<tr class="separator:abb0f56b2756d6ac8f343b318e45cf8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4501988d0f061474216442336718f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ae4501988d0f061474216442336718f4a">~FSArray</a> ()</td></tr>
+<tr class="separator:ae4501988d0f061474216442336718f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ac428ea81400c9c0c21f3635271742da8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ac428ea81400c9c0c21f3635271742da8">operator()</a> (int const i0) const</td></tr>
+<tr class="memdesc:ac428ea81400c9c0c21f3635271742da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index the <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. Number of indices must match the rank of the array object. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>.  <a href="classyakl_1_1FSArray.html#ac428ea81400c9c0c21f3635271742da8">More...</a><br /></td></tr>
+<tr class="separator:ac428ea81400c9c0c21f3635271742da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13177d34ebbf2a7924dc3119931f6fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a13177d34ebbf2a7924dc3119931f6fc5">operator()</a> (int const i0, int const i1) const</td></tr>
+<tr class="separator:a13177d34ebbf2a7924dc3119931f6fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dafe98cca2e5ed43919988d0502636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a00dafe98cca2e5ed43919988d0502636">operator()</a> (int const i0, int const i1, int const i2) const</td></tr>
+<tr class="separator:a00dafe98cca2e5ed43919988d0502636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68bfcebfce9a31d3253894d85707e0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ad68bfcebfce9a31d3253894d85707e0f">operator()</a> (int const i0, int const i1, int const i2, int const i3) const</td></tr>
+<tr class="separator:ad68bfcebfce9a31d3253894d85707e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab705c0c48e855a23e3c5ba0e46b28560"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab705c0c48e855a23e3c5ba0e46b28560">totElems</a> ()</td></tr>
+<tr class="memdesc:ab705c0c48e855a23e3c5ba0e46b28560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#ab705c0c48e855a23e3c5ba0e46b28560">More...</a><br /></td></tr>
+<tr class="separator:ab705c0c48e855a23e3c5ba0e46b28560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4315f46b32267ddc4a81675ef10f429"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ae4315f46b32267ddc4a81675ef10f429">get_totElems</a> ()</td></tr>
+<tr class="memdesc:ae4315f46b32267ddc4a81675ef10f429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#ae4315f46b32267ddc4a81675ef10f429">More...</a><br /></td></tr>
+<tr class="separator:ae4315f46b32267ddc4a81675ef10f429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25423fa665bfccc388793586a02a3a3e"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a25423fa665bfccc388793586a02a3a3e">get_elem_count</a> ()</td></tr>
 <tr class="memdesc:a25423fa665bfccc388793586a02a3a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#a25423fa665bfccc388793586a02a3a3e">More...</a><br /></td></tr>
 <tr class="separator:a25423fa665bfccc388793586a02a3a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab118805e402972636786219415711f94"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab118805e402972636786219415711f94">get_rank</a> ()</td></tr>
 <tr class="memdesc:ab118805e402972636786219415711f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of dimensions.  <a href="classyakl_1_1FSArray.html#ab118805e402972636786219415711f94">More...</a><br /></td></tr>
 <tr class="separator:ab118805e402972636786219415711f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4315f46b32267ddc4a81675ef10f429"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ae4315f46b32267ddc4a81675ef10f429">get_totElems</a> ()</td></tr>
-<tr class="memdesc:ae4315f46b32267ddc4a81675ef10f429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#ae4315f46b32267ddc4a81675ef10f429">More...</a><br /></td></tr>
-<tr class="separator:ae4315f46b32267ddc4a81675ef10f429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ec80b9e40d7fc78e76a28b881947df"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a13ec80b9e40d7fc78e76a28b881947df">initialized</a> ()</td></tr>
-<tr class="memdesc:a13ec80b9e40d7fc78e76a28b881947df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2" title="Most often, codes use the type define yakl::SArray rather than yakl::CSArray.">yakl::SArray</a> objects are by default always initialized / allocated.  <a href="classyakl_1_1FSArray.html#a13ec80b9e40d7fc78e76a28b881947df">More...</a><br /></td></tr>
-<tr class="separator:a13ec80b9e40d7fc78e76a28b881947df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38e58570e742d7eb768bc4ecf648dd6b"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a38e58570e742d7eb768bc4ecf648dd6b">span_is_contiguous</a> ()</td></tr>
 <tr class="memdesc:a38e58570e742d7eb768bc4ecf648dd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. All YAKL arrays are contiguous with no padding.  <a href="classyakl_1_1FSArray.html#a38e58570e742d7eb768bc4ecf648dd6b">More...</a><br /></td></tr>
 <tr class="separator:a38e58570e742d7eb768bc4ecf648dd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab705c0c48e855a23e3c5ba0e46b28560"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab705c0c48e855a23e3c5ba0e46b28560">totElems</a> ()</td></tr>
-<tr class="memdesc:ab705c0c48e855a23e3c5ba0e46b28560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#ab705c0c48e855a23e3c5ba0e46b28560">More...</a><br /></td></tr>
-<tr class="separator:ab705c0c48e855a23e3c5ba0e46b28560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ec80b9e40d7fc78e76a28b881947df"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a13ec80b9e40d7fc78e76a28b881947df">initialized</a> ()</td></tr>
+<tr class="memdesc:a13ec80b9e40d7fc78e76a28b881947df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2" title="Most often, codes use the type define yakl::SArray rather than yakl::CSArray.">yakl::SArray</a> objects are by default always initialized / allocated.  <a href="classyakl_1_1FSArray.html#a13ec80b9e40d7fc78e76a28b881947df">More...</a><br /></td></tr>
+<tr class="separator:a13ec80b9e40d7fc78e76a28b881947df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -178,16 +173,16 @@ Friends</h2></td></tr>
 <div class="textblock"><h3>template&lt;class T, int rank, class B0, class B1 = SB&lt;1&gt;, class B2 = SB&lt;1&gt;, class B3 = SB&lt;1&gt;&gt;<br />
 class yakl::FSArray&lt; T, rank, B0, B1, B2, B3 &gt;</h3>
 
-<p>Fortran-style array on the stack similar in nature to, e.g., <code>float arr[ny][nx];</code> </p>
-<p>This creates a Fortran-style "Stack Array" (<a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">FSArray</a>) class. It should be thought of as similar in nature to a C-style multi-dimensional array, <code>float arr[n1][n2][n3];</code>, except that it uses column-majore index ordering (left-most index varies the fastest), and it has lower bounds that default to <code>1</code> but can also be arbitrary. An example of declaring a yakl:<a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">FSArray</a> object is <code><a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a>&lt;float,3,<a class="el" href="classyakl_1_1SB.html" title="This specifies a set of bounds for a dimension when declaring a yakl::FSArray.">SB</a>&lt;n1&gt;,<a class="el" href="classyakl_1_1SB.html" title="This specifies a set of bounds for a dimension when declaring a yakl::FSArray.">SB</a>&lt;0,n2+1&gt;,<a class="el" href="classyakl_1_1SB.html" title="This specifies a set of bounds for a dimension when declaring a yakl::FSArray.">SB</a>&lt;n3&gt;&gt; arr;</code> The syntax is a bit ugly, but it's necessary to allow lower bounds other than <code>1</code>. The array declared just now will have lower bounds of 1, 0, and 1, respectively, and upper bounds of n1, n2+1, n3, respectively. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Dimensions sizes must be known at compile time, and data is placed on the stack of whatever context it is declared. When declared in a device <code>parallel_for</code> kernel, it is a thread-private array, meaning every thread has a separate copy of the array. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This creates a Fortran-style "Stack Array" (<a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">FSArray</a>) class. It should be thought of as similar in nature to a C-style multi-dimensional array, <code>float arr[n1][n2][n3];</code>, except that it uses column-majore index ordering (left-most index varies the fastest), and it has lower bounds that default to <code>1</code> but can also be arbitrary. An example of declaring a yakl:<a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">FSArray</a> object is <code><a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a>&lt;float,3,<a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">SB</a>&lt;n1&gt;,<a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">SB</a>&lt;0,n2+1&gt;,<a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">SB</a>&lt;n3&gt;&gt; arr;</code> The syntax is a bit ugly, but it's necessary to allow lower bounds other than <code>1</code>. The array declared just now will have lower bounds of 1, 0, and 1, respectively, and upper bounds of n1, n2+1, n3, respectively. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Dimensions sizes must be known at compile time, and data is placed on the stack of whatever context it is declared. When declared in a device <code>parallel_for</code> kernel, it is a thread-private array, meaning every thread has a separate copy of the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">T</td><td>Type of the <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object </td></tr>
+    <tr><td class="paramname">T</td><td>Type of the <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object </td></tr>
     <tr><td class="paramname">rank</td><td>Number of dimensions </td></tr>
-    <tr><td class="paramname">B[0-3]</td><td>Bounds for each dimensions specified using a <a class="el" href="classyakl_1_1SB.html" title="This specifies a set of bounds for a dimension when declaring a yakl::FSArray.">yakl::SB</a> class. B1, B2, and B3 are optional template parameters. Each <a class="el" href="classyakl_1_1SB.html" title="This specifies a set of bounds for a dimension when declaring a yakl::FSArray.">yakl::SB</a> object can take one or two template parameters. Specifying only one template parameter assumes a lower bound of <code>1</code>. Specifying two template parameters gives the lower and upper bound (<b>inclusive</b>).</td></tr>
+    <tr><td class="paramname">B[0-3]</td><td>Bounds for each dimensions specified using a <a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">yakl::SB</a> class. B1, B2, and B3 are optional template parameters. Each <a class="el" href="classyakl_1_1SB.html" title="This specifyies a set of bounds for a dimension when declaring a yakl::FSArray. It takes either one o...">yakl::SB</a> object can take one or two template parameters. Specifying only one template parameter assumes a lower bound of <code>1</code>. Specifying two template parameters gives the lower and upper bound (<b>inclusive</b>).</td></tr>
   </table>
   </dd>
 </dl>
-<p>Creating these arrays is very cheap, but copying them does a deep copy every time and can be expensive. Remember that <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> objects use column-major index ordering, meaning the left-most index varies the fastest. </p>
+<p>Creating these arrays is very cheap, but copying them does a deep copy every time and can be expensive. Remember that <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> objects use column-major index ordering, meaning the left-most index varies the fastest. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad103a25d8d8d3f3aebc5cfdac912a472"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad103a25d8d8d3f3aebc5cfdac912a472">&#9670;&nbsp;</a></span>const_value_type</h2>
@@ -203,7 +198,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
       </table>
 </div><div class="memdoc">
 
-<p>This is the type <code>T</code> with <code>const</code> added to it (if the original type has <code>volatile</code>, then so will this type). </p>
+<p>This is the type <code>T</code> with <code>const</code> added to it (if the original type has <code>volatile</code>, then so will this type. </p>
 
 </div>
 </div>
@@ -221,7 +216,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
       </table>
 </div><div class="memdoc">
 
-<p>This is the type <code>T</code> with <code>const</code> removed from it (if the original type has <code>volatile</code>, then so will this type). </p>
+<p>This is the type <code>T</code> with <code>const</code> removed from it (if the original type has <code>volatile</code>, then so will this type. </p>
 
 </div>
 </div>
@@ -287,7 +282,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>No constructor arguments allowed. </p>
+<p>All copy and move constructors do a deep copy of all of the data, so they should be considered as possibly expensive. </p>
 
 </div>
 </div>
@@ -317,8 +312,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Copy and move constructors deep copy all data. </p>
-
 </div>
 </div>
 <a id="af03d1bbf11a61f5fd227c186c952e5e8"></a>
@@ -346,8 +339,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copy and move constructors deep copy all data. </p>
 
 </div>
 </div>
@@ -462,8 +453,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Returns the dimensions of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object. </p>
-<p>You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object. </p>
+<p>Returns the dimensions of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. </p>
 
 </div>
 </div>
@@ -521,8 +511,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Returns the lower bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object. </p>
-<p>You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object. </p>
+<p>Returns the lower bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. </p>
 
 </div>
 </div>
@@ -609,8 +598,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Returns the upper bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object. </p>
-<p>You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="Fortran-style array on the stack similar in nature to, e.g., float arr[ny][nx];">yakl::FSArray</a> object. </p>
+<p>Returns the upper bound of each dimension of this array as a <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. You should use one-based indexing on the returned <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. </p>
 
 </div>
 </div>
@@ -669,8 +657,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Returns a reference to the indexed element (1-D). </p>
-<p>Number of indices must match the rank of the array object. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Always use one-based indexing (unless the dimension has non-default bounds) with column-major ordering (left-most index varying the fastest). </p>
+<p>Index the <a class="el" href="classyakl_1_1FSArray.html" title="This creates a Fortran-style &quot;Stack Array&quot; (FSArray) class. It should be thought of as similar in nat...">yakl::FSArray</a> object. Number of indices must match the rank of the array object. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. </p>
 
 </div>
 </div>
@@ -709,9 +696,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a reference to the indexed element (2-D). </p>
-<p>Number of indices must match the rank of the array object. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Always use one-based indexing (unless the dimension has non-default bounds) with column-major ordering (left-most index varying the fastest). </p>
 
 </div>
 </div>
@@ -756,9 +740,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a reference to the indexed element (3-D). </p>
-<p>Number of indices must match the rank of the array object. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Always use one-based indexing (unless the dimension has non-default bounds) with column-major ordering (left-most index varying the fastest). </p>
 
 </div>
 </div>
@@ -810,9 +791,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Returns a reference to the indexed element (4-D). </p>
-<p>Number of indices must match the rank of the array object. For bounds checking, define the CPP macro <code>YAKL_DEBUG</code>. Always use one-based indexing (unless the dimension has non-default bounds) with column-major ordering (left-most index varying the fastest). </p>
-
 </div>
 </div>
 <a id="a8f1223180ff5de83711ecf96b9c317cf"></a>
@@ -841,8 +819,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </table>
 </div><div class="memdoc">
 
-<p>Copy and move constructors deep copy all data. </p>
-
 </div>
 </div>
 <a id="ae3e83cb06372efd2b3c1f001653253bb"></a>
@@ -870,8 +846,6 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copy and move constructors deep copy all data. </p>
 
 </div>
 </div>

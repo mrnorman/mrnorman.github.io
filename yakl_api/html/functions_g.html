@@ -81,6 +81,12 @@ $(function() {
 , <a class="el" href="classyakl_1_1CSArray.html#a0130c82ad36b2d665a2bbbaeaadba028">yakl::CSArray&lt; T, rank, D0, D1, D2, D3 &gt;</a>
 , <a class="el" href="classyakl_1_1FSArray.html#a8e7d09c64deb37ccc65eeea8411bf107">yakl::FSArray&lt; T, rank, B0, B1, B2, B3 &gt;</a>
 </li>
+<li>get_device_allocator()
+: <a class="el" href="classyakl_1_1InitConfig.html#a07344b00e61a51a145eef7e2cd8f333b">yakl::InitConfig</a>
+</li>
+<li>get_device_deallocator()
+: <a class="el" href="classyakl_1_1InitConfig.html#a363d65df5c12dd853180a48563284c88">yakl::InitConfig</a>
+</li>
 <li>get_dim_id()
 : <a class="el" href="classyakl_1_1SimplePNetCDF.html#a66e017d35fc544c8fb2d058e74e10d33">yakl::SimplePNetCDF</a>
 </li>
@@ -98,11 +104,23 @@ $(function() {
 , <a class="el" href="classyakl_1_1CSArray.html#aecb30d41173fa270b51a93b37582dcc2">yakl::CSArray&lt; T, rank, D0, D1, D2, D3 &gt;</a>
 , <a class="el" href="classyakl_1_1FSArray.html#a25423fa665bfccc388793586a02a3a3e">yakl::FSArray&lt; T, rank, B0, B1, B2, B3 &gt;</a>
 </li>
+<li>get_host_allocator()
+: <a class="el" href="classyakl_1_1InitConfig.html#abf7fca7eb86b2826efb5761a778da918">yakl::InitConfig</a>
+</li>
+<li>get_host_deallocator()
+: <a class="el" href="classyakl_1_1InitConfig.html#a314fc56c51c20b6f92abb3f163984fb8">yakl::InitConfig</a>
+</li>
 <li>get_lbounds()
 : <a class="el" href="classyakl_1_1Array_3_01T_00_01rank_00_01myMem_00_01styleC_01_4.html#ae9336df9b02fdc612af2cb8e0dc4b409">yakl::Array&lt; T, rank, myMem, styleC &gt;</a>
 , <a class="el" href="classyakl_1_1Array_3_01T_00_01rank_00_01myMem_00_01styleFortran_01_4.html#a44fe7924b2a2967685019d48df43dc48">yakl::Array&lt; T, rank, myMem, styleFortran &gt;</a>
 , <a class="el" href="classyakl_1_1CSArray.html#ac74073afbebe9c21bb5de9c53490ced8">yakl::CSArray&lt; T, rank, D0, D1, D2, D3 &gt;</a>
 , <a class="el" href="classyakl_1_1FSArray.html#ad063760064dd66154c263e5c1fc59aea">yakl::FSArray&lt; T, rank, B0, B1, B2, B3 &gt;</a>
+</li>
+<li>get_or_create_thread_index()
+: <a class="el" href="classyakl_1_1Toney.html#acfc5325aa4172c23331047f44de70606">yakl::Toney</a>
+</li>
+<li>get_or_create_timer_index()
+: <a class="el" href="classyakl_1_1Toney.html#a4672456be528dd06797774ff7b3f69ae">yakl::Toney</a>
 </li>
 <li>get_pack_size()
 : <a class="el" href="classyakl_1_1Pack.html#a14b75895306bc94c0be9098a0b4dbbd4">yakl::Pack&lt; T, N &gt;</a>
@@ -111,6 +129,18 @@ $(function() {
 : <a class="el" href="classyakl_1_1ArrayBase.html#ae5069cb724512bc32277dee3454dae0c">yakl::ArrayBase&lt; T, rank, myMem, myStyle &gt;</a>
 , <a class="el" href="classyakl_1_1CSArray.html#a91ad56b0180aaab19de41c016cf0eb48">yakl::CSArray&lt; T, rank, D0, D1, D2, D3 &gt;</a>
 , <a class="el" href="classyakl_1_1FSArray.html#ab118805e402972636786219415711f94">yakl::FSArray&lt; T, rank, B0, B1, B2, B3 &gt;</a>
+</li>
+<li>get_timer_finalize()
+: <a class="el" href="classyakl_1_1InitConfig.html#ac0dfdd72e8d004048ebb1b91a04e1547">yakl::InitConfig</a>
+</li>
+<li>get_timer_init()
+: <a class="el" href="classyakl_1_1InitConfig.html#a2fe43b414d5c044a3921f1fbc8233197">yakl::InitConfig</a>
+</li>
+<li>get_timer_start()
+: <a class="el" href="classyakl_1_1InitConfig.html#ab7aef1c459f38c43a268c52d7fae8960">yakl::InitConfig</a>
+</li>
+<li>get_timer_stop()
+: <a class="el" href="classyakl_1_1InitConfig.html#a40e6b6611cd2ce28d089a0119ba6d2a7">yakl::InitConfig</a>
 </li>
 <li>get_totElems()
 : <a class="el" href="classyakl_1_1ArrayBase.html#a3373ceea89cf75ee78b2293bcafec919">yakl::ArrayBase&lt; T, rank, myMem, myStyle &gt;</a>
@@ -128,6 +158,13 @@ $(function() {
 </li>
 <li>getDimSize()
 : <a class="el" href="classyakl_1_1SimpleNetCDF.html#a0a652a6f926d04df89fac3e118230d2a">yakl::SimpleNetCDF</a>
+</li>
+<li>getType()
+: <a class="el" href="classyakl_1_1SimpleNetCDF.html#a0b7141dd4dbc4ff78a0ab6f2031ca4f9">yakl::SimpleNetCDF</a>
+, <a class="el" href="classyakl_1_1SimplePNetCDF.html#a51f37ea9b73ffeda72e7a8d3c0167dd7">yakl::SimplePNetCDF</a>
+</li>
+<li>growSize
+: <a class="el" href="classyakl_1_1Gator.html#a7889aa20cbd46f8ba989d49882bfe0a5">yakl::Gator</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -66,7 +66,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">YAKL_parallel_for_common.h File Reference</div>  </div>
@@ -93,11 +92,6 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="YAKL__parallel__for__common_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDoOuter.html">DoOuter&lt; OUTER &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0ee5eaef6b684d8b2e8da7bea85213aa"><td class="memTemplParams" colspan="2">template&lt;class F , bool simple, int N&gt; </td></tr>
@@ -106,42 +100,42 @@ Functions</h2></td></tr>
 <tr class="memitem:a3ae4586b4d42733f9f9a5b2850dc21ef"><td class="memTemplParams" colspan="2">template&lt;class F , bool simple, int N&gt; </td></tr>
 <tr class="memitem:a3ae4586b4d42733f9f9a5b2850dc21ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#a2e42539c6b38d6a1b535524132d26e12">YAKL_DEVICE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a3ae4586b4d42733f9f9a5b2850dc21ef">callFunctorOuter</a> (F const &amp;f, Bounds&lt; N, simple &gt; const &amp;bnd, int const i, InnerHandler handler)</td></tr>
 <tr class="separator:a3ae4586b4d42733f9f9a5b2850dc21ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12fa555c8f3c07daedd681f34da90c82"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
-<tr class="memitem:a12fa555c8f3c07daedd681f34da90c82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a12fa555c8f3c07daedd681f34da90c82">parallel_for</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
-<tr class="separator:a12fa555c8f3c07daedd681f34da90c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4175a89b47fc7c5ccea403641b3f5bb"><td class="memTemplParams" colspan="2">template&lt;class F , bool simple, int N, bool OUTER = false&gt; </td></tr>
+<tr class="memitem:ad4175a89b47fc7c5ccea403641b3f5bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, DoOuter&lt; OUTER &gt; dummy=DoOuter&lt; false &gt;())</td></tr>
+<tr class="separator:ad4175a89b47fc7c5ccea403641b3f5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9e85d9379eb1c4e2795f293ae19b7f"><td class="memTemplParams" colspan="2">template&lt;class F , bool simple, int N&gt; </td></tr>
+<tr class="memitem:abc9e85d9379eb1c4e2795f293ae19b7f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#abc9e85d9379eb1c4e2795f293ae19b7f">parallel_inner_cpu_serial</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f)</td></tr>
+<tr class="separator:abc9e85d9379eb1c4e2795f293ae19b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f0cf12f19db2531aa74f46b206570c2"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
 <tr class="memitem:a4f0cf12f19db2531aa74f46b206570c2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a4f0cf12f19db2531aa74f46b206570c2">parallel_for</a> (char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
 <tr class="separator:a4f0cf12f19db2531aa74f46b206570c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e3a079d62fea66889b3a0ba28adadf"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:af7e3a079d62fea66889b3a0ba28adadf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#af7e3a079d62fea66889b3a0ba28adadf">parallel_for</a> (char const *str, LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="separator:af7e3a079d62fea66889b3a0ba28adadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fa555c8f3c07daedd681f34da90c82"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
+<tr class="memitem:a12fa555c8f3c07daedd681f34da90c82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a12fa555c8f3c07daedd681f34da90c82">parallel_for</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
+<tr class="separator:a12fa555c8f3c07daedd681f34da90c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a828b6df79b78cf4d48e894ab851f40"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
 <tr class="memitem:a6a828b6df79b78cf4d48e894ab851f40"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a6a828b6df79b78cf4d48e894ab851f40">parallel_for</a> (LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
 <tr class="separator:a6a828b6df79b78cf4d48e894ab851f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4175a89b47fc7c5ccea403641b3f5bb"><td class="memTemplParams" colspan="2">template&lt;class F , bool simple, int N, bool OUTER = false&gt; </td></tr>
-<tr class="memitem:ad4175a89b47fc7c5ccea403641b3f5bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, <a class="el" href="structDoOuter.html">DoOuter</a>&lt; OUTER &gt; dummy=<a class="el" href="structDoOuter.html">DoOuter</a>&lt; false &gt;())</td></tr>
-<tr class="separator:ad4175a89b47fc7c5ccea403641b3f5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e3a079d62fea66889b3a0ba28adadf"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
+<tr class="memitem:af7e3a079d62fea66889b3a0ba28adadf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#af7e3a079d62fea66889b3a0ba28adadf">parallel_for</a> (char const *str, LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
+<tr class="separator:af7e3a079d62fea66889b3a0ba28adadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac050d79e5e7f7be7aff2e2a9b05a1e43"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
+<tr class="memitem:ac050d79e5e7f7be7aff2e2a9b05a1e43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#ac050d79e5e7f7be7aff2e2a9b05a1e43">parallel_outer</a> (char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
+<tr class="separator:ac050d79e5e7f7be7aff2e2a9b05a1e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f005daa7a977bb059a2ef0dbb89c221"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
+<tr class="memitem:a8f005daa7a977bb059a2ef0dbb89c221"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a8f005daa7a977bb059a2ef0dbb89c221">parallel_outer</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
+<tr class="separator:a8f005daa7a977bb059a2ef0dbb89c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd84b97737a5bb237195a2de9ab3910c"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
+<tr class="memitem:afd84b97737a5bb237195a2de9ab3910c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#afd84b97737a5bb237195a2de9ab3910c">parallel_outer</a> (LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
+<tr class="separator:afd84b97737a5bb237195a2de9ab3910c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacea5859758ff295942e659377a1ea85"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
+<tr class="memitem:aacea5859758ff295942e659377a1ea85"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#aacea5859758ff295942e659377a1ea85">parallel_outer</a> (char const *str, LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
+<tr class="separator:aacea5859758ff295942e659377a1ea85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d5351f2f3bbd1db091e7d2d6f46189"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple&gt; </td></tr>
 <tr class="memitem:a51d5351f2f3bbd1db091e7d2d6f46189"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a51d5351f2f3bbd1db091e7d2d6f46189">parallel_inner</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, InnerHandler handler)</td></tr>
 <tr class="separator:a51d5351f2f3bbd1db091e7d2d6f46189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa95aace4c04610488c66dec89709f11b"><td class="memTemplParams" colspan="2">template&lt;class F &gt; </td></tr>
 <tr class="memitem:aa95aace4c04610488c66dec89709f11b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#aa95aace4c04610488c66dec89709f11b">parallel_inner</a> (LBnd bnd, F const &amp;f, InnerHandler handler)</td></tr>
 <tr class="separator:aa95aace4c04610488c66dec89709f11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9e85d9379eb1c4e2795f293ae19b7f"><td class="memTemplParams" colspan="2">template&lt;class F , bool simple, int N&gt; </td></tr>
-<tr class="memitem:abc9e85d9379eb1c4e2795f293ae19b7f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#abc9e85d9379eb1c4e2795f293ae19b7f">parallel_inner_cpu_serial</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f)</td></tr>
-<tr class="separator:abc9e85d9379eb1c4e2795f293ae19b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f005daa7a977bb059a2ef0dbb89c221"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
-<tr class="memitem:a8f005daa7a977bb059a2ef0dbb89c221"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#a8f005daa7a977bb059a2ef0dbb89c221">parallel_outer</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
-<tr class="separator:a8f005daa7a977bb059a2ef0dbb89c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac050d79e5e7f7be7aff2e2a9b05a1e43"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen, bool B4B&gt; </td></tr>
-<tr class="memitem:ac050d79e5e7f7be7aff2e2a9b05a1e43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#ac050d79e5e7f7be7aff2e2a9b05a1e43">parallel_outer</a> (char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config)</td></tr>
-<tr class="separator:ac050d79e5e7f7be7aff2e2a9b05a1e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacea5859758ff295942e659377a1ea85"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:aacea5859758ff295942e659377a1ea85"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#aacea5859758ff295942e659377a1ea85">parallel_outer</a> (char const *str, LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="separator:aacea5859758ff295942e659377a1ea85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd84b97737a5bb237195a2de9ab3910c"><td class="memTemplParams" colspan="2">template&lt;class F , int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:afd84b97737a5bb237195a2de9ab3910c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#afd84b97737a5bb237195a2de9ab3910c">parallel_outer</a> (LBnd bnd, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="separator:afd84b97737a5bb237195a2de9ab3910c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe560e7158bb6cc92c0828d261433698"><td class="memTemplParams" colspan="2">template&lt;class F &gt; </td></tr>
 <tr class="memitem:abe560e7158bb6cc92c0828d261433698"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="YAKL__parallel__for__common_8h.html#abe560e7158bb6cc92c0828d261433698">single_inner</a> (F const &amp;f, InnerHandler handler)</td></tr>
 <tr class="separator:abe560e7158bb6cc92c0828d261433698"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -439,8 +433,8 @@ template&lt;class F , bool simple, int N, bool OUTER = false&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structDoOuter.html">DoOuter</a>&lt; OUTER &gt;&#160;</td>
-          <td class="paramname"><em>dummy</em> = <code><a class="el" href="structDoOuter.html">DoOuter</a>&lt;false&gt;()</code>&#160;</td>
+          <td class="paramtype">DoOuter&lt; OUTER &gt;&#160;</td>
+          <td class="paramname"><em>dummy</em> = <code>DoOuter&lt;false&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

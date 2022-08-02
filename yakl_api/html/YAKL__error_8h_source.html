@@ -70,75 +70,75 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="YAKL__error_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// Included by YAKL.h</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceyakl.html">yakl</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">   16</a></span>&#160;  <a class="code" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * msg) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// If we&#39;re on the host, then let&#39;s throw a real exception</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #if YAKL_CURRENTLY_ON_HOST()</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;YAKL FATAL ERROR:\n&quot;</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      std::cerr &lt;&lt; msg &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">throw</span> msg;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Otherwise, we need to be more careful with printf and intentionally segfaulting to stop the program</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">      #ifdef YAKL_ARCH_SYCL</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// SYCL cannot printf like the other backends quite yet</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">const</span> CL_CONSTANT <span class="keywordtype">char</span> format[] = <span class="stringliteral">&quot;KERNEL CHECK FAILED:\n   %s\n&quot;</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        sycl::ext::oneapi::experimental::printf(format,msg);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">      #else</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        printf(<span class="stringliteral">&quot;%s\n&quot;</span>,msg);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="comment">// Intentionally cause a segfault to kill the run</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordtype">int</span> *segfault = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      *segfault = 10;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Included by YAKL.h</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceyakl.html">yakl</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">   15</a></span>&#160;  <a class="code" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * msg) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// If we&#39;re on the host, then let&#39;s throw a real exception</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #if YAKL_CURRENTLY_ON_HOST()</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;YAKL FATAL ERROR:\n&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      std::cerr &lt;&lt; msg &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordflow">throw</span> msg;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Otherwise, we need to be more careful with printf and intentionally segfaulting to stop the program</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">      #ifdef YAKL_ARCH_SYCL</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// SYCL cannot printf like the other backends quite yet</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">const</span> CL_CONSTANT <span class="keywordtype">char</span> format[] = <span class="stringliteral">&quot;KERNEL CHECK FAILED:\n   %s\n&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        sycl::ext::oneapi::experimental::printf(format,msg);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">      #else</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        printf(<span class="stringliteral">&quot;%s\n&quot;</span>,msg);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="comment">// Intentionally cause a segfault to kill the run</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordtype">int</span> *segfault = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      *segfault = 10;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">   43</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a>() {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    #ifdef YAKL_DEBUG</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">      #ifdef YAKL_ARCH_CUDA</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">auto</span> ierr = cudaGetLastError();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (ierr != cudaSuccess) { <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>( cudaGetErrorString( ierr ) ); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">      #elif defined(YAKL_ARCH_HIP)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">auto</span> ierr = hipGetLastError();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (ierr != hipSuccess) { <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>( hipGetErrorString( ierr ) ); }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">      #elif defined(YAKL_ARCH_SYCL)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespaceyakl.html#a3763ece1d485b7596603c70a3199806f">   62</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceyakl.html#a3763ece1d485b7596603c70a3199806f">yakl_mainproc</a>() {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Only actually check if the user says MPI is available. Otherwise, always return true</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    #ifdef HAVE_MPI</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordtype">int</span> is_initialized;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      MPI_Initialized(&amp;is_initialized);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">if</span> (!is_initialized) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> myrank;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        MPI_Comm_rank(MPI_COMM_WORLD, &amp;myrank);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> myrank == 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">   41</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #ifdef YAKL_DEBUG</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">      #ifdef YAKL_ARCH_CUDA</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">auto</span> ierr = cudaGetLastError();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (ierr != cudaSuccess) { <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>( cudaGetErrorString( ierr ) ); }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">      #elif defined(YAKL_ARCH_HIP)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">auto</span> ierr = hipGetLastError();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (ierr != hipSuccess) { <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>( hipGetErrorString( ierr ) ); }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">      #elif defined(YAKL_ARCH_SYCL)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespaceyakl.html#a3763ece1d485b7596603c70a3199806f">   59</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceyakl.html#a3763ece1d485b7596603c70a3199806f">yakl_mainproc</a>() {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Only actually check if the user says MPI is available. Otherwise, always return true</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    #ifdef HAVE_MPI</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordtype">int</span> is_initialized;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      MPI_Initialized(&amp;is_initialized);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span> (!is_initialized) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">int</span> myrank;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        MPI_Comm_rank(MPI_COMM_WORLD, &amp;myrank);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> myrank == 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aYAKL__defines_8h_html_aa0dd629ffce6d564b19e9313fb91a5ad"><div class="ttname"><a href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a></div><div class="ttdeci">#define YAKL_INLINE</div><div class="ttdoc">Used to decorate functions called from kernels (parallel_for and parallel_outer) or from CPU function...</div><div class="ttdef"><b>Definition:</b> YAKL_defines.h:101</div></div>
+<div class="ttc" id="aYAKL__defines_8h_html_aa0dd629ffce6d564b19e9313fb91a5ad"><div class="ttname"><a href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a></div><div class="ttdeci">#define YAKL_INLINE</div><div class="ttdef"><b>Definition:</b> YAKL_defines.h:85</div></div>
 <div class="ttc" id="anamespaceyakl_html_a5debd8fe5fff4f37c06e55648d138e0c"><div class="ttname"><a href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">yakl::fence</a></div><div class="ttdeci">void fence()</div><div class="ttdoc">Block the host code until all device code has completed.</div><div class="ttdef"><b>Definition:</b> YAKL_fence.h:15</div></div>
-<div class="ttc" id="anamespaceyakl_html_a26dec4d21029959d4e9714098f1d22ff"><div class="ttname"><a href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a></div><div class="ttdeci">YAKL_INLINE void yakl_throw(const char *msg)</div><div class="ttdoc">Throw an error message. Works from the host or device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:16</div></div>
-<div class="ttc" id="anamespaceyakl_html_a3763ece1d485b7596603c70a3199806f"><div class="ttname"><a href="namespaceyakl.html#a3763ece1d485b7596603c70a3199806f">yakl::yakl_mainproc</a></div><div class="ttdeci">bool yakl_mainproc()</div><div class="ttdoc">If true, this is the main MPI process (task number == 0)</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:62</div></div>
+<div class="ttc" id="anamespaceyakl_html_a26dec4d21029959d4e9714098f1d22ff"><div class="ttname"><a href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a></div><div class="ttdeci">YAKL_INLINE void yakl_throw(const char *msg)</div><div class="ttdoc">Throw an error message. On the host, this throws an exception. On the device, it prints and then forc...</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:15</div></div>
+<div class="ttc" id="anamespaceyakl_html_a3763ece1d485b7596603c70a3199806f"><div class="ttname"><a href="namespaceyakl.html#a3763ece1d485b7596603c70a3199806f">yakl::yakl_mainproc</a></div><div class="ttdeci">bool yakl_mainproc()</div><div class="ttdoc">If true, this is the main MPI process (task number == 0)</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:59</div></div>
 <div class="ttc" id="anamespaceyakl_html"><div class="ttname"><a href="namespaceyakl.html">yakl</a></div><div class="ttdef"><b>Definition:</b> YAKL.cpp:8</div></div>
-<div class="ttc" id="anamespaceyakl_html_a7e01c087965b875ff55d3c7b2b4f4b00"><div class="ttname"><a href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">yakl::check_last_error</a></div><div class="ttdeci">void check_last_error()</div><div class="ttdoc">Checks to see if an error has occurred on the device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:43</div></div>
+<div class="ttc" id="anamespaceyakl_html_a7e01c087965b875ff55d3c7b2b4f4b00"><div class="ttname"><a href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">yakl::check_last_error</a></div><div class="ttdeci">void check_last_error()</div><div class="ttdoc">Checks to see if an error has occurred on the device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:41</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

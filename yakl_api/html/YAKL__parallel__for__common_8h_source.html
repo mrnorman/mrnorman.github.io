@@ -334,7 +334,7 @@ $(function() {
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="structDoOuter.html">  270</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> OUTER&gt; <span class="keyword">struct </span><a class="code" href="structDoOuter.html">DoOuter</a> {};</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> OUTER&gt; <span class="keyword">struct </span>DoOuter {};</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">// These are the CPU routines for parallel_for without a device target. These rely on</span></div>
@@ -343,7 +343,7 @@ $(function() {
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">// For OMP target offload backend, target teams distribute parallel for simd is used.</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">// For OMP CPU threading backend, parallel for is used</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> F, <span class="keywordtype">bool</span> simple, <span class="keywordtype">int</span> N, <span class="keywordtype">bool</span> OUTER=false&gt;</div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">  279</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a>( Bounds&lt;N,simple&gt; <span class="keyword">const</span> &amp;bounds , F <span class="keyword">const</span> &amp;f , <a class="code" href="structDoOuter.html">DoOuter&lt;OUTER&gt;</a> dummy = <a class="code" href="structDoOuter.html">DoOuter&lt;false&gt;</a>() ) {</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">  279</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a>( Bounds&lt;N,simple&gt; <span class="keyword">const</span> &amp;bounds , F <span class="keyword">const</span> &amp;f , DoOuter&lt;OUTER&gt; dummy = DoOuter&lt;false&gt;() ) {</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">if</span> constexpr (N == 1) {</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">    #ifdef YAKL_ARCH_OPENMP</span></div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">      #pragma omp parallel for</span></div>
@@ -617,7 +617,7 @@ $(function() {
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="comment">// For instance, if the lambda is YAKL_DEVICE_LAMBDA, compiling this line will give an error because</span></div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="comment">// it isn&#39;t available on the host.</span></div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="preprocessor">    #ifdef YAKL_B4B</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      <span class="keywordflow">if</span> constexpr (B4B) <a class="code" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a>( bounds , f , <a class="code" href="structDoOuter.html">DoOuter&lt;true&gt;</a>() );</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      <span class="keywordflow">if</span> constexpr (B4B) <a class="code" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a>( bounds , f , DoOuter&lt;true&gt;() );</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="preprocessor">    #ifdef YAKL_ARCH_CUDA</span></div>
@@ -627,7 +627,7 @@ $(function() {
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">    #elif defined(YAKL_ARCH_SYCL)</span></div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      parallel_outer_sycl( bounds , f , config );</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      <a class="code" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a>( bounds , f , <a class="code" href="structDoOuter.html">DoOuter&lt;true&gt;</a>() );</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      <a class="code" href="YAKL__parallel__for__common_8h.html#ad4175a89b47fc7c5ccea403641b3f5bb">parallel_for_cpu_serial</a>( bounds , f , DoOuter&lt;true&gt;() );</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  }</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
@@ -728,7 +728,6 @@ $(function() {
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160; </div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructDoOuter_html"><div class="ttname"><a href="structDoOuter.html">DoOuter</a></div><div class="ttdef"><b>Definition:</b> YAKL_parallel_for_common.h:270</div></div>
 <div class="ttc" id="anamespaceyakl_html_ae2a80175a29130a523e3d44585d046da"><div class="ttname"><a href="namespaceyakl.html#ae2a80175a29130a523e3d44585d046da">yakl::timer_stop</a></div><div class="ttdeci">void timer_stop(char const *lab)</div><div class="ttdoc">Stop a timer with the given string label. NOTE: Timers must be perfectly nested.</div><div class="ttdef"><b>Definition:</b> YAKL_timers.h:39</div></div>
 <div class="ttc" id="anamespaceyakl_html_a84fb5d8e747b5e4eff60360ad77fc402"><div class="ttname"><a href="namespaceyakl.html#a84fb5d8e747b5e4eff60360ad77fc402">yakl::InnerHandler</a></div><div class="ttdeci">struct yakl::InnerHandlerEmpty InnerHandler</div><div class="ttdoc">This class is necessary for coordination of two-level parallelism. A yakl::InnerHandler object must b...</div></div>
 <div class="ttc" id="aYAKL__parallel__for__common_8h_html_a3ae4586b4d42733f9f9a5b2850dc21ef"><div class="ttname"><a href="YAKL__parallel__for__common_8h.html#a3ae4586b4d42733f9f9a5b2850dc21ef">callFunctorOuter</a></div><div class="ttdeci">YAKL_DEVICE_INLINE void callFunctorOuter(F const &amp;f, Bounds&lt; N, simple &gt; const &amp;bnd, int const i, InnerHandler handler)</div><div class="ttdef"><b>Definition:</b> YAKL_parallel_for_common.h:27</div></div>

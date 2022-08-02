@@ -14,7 +14,7 @@
 <area shape="rect" id="node3" href="$YAKL__header_8h.html" title=" " alt="" coords="1611,169,1730,196"/>
 <area shape="rect" id="node23" href="$YAKL__defines_8h.html" title=" " alt="" coords="1755,169,1877,196"/>
 <area shape="rect" id="node24" href="$YAKL__mutex_8h.html" title=" " alt="" coords="1902,169,2018,196"/>
-<area shape="rect" id="node25" title=" " alt="" coords="2042,169,2185,196"/>
+<area shape="rect" id="node25" href="$YAKL__sycldevice_8h.html" title=" " alt="" coords="2042,169,2185,196"/>
 <area shape="rect" id="node26" href="$YAKL__LaunchConfig_8h.html" title=" " alt="" coords="2209,169,2372,196"/>
 <area shape="rect" id="node27" href="$YAKL__fence_8h.html" title=" " alt="" coords="2397,169,2507,196"/>
 <area shape="rect" id="node28" href="$YAKL__error_8h.html" title=" " alt="" coords="2531,169,2637,196"/>
@@ -28,7 +28,7 @@
 <area shape="rect" id="node36" href="$YAKL__parallel__for_8h.html" title=" " alt="" coords="3659,169,3807,196"/>
 <area shape="rect" id="node37" href="$YAKL__memory__spaces_8h.html" title=" " alt="" coords="3832,169,4013,196"/>
 <area shape="rect" id="node38" href="$YAKL__mem__transfers_8h.html" title=" " alt="" coords="4037,169,4211,196"/>
-<area shape="rect" id="node39" title=" " alt="" coords="4235,169,4378,196"/>
+<area shape="rect" id="node39" href="$YAKL__reductions_8h.html" title=" " alt="" coords="4235,169,4378,196"/>
 <area shape="rect" id="node40" href="$YAKL__atomics_8h.html" title=" " alt="" coords="331,169,458,196"/>
 <area shape="rect" id="node41" href="$YAKL__random_8h.html" title=" " alt="" coords="482,169,606,196"/>
 <area shape="rect" id="node42" href="$YAKL__Array_8h.html" title=" " alt="" coords="631,169,737,196"/>

@@ -67,61 +67,270 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classyakl_1_1InitConfig-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::InitConfig Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An object of this class can optionally be passed to <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> to configure the initialization.  
- <a href="classyakl_1_1InitConfig.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="YAKL__InitConfig_8h_source.html">YAKL_InitConfig.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e1d412e88c504dd6af5922d10d88c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a9e1d412e88c504dd6af5922d10d88c67">set_device_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
-<tr class="memdesc:a9e1d412e88c504dd6af5922d10d88c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the device allocator function you wish to use to override YAKL's default (NO LABEL)  <a href="classyakl_1_1InitConfig.html#a9e1d412e88c504dd6af5922d10d88c67">More...</a><br /></td></tr>
-<tr class="separator:a9e1d412e88c504dd6af5922d10d88c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f98c21e55da5770bd1a35ec2578b7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a1f98c21e55da5770bd1a35ec2578b7d2">set_device_allocator</a> (std::function&lt; void *(size_t, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a1f98c21e55da5770bd1a35ec2578b7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the device allocator function you wish to use to override YAKL's default (LABEL)  <a href="classyakl_1_1InitConfig.html#a1f98c21e55da5770bd1a35ec2578b7d2">More...</a><br /></td></tr>
-<tr class="separator:a1f98c21e55da5770bd1a35ec2578b7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb5447d374fdcb592e3b5ca4ac53046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a8cb5447d374fdcb592e3b5ca4ac53046">set_device_deallocator</a> (std::function&lt; void(void *)&gt; func)</td></tr>
-<tr class="memdesc:a8cb5447d374fdcb592e3b5ca4ac53046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the device deallocator function you wish to use to override YAKL's default (NO LABEL)  <a href="classyakl_1_1InitConfig.html#a8cb5447d374fdcb592e3b5ca4ac53046">More...</a><br /></td></tr>
-<tr class="separator:a8cb5447d374fdcb592e3b5ca4ac53046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a138575b98eaaf63070ccf7e583644785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a138575b98eaaf63070ccf7e583644785">set_device_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a138575b98eaaf63070ccf7e583644785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the device deallocator function you wish to use to override YAKL's default (LABEL)  <a href="classyakl_1_1InitConfig.html#a138575b98eaaf63070ccf7e583644785">More...</a><br /></td></tr>
-<tr class="separator:a138575b98eaaf63070ccf7e583644785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e0f2f2c7f757afb2ccbbb285e18946"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#aa1e0f2f2c7f757afb2ccbbb285e18946">set_host_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
-<tr class="memdesc:aa1e0f2f2c7f757afb2ccbbb285e18946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the host allocator function you wish to use to override YAKL's default (NO LABEL)  <a href="classyakl_1_1InitConfig.html#aa1e0f2f2c7f757afb2ccbbb285e18946">More...</a><br /></td></tr>
 <tr class="separator:aa1e0f2f2c7f757afb2ccbbb285e18946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6bc28e265ff9b5f8e4a3b036aec0728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#aa6bc28e265ff9b5f8e4a3b036aec0728">set_host_allocator</a> (std::function&lt; void *(size_t, char const *)&gt; func)</td></tr>
-<tr class="memdesc:aa6bc28e265ff9b5f8e4a3b036aec0728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the host allocator function you wish to use to override YAKL's default (LABEL)  <a href="classyakl_1_1InitConfig.html#aa6bc28e265ff9b5f8e4a3b036aec0728">More...</a><br /></td></tr>
-<tr class="separator:aa6bc28e265ff9b5f8e4a3b036aec0728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1d412e88c504dd6af5922d10d88c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a9e1d412e88c504dd6af5922d10d88c67">set_device_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
+<tr class="separator:a9e1d412e88c504dd6af5922d10d88c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e5ec0b6fd026c57879a89fba7c4471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a36e5ec0b6fd026c57879a89fba7c4471">set_host_deallocator</a> (std::function&lt; void(void *)&gt; func)</td></tr>
-<tr class="memdesc:a36e5ec0b6fd026c57879a89fba7c4471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the host deallocator function you wish to use to override YAKL's default (NO LABEL)  <a href="classyakl_1_1InitConfig.html#a36e5ec0b6fd026c57879a89fba7c4471">More...</a><br /></td></tr>
 <tr class="separator:a36e5ec0b6fd026c57879a89fba7c4471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb5447d374fdcb592e3b5ca4ac53046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a8cb5447d374fdcb592e3b5ca4ac53046">set_device_deallocator</a> (std::function&lt; void(void *)&gt; func)</td></tr>
+<tr class="separator:a8cb5447d374fdcb592e3b5ca4ac53046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6bc28e265ff9b5f8e4a3b036aec0728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#aa6bc28e265ff9b5f8e4a3b036aec0728">set_host_allocator</a> (std::function&lt; void *(size_t, char const *)&gt; func)</td></tr>
+<tr class="separator:aa6bc28e265ff9b5f8e4a3b036aec0728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f98c21e55da5770bd1a35ec2578b7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a1f98c21e55da5770bd1a35ec2578b7d2">set_device_allocator</a> (std::function&lt; void *(size_t, char const *)&gt; func)</td></tr>
+<tr class="separator:a1f98c21e55da5770bd1a35ec2578b7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c58e284922cd8b572e8bd1435070db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a88c58e284922cd8b572e8bd1435070db">set_host_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a88c58e284922cd8b572e8bd1435070db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the host deallocator function you wish to use to override YAKL's default (LABEL)  <a href="classyakl_1_1InitConfig.html#a88c58e284922cd8b572e8bd1435070db">More...</a><br /></td></tr>
 <tr class="separator:a88c58e284922cd8b572e8bd1435070db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0df05b7bfbaf387c832515551a53ae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#ae0df05b7bfbaf387c832515551a53ae1">set_timer_finalize</a> (std::function&lt; void()&gt; func)</td></tr>
-<tr class="memdesc:ae0df05b7bfbaf387c832515551a53ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the timer finalize function you wish to use to override YAKL's default.  <a href="classyakl_1_1InitConfig.html#ae0df05b7bfbaf387c832515551a53ae1">More...</a><br /></td></tr>
-<tr class="separator:ae0df05b7bfbaf387c832515551a53ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138575b98eaaf63070ccf7e583644785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a138575b98eaaf63070ccf7e583644785">set_device_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
+<tr class="separator:a138575b98eaaf63070ccf7e583644785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5492808234c04fab0065c54f5aa2aa76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a5492808234c04fab0065c54f5aa2aa76">set_timer_init</a> (std::function&lt; void()&gt; func)</td></tr>
-<tr class="memdesc:a5492808234c04fab0065c54f5aa2aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the timer init function you wish to use to override YAKL's default.  <a href="classyakl_1_1InitConfig.html#a5492808234c04fab0065c54f5aa2aa76">More...</a><br /></td></tr>
 <tr class="separator:a5492808234c04fab0065c54f5aa2aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0df05b7bfbaf387c832515551a53ae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#ae0df05b7bfbaf387c832515551a53ae1">set_timer_finalize</a> (std::function&lt; void()&gt; func)</td></tr>
+<tr class="separator:ae0df05b7bfbaf387c832515551a53ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca33a355101b972f3116897b61d02a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a0ca33a355101b972f3116897b61d02a1">set_timer_start</a> (std::function&lt; void(char const *)&gt; func)</td></tr>
-<tr class="memdesc:a0ca33a355101b972f3116897b61d02a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the timer start function you wish to use to override YAKL's default.  <a href="classyakl_1_1InitConfig.html#a0ca33a355101b972f3116897b61d02a1">More...</a><br /></td></tr>
 <tr class="separator:a0ca33a355101b972f3116897b61d02a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85198059ef2fc8ef1a9e97f1c6781c7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a85198059ef2fc8ef1a9e97f1c6781c7c">set_timer_stop</a> (std::function&lt; void(char const *)&gt; func)</td></tr>
-<tr class="memdesc:a85198059ef2fc8ef1a9e97f1c6781c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the timer stop function you wish to use to override YAKL's default.  <a href="classyakl_1_1InitConfig.html#a85198059ef2fc8ef1a9e97f1c6781c7c">More...</a><br /></td></tr>
 <tr class="separator:a85198059ef2fc8ef1a9e97f1c6781c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7fca7eb86b2826efb5761a778da918"><td class="memItemLeft" align="right" valign="top">std::function&lt; void *(size_t, char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#abf7fca7eb86b2826efb5761a778da918">get_host_allocator</a> () const</td></tr>
+<tr class="separator:abf7fca7eb86b2826efb5761a778da918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07344b00e61a51a145eef7e2cd8f333b"><td class="memItemLeft" align="right" valign="top">std::function&lt; void *(size_t, char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a07344b00e61a51a145eef7e2cd8f333b">get_device_allocator</a> () const</td></tr>
+<tr class="separator:a07344b00e61a51a145eef7e2cd8f333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314fc56c51c20b6f92abb3f163984fb8"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void *, char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a314fc56c51c20b6f92abb3f163984fb8">get_host_deallocator</a> () const</td></tr>
+<tr class="separator:a314fc56c51c20b6f92abb3f163984fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363d65df5c12dd853180a48563284c88"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void *, char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a363d65df5c12dd853180a48563284c88">get_device_deallocator</a> () const</td></tr>
+<tr class="separator:a363d65df5c12dd853180a48563284c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe43b414d5c044a3921f1fbc8233197"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a2fe43b414d5c044a3921f1fbc8233197">get_timer_init</a> () const</td></tr>
+<tr class="separator:a2fe43b414d5c044a3921f1fbc8233197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0dfdd72e8d004048ebb1b91a04e1547"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#ac0dfdd72e8d004048ebb1b91a04e1547">get_timer_finalize</a> () const</td></tr>
+<tr class="separator:ac0dfdd72e8d004048ebb1b91a04e1547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7aef1c459f38c43a268c52d7fae8960"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#ab7aef1c459f38c43a268c52d7fae8960">get_timer_start</a> () const</td></tr>
+<tr class="separator:ab7aef1c459f38c43a268c52d7fae8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e6b6611cd2ce28d089a0119ba6d2a7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a40e6b6611cd2ce28d089a0119ba6d2a7">get_timer_stop</a> () const</td></tr>
+<tr class="separator:a40e6b6611cd2ce28d089a0119ba6d2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a5bc85788df6493599c9ecf8d34d9ce21"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a5bc85788df6493599c9ecf8d34d9ce21">timer_init</a></td></tr>
+<tr class="separator:a5bc85788df6493599c9ecf8d34d9ce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c1969bb474025e2710b5701e936f83"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#ac3c1969bb474025e2710b5701e936f83">timer_finalize</a></td></tr>
+<tr class="separator:ac3c1969bb474025e2710b5701e936f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66035e16334bca30995cba136a381d92"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#a66035e16334bca30995cba136a381d92">timer_start</a></td></tr>
+<tr class="separator:a66035e16334bca30995cba136a381d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92a710a756e1e0b6a5d3ef8266bb1f5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(char const *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html#ae92a710a756e1e0b6a5d3ef8266bb1f5">timer_stop</a></td></tr>
+<tr class="separator:ae92a710a756e1e0b6a5d3ef8266bb1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An object of this class can optionally be passed to <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> to configure the initialization. </p>
-<p>This allows the user to override timer, allocation, and deallocation routines.</p>
-<p>All <code>set_</code> functions return the <a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization.">InitConfig</a> object they were called on. Therefore, the user can code, e.g., <code><a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init</a>(<a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization.">yakl::InitConfig()</a>.set_device_allocator(myalloc).set_device_deallocator(myfree));</code> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a07344b00e61a51a145eef7e2cd8f333b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07344b00e61a51a145eef7e2cd8f333b">&#9670;&nbsp;</a></span>get_device_allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void *( size_t , char const *)&gt; yakl::InitConfig::get_device_allocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a363d65df5c12dd853180a48563284c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363d65df5c12dd853180a48563284c88">&#9670;&nbsp;</a></span>get_device_deallocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void ( void * , char const *)&gt; yakl::InitConfig::get_device_deallocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf7fca7eb86b2826efb5761a778da918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7fca7eb86b2826efb5761a778da918">&#9670;&nbsp;</a></span>get_host_allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void *( size_t , char const *)&gt; yakl::InitConfig::get_host_allocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a314fc56c51c20b6f92abb3f163984fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314fc56c51c20b6f92abb3f163984fb8">&#9670;&nbsp;</a></span>get_host_deallocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void ( void * , char const *)&gt; yakl::InitConfig::get_host_deallocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0dfdd72e8d004048ebb1b91a04e1547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0dfdd72e8d004048ebb1b91a04e1547">&#9670;&nbsp;</a></span>get_timer_finalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void ()&gt; yakl::InitConfig::get_timer_finalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fe43b414d5c044a3921f1fbc8233197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe43b414d5c044a3921f1fbc8233197">&#9670;&nbsp;</a></span>get_timer_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void ()&gt; yakl::InitConfig::get_timer_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7aef1c459f38c43a268c52d7fae8960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7aef1c459f38c43a268c52d7fae8960">&#9670;&nbsp;</a></span>get_timer_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void (char const *)&gt; yakl::InitConfig::get_timer_start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40e6b6611cd2ce28d089a0119ba6d2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e6b6611cd2ce28d089a0119ba6d2a7">&#9670;&nbsp;</a></span>get_timer_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void (char const *)&gt; yakl::InitConfig::get_timer_stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9e1d412e88c504dd6af5922d10d88c67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e1d412e88c504dd6af5922d10d88c67">&#9670;&nbsp;</a></span>set_device_allocator() <span class="overload">[1/2]</span></h2>
 
@@ -145,8 +354,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Pass the device allocator function you wish to use to override YAKL's default (NO LABEL) </p>
 
 </div>
 </div>
@@ -174,8 +381,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the device allocator function you wish to use to override YAKL's default (LABEL) </p>
-
 </div>
 </div>
 <a id="a8cb5447d374fdcb592e3b5ca4ac53046"></a>
@@ -201,8 +406,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Pass the device deallocator function you wish to use to override YAKL's default (NO LABEL) </p>
 
 </div>
 </div>
@@ -230,8 +433,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the device deallocator function you wish to use to override YAKL's default (LABEL) </p>
-
 </div>
 </div>
 <a id="aa1e0f2f2c7f757afb2ccbbb285e18946"></a>
@@ -257,8 +458,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Pass the host allocator function you wish to use to override YAKL's default (NO LABEL) </p>
 
 </div>
 </div>
@@ -286,8 +485,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the host allocator function you wish to use to override YAKL's default (LABEL) </p>
-
 </div>
 </div>
 <a id="a36e5ec0b6fd026c57879a89fba7c4471"></a>
@@ -313,8 +510,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Pass the host deallocator function you wish to use to override YAKL's default (NO LABEL) </p>
 
 </div>
 </div>
@@ -342,8 +537,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the host deallocator function you wish to use to override YAKL's default (LABEL) </p>
-
 </div>
 </div>
 <a id="ae0df05b7bfbaf387c832515551a53ae1"></a>
@@ -369,8 +562,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Pass the timer finalize function you wish to use to override YAKL's default. </p>
 
 </div>
 </div>
@@ -398,8 +589,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the timer init function you wish to use to override YAKL's default. </p>
-
 </div>
 </div>
 <a id="a0ca33a355101b972f3116897b61d02a1"></a>
@@ -425,8 +614,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Pass the timer start function you wish to use to override YAKL's default. </p>
 
 </div>
 </div>
@@ -454,7 +641,94 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the timer stop function you wish to use to override YAKL's default. </p>
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac3c1969bb474025e2710b5701e936f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c1969bb474025e2710b5701e936f83">&#9670;&nbsp;</a></span>timer_finalize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void ()&gt; yakl::InitConfig::timer_finalize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bc85788df6493599c9ecf8d34d9ce21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc85788df6493599c9ecf8d34d9ce21">&#9670;&nbsp;</a></span>timer_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void ()&gt; yakl::InitConfig::timer_init</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66035e16334bca30995cba136a381d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66035e16334bca30995cba136a381d92">&#9670;&nbsp;</a></span>timer_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void (char const *)&gt; yakl::InitConfig::timer_start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae92a710a756e1e0b6a5d3ef8266bb1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92a710a756e1e0b6a5d3ef8266bb1f5">&#9670;&nbsp;</a></span>timer_stop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void (char const *)&gt; yakl::InitConfig::timer_stop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

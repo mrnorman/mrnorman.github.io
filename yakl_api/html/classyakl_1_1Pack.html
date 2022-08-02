@@ -66,8 +66,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classyakl_1_1Pack-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -75,75 +77,80 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> class performs encourages vectorization by performing operations Packs of known size.  
- <a href="classyakl_1_1Pack.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="YAKL__simd_8h_source.html">YAKL_simd.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae4abcbf43184a01a2fc7e1cd7e1c45a2"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#ae4abcbf43184a01a2fc7e1cd7e1c45a2">uint</a></td></tr>
+<tr class="separator:ae4abcbf43184a01a2fc7e1cd7e1c45a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fb50bd1b5784569e088d0aee10ed43d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a9fb50bd1b5784569e088d0aee10ed43d">operator()</a> (uint i)</td></tr>
-<tr class="memdesc:a9fb50bd1b5784569e088d0aee10ed43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a modifiable reference to the data at the requested index.  <a href="classyakl_1_1Pack.html#a9fb50bd1b5784569e088d0aee10ed43d">More...</a><br /></td></tr>
+<tr class="memitem:a9fb50bd1b5784569e088d0aee10ed43d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a9fb50bd1b5784569e088d0aee10ed43d">operator()</a> (<a class="el" href="classyakl_1_1Pack.html#ae4abcbf43184a01a2fc7e1cd7e1c45a2">uint</a> i)</td></tr>
 <tr class="separator:a9fb50bd1b5784569e088d0aee10ed43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f308ec6cc7759a6417c4af129f3535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#ae6f308ec6cc7759a6417c4af129f3535">operator()</a> (uint i) const</td></tr>
-<tr class="memdesc:ae6f308ec6cc7759a6417c4af129f3535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a non-modifiable value to the data at the requested index.  <a href="classyakl_1_1Pack.html#ae6f308ec6cc7759a6417c4af129f3535">More...</a><br /></td></tr>
+<tr class="memitem:ae6f308ec6cc7759a6417c4af129f3535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#ae6f308ec6cc7759a6417c4af129f3535">operator()</a> (<a class="el" href="classyakl_1_1Pack.html#ae4abcbf43184a01a2fc7e1cd7e1c45a2">uint</a> i) const</td></tr>
 <tr class="separator:ae6f308ec6cc7759a6417c4af129f3535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2790695462632af4f770cf4593420a4f"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
-<tr class="memitem:a2790695462632af4f770cf4593420a4f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a2790695462632af4f770cf4593420a4f">operator*=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
-<tr class="separator:a2790695462632af4f770cf4593420a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ead5ad4f068f343d79b43ae2547c0f"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a23ead5ad4f068f343d79b43ae2547c0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a23ead5ad4f068f343d79b43ae2547c0f">operator*=</a> (TLOC rhs)</td></tr>
-<tr class="separator:a23ead5ad4f068f343d79b43ae2547c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64440944c31121dca4dbd7eb042f4600"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
-<tr class="memitem:a64440944c31121dca4dbd7eb042f4600"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a64440944c31121dca4dbd7eb042f4600">operator+=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
-<tr class="separator:a64440944c31121dca4dbd7eb042f4600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a960115a42a2e3cf2371304997c267b78"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a960115a42a2e3cf2371304997c267b78"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a960115a42a2e3cf2371304997c267b78">operator+=</a> (TLOC rhs)</td></tr>
-<tr class="separator:a960115a42a2e3cf2371304997c267b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef3100231bdeb25cd1f460423881afa7"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
-<tr class="memitem:aef3100231bdeb25cd1f460423881afa7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#aef3100231bdeb25cd1f460423881afa7">operator-=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
-<tr class="separator:aef3100231bdeb25cd1f460423881afa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add242e47dfdf94cff2aa922c14b984c8"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:add242e47dfdf94cff2aa922c14b984c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#add242e47dfdf94cff2aa922c14b984c8">operator-=</a> (TLOC rhs)</td></tr>
-<tr class="separator:add242e47dfdf94cff2aa922c14b984c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac040ade627a12657359109df115df703"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
-<tr class="memitem:ac040ade627a12657359109df115df703"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#ac040ade627a12657359109df115df703">operator/=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
-<tr class="separator:ac040ade627a12657359109df115df703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e4b31da37e167d680b4e71e6394cee8"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a4e4b31da37e167d680b4e71e6394cee8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a4e4b31da37e167d680b4e71e6394cee8">operator/=</a> (TLOC rhs)</td></tr>
-<tr class="separator:a4e4b31da37e167d680b4e71e6394cee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4bfdafca17268f1ca2d05909c4df6b"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
 <tr class="memitem:abe4bfdafca17268f1ca2d05909c4df6b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#abe4bfdafca17268f1ca2d05909c4df6b">operator=</a> (TLOC rhs)</td></tr>
 <tr class="separator:abe4bfdafca17268f1ca2d05909c4df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960115a42a2e3cf2371304997c267b78"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
+<tr class="memitem:a960115a42a2e3cf2371304997c267b78"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a960115a42a2e3cf2371304997c267b78">operator+=</a> (TLOC rhs)</td></tr>
+<tr class="separator:a960115a42a2e3cf2371304997c267b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add242e47dfdf94cff2aa922c14b984c8"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
+<tr class="memitem:add242e47dfdf94cff2aa922c14b984c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#add242e47dfdf94cff2aa922c14b984c8">operator-=</a> (TLOC rhs)</td></tr>
+<tr class="separator:add242e47dfdf94cff2aa922c14b984c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ead5ad4f068f343d79b43ae2547c0f"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
+<tr class="memitem:a23ead5ad4f068f343d79b43ae2547c0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a23ead5ad4f068f343d79b43ae2547c0f">operator*=</a> (TLOC rhs)</td></tr>
+<tr class="separator:a23ead5ad4f068f343d79b43ae2547c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4b31da37e167d680b4e71e6394cee8"><td class="memTemplParams" colspan="2">template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
+<tr class="memitem:a4e4b31da37e167d680b4e71e6394cee8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a4e4b31da37e167d680b4e71e6394cee8">operator/=</a> (TLOC rhs)</td></tr>
+<tr class="separator:a4e4b31da37e167d680b4e71e6394cee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64440944c31121dca4dbd7eb042f4600"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
+<tr class="memitem:a64440944c31121dca4dbd7eb042f4600"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a64440944c31121dca4dbd7eb042f4600">operator+=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
+<tr class="separator:a64440944c31121dca4dbd7eb042f4600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3100231bdeb25cd1f460423881afa7"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
+<tr class="memitem:aef3100231bdeb25cd1f460423881afa7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#aef3100231bdeb25cd1f460423881afa7">operator-=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
+<tr class="separator:aef3100231bdeb25cd1f460423881afa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2790695462632af4f770cf4593420a4f"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
+<tr class="memitem:a2790695462632af4f770cf4593420a4f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a2790695462632af4f770cf4593420a4f">operator*=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
+<tr class="separator:a2790695462632af4f770cf4593420a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac040ade627a12657359109df115df703"><td class="memTemplParams" colspan="2">template&lt;class TLOC &gt; </td></tr>
+<tr class="memitem:ac040ade627a12657359109df115df703"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#ac040ade627a12657359109df115df703">operator/=</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; TLOC, N &gt; rhs)</td></tr>
+<tr class="separator:ac040ade627a12657359109df115df703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a14b75895306bc94c0be9098a0b4dbbd4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a14b75895306bc94c0be9098a0b4dbbd4">get_pack_size</a> ()</td></tr>
-<tr class="memdesc:a14b75895306bc94c0be9098a0b4dbbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object.  <a href="classyakl_1_1Pack.html#a14b75895306bc94c0be9098a0b4dbbd4">More...</a><br /></td></tr>
 <tr class="separator:a14b75895306bc94c0be9098a0b4dbbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aadcbefd61bfeea68be791993462ae3a2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#aadcbefd61bfeea68be791993462ae3a2">myData</a> [N]</td></tr>
+<tr class="separator:aadcbefd61bfeea68be791993462ae3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a76327cd64c08133ce0f2b9b33c89db1f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html#a76327cd64c08133ce0f2b9b33c89db1f">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; const &amp;v)</td></tr>
-<tr class="memdesc:a76327cd64c08133ce0f2b9b33c89db1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object values to stdout.  <a href="classyakl_1_1Pack.html#a76327cd64c08133ce0f2b9b33c89db1f">More...</a><br /></td></tr>
 <tr class="separator:a76327cd64c08133ce0f2b9b33c89db1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class T, unsigned int N&gt;<br />
-class yakl::Pack&lt; T, N &gt;</h3>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae4abcbf43184a01a2fc7e1cd7e1c45a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4abcbf43184a01a2fc7e1cd7e1c45a2">&#9670;&nbsp;</a></span>uint</h2>
 
-<p>The <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> class performs encourages vectorization by performing operations Packs of known size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">T</td><td>Data type of the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> </td></tr>
-    <tr><td class="paramname">N</td><td>Number of elements in the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Packs can be used by the user in order to encourage compilers to SIMD vectorize in cases where the compiler is having trouble determining when vector instructions can be generated.</p>
-<p>For straighforward mathematical operations, simply apply that operation to the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object(s).</p>
-<p>Whenever different behavior is needed for different members of the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object (e.g., if-statement), the user must iterate explicitly over the pack with <a class="el" href="namespaceyakl.html#a27535cdea6b17bbbdc6ccfe17808abb5" title="Perform a loop over the number of elements specified by the PackIterConfig object.">yakl::iterate_over_pack</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , unsigned int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="classyakl_1_1Pack.html">yakl::Pack</a>&lt; T, N &gt;::<a class="el" href="classyakl_1_1Pack.html#ae4abcbf43184a01a2fc7e1cd7e1c45a2">uint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14b75895306bc94c0be9098a0b4dbbd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14b75895306bc94c0be9098a0b4dbbd4">&#9670;&nbsp;</a></span>get_pack_size()</h2>
 
@@ -169,8 +176,6 @@ template&lt;class T , unsigned int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of elements in the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object. </p>
-
 </div>
 </div>
 <a id="a9fb50bd1b5784569e088d0aee10ed43d"></a>
@@ -187,7 +192,7 @@ template&lt;class T , unsigned int N&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T&amp; <a class="el" href="classyakl_1_1Pack.html">yakl::Pack</a>&lt; T, N &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">uint&#160;</td>
+          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html#ae4abcbf43184a01a2fc7e1cd7e1c45a2">uint</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -198,8 +203,6 @@ template&lt;class T , unsigned int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a modifiable reference to the data at the requested index. </p>
 
 </div>
 </div>
@@ -217,7 +220,7 @@ template&lt;class T , unsigned int N&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T <a class="el" href="classyakl_1_1Pack.html">yakl::Pack</a>&lt; T, N &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">uint&#160;</td>
+          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html#ae4abcbf43184a01a2fc7e1cd7e1c45a2">uint</a>&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -228,8 +231,6 @@ template&lt;class T , unsigned int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a non-modifiable value to the data at the requested index. </p>
 
 </div>
 </div>
@@ -540,7 +541,22 @@ template&lt;class T , unsigned int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Print out the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> object values to stdout. </p>
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aadcbefd61bfeea68be791993462ae3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcbefd61bfeea68be791993462ae3a2">&#9670;&nbsp;</a></span>myData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , unsigned int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classyakl_1_1Pack.html">yakl::Pack</a>&lt; T, N &gt;::myData[N]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

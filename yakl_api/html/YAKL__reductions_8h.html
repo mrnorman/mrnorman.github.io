@@ -68,8 +68,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">YAKL_reductions.h File Reference</div>  </div>
 </div><!--header-->
@@ -96,9 +95,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ParallelReduction.html">yakl::ParallelReduction&lt; T, memSpace, RED &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ParallelReduction_3_01T_00_01memDevice_00_01RED_01_4.html">yakl::ParallelReduction&lt; T, memDevice, RED &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ParallelReduction_3_01T_00_01memHost_00_01RED_01_4.html">yakl::ParallelReduction&lt; T, memHost, RED &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ParallelReduction_3_01T_00_01memDevice_00_01RED_01_4.html">yakl::ParallelReduction&lt; T, memDevice, RED &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -108,29 +107,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a963e440ba3b79d2250aea69749f844fd"><td class="memTemplParams" colspan="2">template&lt;class T , int memSpace&gt; </td></tr>
-<tr class="memitem:a963e440ba3b79d2250aea69749f844fd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a963e440ba3b79d2250aea69749f844fd">yakl::ParallelMax</a> = ParallelReduction&lt; T, memSpace, YAKL_REDUCTION_MAX &gt;</td></tr>
-<tr class="separator:a963e440ba3b79d2250aea69749f844fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae2cdeccf05329f3fcc2ab27d8cf0399"><td class="memTemplParams" colspan="2">template&lt;class T , int memSpace&gt; </td></tr>
 <tr class="memitem:aae2cdeccf05329f3fcc2ab27d8cf0399"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aae2cdeccf05329f3fcc2ab27d8cf0399">yakl::ParallelMin</a> = ParallelReduction&lt; T, memSpace, YAKL_REDUCTION_MIN &gt;</td></tr>
 <tr class="separator:aae2cdeccf05329f3fcc2ab27d8cf0399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bbeb29ba06bb6b58bb0a5672575fd3a"><td class="memTemplParams" colspan="2">template&lt;class T , int memSpace&gt; </td></tr>
-<tr class="memitem:a6bbeb29ba06bb6b58bb0a5672575fd3a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a6bbeb29ba06bb6b58bb0a5672575fd3a">yakl::ParallelProd</a> = ParallelReduction&lt; T, memSpace, YAKL_REDUCTION_PROD &gt;</td></tr>
-<tr class="separator:a6bbeb29ba06bb6b58bb0a5672575fd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963e440ba3b79d2250aea69749f844fd"><td class="memTemplParams" colspan="2">template&lt;class T , int memSpace&gt; </td></tr>
+<tr class="memitem:a963e440ba3b79d2250aea69749f844fd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a963e440ba3b79d2250aea69749f844fd">yakl::ParallelMax</a> = ParallelReduction&lt; T, memSpace, YAKL_REDUCTION_MAX &gt;</td></tr>
+<tr class="separator:a963e440ba3b79d2250aea69749f844fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0eae445a17795ed61a17745902a7bf"><td class="memTemplParams" colspan="2">template&lt;class T , int memSpace&gt; </td></tr>
 <tr class="memitem:a6a0eae445a17795ed61a17745902a7bf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a6a0eae445a17795ed61a17745902a7bf">yakl::ParallelSum</a> = ParallelReduction&lt; T, memSpace, YAKL_REDUCTION_SUM &gt;</td></tr>
 <tr class="separator:a6a0eae445a17795ed61a17745902a7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa63edafa4533f2f8afbcf3d83a368d02"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aa63edafa4533f2f8afbcf3d83a368d02">yakl::YAKL_REDUCTION_MAX</a> = 1</td></tr>
-<tr class="separator:aa63edafa4533f2f8afbcf3d83a368d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ae6018771503a94e035311c30b7558"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#af2ae6018771503a94e035311c30b7558">yakl::YAKL_REDUCTION_MIN</a> = 0</td></tr>
-<tr class="separator:af2ae6018771503a94e035311c30b7558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c89acf2ad6c8dff878469ac92e98dd"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ac0c89acf2ad6c8dff878469ac92e98dd">yakl::YAKL_REDUCTION_PROD</a> = 3</td></tr>
-<tr class="separator:ac0c89acf2ad6c8dff878469ac92e98dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05ada7dce8cd0eb47e5370772349edfc"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a05ada7dce8cd0eb47e5370772349edfc">yakl::YAKL_REDUCTION_SUM</a> = 2</td></tr>
-<tr class="separator:a05ada7dce8cd0eb47e5370772349edfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbeb29ba06bb6b58bb0a5672575fd3a"><td class="memTemplParams" colspan="2">template&lt;class T , int memSpace&gt; </td></tr>
+<tr class="memitem:a6bbeb29ba06bb6b58bb0a5672575fd3a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a6bbeb29ba06bb6b58bb0a5672575fd3a">yakl::ParallelProd</a> = ParallelReduction&lt; T, memSpace, YAKL_REDUCTION_PROD &gt;</td></tr>
+<tr class="separator:a6bbeb29ba06bb6b58bb0a5672575fd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

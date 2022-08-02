@@ -75,89 +75,91 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceyakl.html">yakl</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">   17</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">finalize</a>() {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    yakl_mtx.lock();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Only finalize if YAKL&#39;s already initialized</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">isInitialized</a>() ) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a>();  <span class="comment">// Make sure all device work is done before we start freeing pool memory</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">      #if defined(YAKL_ARCH_HIP)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        rocfft_cleanup();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="comment">// Free the pools</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      pool.<a class="code" href="classyakl_1_1Gator.html#a0ba398e8fc4a9a6f3e81a808abea0400">finalize</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="comment">// Free functorBuffer</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">      #ifdef YAKL_ARCH_CUDA</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        cudaFree(functorBuffer);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">      #if defined(YAKL_ARCH_SYCL)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        sycl::free(functorBuffer, sycl_default_stream());</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      functorBuffer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      yakl_is_initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">// Finalize the timers</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">      #if defined(YAKL_PROFILE)</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="namespaceyakl.html#a757af9a71189e007f6afa0c8df1380cf">timer_finalize</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      timer_init_func = [] () {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_init(); before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      timer_finalize_func = [] () {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_finalize(); before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      timer_start_func = [] (<span class="keywordtype">char</span> <span class="keyword">const</span> *label) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_start(); before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      };</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      timer_stop_func = [] (<span class="keywordtype">char</span> <span class="keyword">const</span> * label) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_stop(); before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      alloc_device_func = [] ( <span class="keywordtype">size_t</span> bytes , <span class="keywordtype">char</span> <span class="keyword">const</span> *label ) -&gt; <span class="keywordtype">void</span>* {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory alloc before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      };</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      free_device_func  = [] ( <span class="keywordtype">void</span> *ptr    , <span class="keywordtype">char</span> <span class="keyword">const</span> *label )          {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory free before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      alloc_host_func = [] ( <span class="keywordtype">size_t</span> bytes , <span class="keywordtype">char</span> <span class="keyword">const</span> *label ) -&gt; <span class="keywordtype">void</span>* {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory alloc before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      free_host_func  = [] ( <span class="keywordtype">void</span> *ptr    , <span class="keywordtype">char</span> <span class="keyword">const</span> *label )          {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory free before calling yakl::init()&quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      };</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;WARNING: Calling yakl::finalize() when YAKL is not initialized. &quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;This might mean you&#39;ve called yakl::finalize() more than once.\n&quot;</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    yakl_is_initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    yakl_mtx.unlock();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">   16</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">finalize</a>() {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespaceyakl.html#a99a2f92ab5419408dd90d950aad1305c">yakl_mtx</a>.lock();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// Only finalize if YAKL&#39;s already initialized</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">isInitialized</a>() ) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a>();  <span class="comment">// Make sure all device work is done before we start freeing pool memory</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">      #if defined(YAKL_ARCH_HIP)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        rocfft_cleanup();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="comment">// Free the pools</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="namespaceyakl.html#a624d250b0cd8562b06641c92090efa8d">pool</a>.<a class="code" href="classyakl_1_1Gator.html#a0ba398e8fc4a9a6f3e81a808abea0400">finalize</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="comment">// Free functorBuffer</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">      #ifdef YAKL_ARCH_CUDA</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        cudaFree(functorBuffer);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">      #if defined(YAKL_ARCH_SYCL)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        sycl::free(functorBuffer, sycl_default_stream());</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      functorBuffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      yakl_is_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="comment">// Finalize the timers</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">      #if defined(YAKL_PROFILE)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="namespaceyakl.html#a757af9a71189e007f6afa0c8df1380cf">timer_finalize</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      timer_init_func = [] () {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_init(); before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      timer_finalize_func = [] () {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_finalize(); before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      timer_start_func = [] (<span class="keywordtype">char</span> <span class="keyword">const</span> *label) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_start(); before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      timer_stop_func = [] (<span class="keywordtype">char</span> <span class="keyword">const</span> * label) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting to call the yakl::timer_stop(); before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      yaklAllocDevice = [] ( <span class="keywordtype">size_t</span> bytes , <span class="keywordtype">char</span> <span class="keyword">const</span> *label ) -&gt; <span class="keywordtype">void</span>* {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory alloc before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      yaklFreeDevice  = [] ( <span class="keywordtype">void</span> *ptr    , <span class="keywordtype">char</span> <span class="keyword">const</span> *label )          {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory free before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      yaklAllocHost = [] ( <span class="keywordtype">size_t</span> bytes , <span class="keywordtype">char</span> <span class="keyword">const</span> *label ) -&gt; <span class="keywordtype">void</span>* {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory alloc before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      yaklFreeHost  = [] ( <span class="keywordtype">void</span> *ptr    , <span class="keywordtype">char</span> <span class="keyword">const</span> *label )          {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl_throw</a>(<span class="stringliteral">&quot;ERROR: attempting memory free before calling yakl::init()&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;WARNING: Calling yakl::finalize() when YAKL is not initialized. &quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;This might mean you&#39;ve called yakl::finalize() more than once.\n&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    yakl_is_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="namespaceyakl.html#a99a2f92ab5419408dd90d950aad1305c">yakl_mtx</a>.unlock();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceyakl_html_a757af9a71189e007f6afa0c8df1380cf"><div class="ttname"><a href="namespaceyakl.html#a757af9a71189e007f6afa0c8df1380cf">yakl::timer_finalize</a></div><div class="ttdeci">void timer_finalize()</div><div class="ttdoc">Finalize the YAKL timers.</div><div class="ttdef"><b>Definition:</b> YAKL_timers.h:29</div></div>
 <div class="ttc" id="anamespaceyakl_html_a5debd8fe5fff4f37c06e55648d138e0c"><div class="ttname"><a href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">yakl::fence</a></div><div class="ttdeci">void fence()</div><div class="ttdoc">Block the host code until all device code has completed.</div><div class="ttdef"><b>Definition:</b> YAKL_fence.h:15</div></div>
+<div class="ttc" id="anamespaceyakl_html_a624d250b0cd8562b06641c92090efa8d"><div class="ttname"><a href="namespaceyakl.html#a624d250b0cd8562b06641c92090efa8d">yakl::pool</a></div><div class="ttdeci">Gator pool</div><div class="ttdef"><b>Definition:</b> YAKL.cpp:12</div></div>
 <div class="ttc" id="anamespaceyakl_html_a110195fb8259c05f75506e71aa5a792c"><div class="ttname"><a href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">yakl::isInitialized</a></div><div class="ttdeci">bool isInitialized()</div><div class="ttdoc">Determine if the YAKL runtime has been initialized. I.e., yakl::init() has been called without a corr...</div><div class="ttdef"><b>Definition:</b> YAKL_init.h:17</div></div>
-<div class="ttc" id="anamespaceyakl_html_a26dec4d21029959d4e9714098f1d22ff"><div class="ttname"><a href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a></div><div class="ttdeci">YAKL_INLINE void yakl_throw(const char *msg)</div><div class="ttdoc">Throw an error message. Works from the host or device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:16</div></div>
-<div class="ttc" id="anamespaceyakl_html_ab42370df4914644cfd129ff6037c5c9f"><div class="ttname"><a href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">yakl::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdoc">Finalize the YAKL runtime.</div><div class="ttdef"><b>Definition:</b> YAKL_finalize.h:17</div></div>
-<div class="ttc" id="aclassyakl_1_1Gator_html_a0ba398e8fc4a9a6f3e81a808abea0400"><div class="ttname"><a href="classyakl_1_1Gator.html#a0ba398e8fc4a9a6f3e81a808abea0400">yakl::Gator::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdoc">Finalize the pool allocator, deallocate all individual pools.</div><div class="ttdef"><b>Definition:</b> YAKL_Gator.h:119</div></div>
+<div class="ttc" id="anamespaceyakl_html_a26dec4d21029959d4e9714098f1d22ff"><div class="ttname"><a href="namespaceyakl.html#a26dec4d21029959d4e9714098f1d22ff">yakl::yakl_throw</a></div><div class="ttdeci">YAKL_INLINE void yakl_throw(const char *msg)</div><div class="ttdoc">Throw an error message. On the host, this throws an exception. On the device, it prints and then forc...</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:15</div></div>
+<div class="ttc" id="anamespaceyakl_html_ab42370df4914644cfd129ff6037c5c9f"><div class="ttname"><a href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">yakl::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdoc">Finalize the YAKL runtime. Best practice is to call yakl::isInitialized() to ensure the YAKL runtime ...</div><div class="ttdef"><b>Definition:</b> YAKL_finalize.h:16</div></div>
+<div class="ttc" id="aclassyakl_1_1Gator_html_a0ba398e8fc4a9a6f3e81a808abea0400"><div class="ttname"><a href="classyakl_1_1Gator.html#a0ba398e8fc4a9a6f3e81a808abea0400">yakl::Gator::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> YAKL_Gator.h:70</div></div>
+<div class="ttc" id="anamespaceyakl_html_a99a2f92ab5419408dd90d950aad1305c"><div class="ttname"><a href="namespaceyakl.html#a99a2f92ab5419408dd90d950aad1305c">yakl::yakl_mtx</a></div><div class="ttdeci">std::mutex yakl_mtx</div><div class="ttdef"><b>Definition:</b> YAKL.cpp:10</div></div>
 <div class="ttc" id="anamespaceyakl_html"><div class="ttname"><a href="namespaceyakl.html">yakl</a></div><div class="ttdef"><b>Definition:</b> YAKL.cpp:8</div></div>
-<div class="ttc" id="anamespaceyakl_html_a7e01c087965b875ff55d3c7b2b4f4b00"><div class="ttname"><a href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">yakl::check_last_error</a></div><div class="ttdeci">void check_last_error()</div><div class="ttdoc">Checks to see if an error has occurred on the device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:43</div></div>
+<div class="ttc" id="anamespaceyakl_html_a7e01c087965b875ff55d3c7b2b4f4b00"><div class="ttname"><a href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">yakl::check_last_error</a></div><div class="ttdeci">void check_last_error()</div><div class="ttdoc">Checks to see if an error has occurred on the device.</div><div class="ttdef"><b>Definition:</b> YAKL_error.h:41</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

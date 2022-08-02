@@ -1,4 +1,4 @@
 <map id="yakl::Array&lt; T, rank, myMem, styleC &gt;" name="yakl::Array&lt; T, rank, myMem, styleC &gt;">
-<area shape="rect" id="node1" title="This implements the yakl:Array class with yakl::styleC behavior." alt="" coords="17,95,175,136"/>
+<area shape="rect" id="node1" title="This implements the yakl:Array class with yakl::styleC behavior, meaning all lower bounds for dimensi..." alt="" coords="17,95,175,136"/>
 <area shape="rect" id="node2" href="$classyakl_1_1ArrayBase.html" title=" " alt="" coords="5,5,187,47"/>
 </map>

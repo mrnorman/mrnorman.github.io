@@ -98,7 +98,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab42370df4914644cfd129ff6037c5c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">yakl::finalize</a> ()</td></tr>
-<tr class="memdesc:ab42370df4914644cfd129ff6037c5c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the YAKL runtime.  <a href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">More...</a><br /></td></tr>
+<tr class="memdesc:ab42370df4914644cfd129ff6037c5c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the YAKL runtime. Best practice is to call <a class="el" href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c" title="Determine if the YAKL runtime has been initialized. I.e., yakl::init() has been called without a corr...">yakl::isInitialized()</a> to ensure the YAKL runtime is initialized before calling this routine. That said, this routine <em>does</em> check to ensure the runtime is initialized for you. THREAD SAFE!  <a href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">More...</a><br /></td></tr>
 <tr class="separator:ab42370df4914644cfd129ff6037c5c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
