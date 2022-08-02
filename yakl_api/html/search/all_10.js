@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tan_236',['tan',['../namespaceyakl.html#a52a50fe47024438c63a8a6da14d130eb',1,'yakl']]],
+  ['tan_236',['tan',['../namespaceyakl_1_1simd.html#ac1a1d6c4ac28b06a29bf66734cabb9e1',1,'yakl::simd']]],
   ['timer_5ffinalize_237',['timer_finalize',['../namespaceyakl.html#a757af9a71189e007f6afa0c8df1380cf',1,'yakl']]],
   ['timer_5finit_238',['timer_init',['../namespaceyakl.html#a548f5a6d111b18c6541bc82f3913345d',1,'yakl']]],
   ['timer_5fstart_239',['timer_start',['../namespaceyakl.html#a22876aa3d7b5d93e2cd9df0110a1f236',1,'yakl']]],

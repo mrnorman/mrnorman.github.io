@@ -9,5 +9,5 @@ var searchData=
   ['innerhandlerempty_111',['InnerHandlerEmpty',['../structyakl_1_1InnerHandlerEmpty.html',1,'yakl']]],
   ['inverse_5freal_112',['inverse_real',['../classyakl_1_1RealFFT1D.html#a09a7f5b6ec9fee5c2a5410b4f84b93ca',1,'yakl::RealFFT1D']]],
   ['isinitialized_113',['isInitialized',['../namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c',1,'yakl']]],
-  ['iterate_5fover_5fpack_114',['iterate_over_pack',['../namespaceyakl.html#a27535cdea6b17bbbdc6ccfe17808abb5',1,'yakl']]]
+  ['iterate_5fover_5fpack_114',['iterate_over_pack',['../namespaceyakl_1_1simd.html#a2731cabea51972e23a7a3ac49d3360d3',1,'yakl::simd']]]
 ];

@@ -86,6 +86,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceyakl_1_1intrinsics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1intrinsics.html">intrinsics</a></td></tr>
 <tr class="memdesc:namespaceyakl_1_1intrinsics"><td class="mdescLeft">&#160;</td><td class="mdescRight">The intrinsics namespace contains a limited Fortran-like intrinsics library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceyakl_1_1simd"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1simd.html">simd</a></td></tr>
+<tr class="memdesc:namespaceyakl_1_1simd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds YAKL's <a class="el" href="classyakl_1_1simd_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> class and operators to encourage SIMD vectorization. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -127,12 +130,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1LaunchConfig.html">LaunchConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class informs YAKL <code>parallel_for</code> and <code>parallel_outer</code> routines how to launch kernels.  <a href="structyakl_1_1LaunchConfig.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Pack.html">Pack</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> class performs encourages vectorization by performing operations Packs of known size.  <a href="classyakl_1_1Pack.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1PackIterConfig.html">PackIterConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs iterate_over_pack of the <a class="el" href="classyakl_1_1Pack.html" title="The Pack class performs encourages vectorization by performing operations Packs of known size.">Pack</a> size and whether to apply a SIMD pragma.  <a href="structyakl_1_1PackIterConfig.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Random.html">Random</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-cryptographic pseudo-random number generator with a very small internal state.  <a href="classyakl_1_1Random.html#details">More...</a><br /></td></tr>
@@ -177,24 +174,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a367630d5bb3c6167f1fa68b55ed4f91b"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a367630d5bb3c6167f1fa68b55ed4f91b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a367630d5bb3c6167f1fa68b55ed4f91b">abs</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a367630d5bb3c6167f1fa68b55ed4f91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dfe6a6ff9d5b2f16b1195767ad2c1b2"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a8dfe6a6ff9d5b2f16b1195767ad2c1b2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a8dfe6a6ff9d5b2f16b1195767ad2c1b2">acos</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a8dfe6a6ff9d5b2f16b1195767ad2c1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744db414fb0ff8dbc17bcd08e05474da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a744db414fb0ff8dbc17bcd08e05474da">alloc_device</a> (size_t bytes, char const *label)</td></tr>
 <tr class="memdesc:a744db414fb0ff8dbc17bcd08e05474da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate on the device using YAKL's device allocator.  <a href="namespaceyakl.html#a744db414fb0ff8dbc17bcd08e05474da">More...</a><br /></td></tr>
 <tr class="separator:a744db414fb0ff8dbc17bcd08e05474da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7600b075989fdf55ea167ed069ee12ca"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7600b075989fdf55ea167ed069ee12ca">alloc_host</a> (size_t bytes, char const *label)</td></tr>
 <tr class="memdesc:a7600b075989fdf55ea167ed069ee12ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate on the host using YAKL's host allocator.  <a href="namespaceyakl.html#a7600b075989fdf55ea167ed069ee12ca">More...</a><br /></td></tr>
 <tr class="separator:a7600b075989fdf55ea167ed069ee12ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3906e1b172670ec659b86a9913f1aef8"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a3906e1b172670ec659b86a9913f1aef8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a3906e1b172670ec659b86a9913f1aef8">asign</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a3906e1b172670ec659b86a9913f1aef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3e703fbd4b6e4176c575a8ef81e58b"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a0a3e703fbd4b6e4176c575a8ef81e58b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a0a3e703fbd4b6e4176c575a8ef81e58b">atan</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a0a3e703fbd4b6e4176c575a8ef81e58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cda355f1f737b5b613b6463232f3e69"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a9cda355f1f737b5b613b6463232f3e69"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">atomicAdd</a> (T &amp;update, T value)</td></tr>
 <tr class="memdesc:a9cda355f1f737b5b613b6463232f3e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically perform update += value.  <a href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">More...</a><br /></td></tr>
@@ -207,18 +192,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a00f63fe7be70100d62b0e572967abea7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a00f63fe7be70100d62b0e572967abea7">atomicMin</a> (T &amp;update, T value)</td></tr>
 <tr class="memdesc:a00f63fe7be70100d62b0e572967abea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically perform update = min(update,value)  <a href="namespaceyakl.html#a00f63fe7be70100d62b0e572967abea7">More...</a><br /></td></tr>
 <tr class="separator:a00f63fe7be70100d62b0e572967abea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac733b4d05317493f8fef7a3f8ddc775c"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:ac733b4d05317493f8fef7a3f8ddc775c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ac733b4d05317493f8fef7a3f8ddc775c">ceil</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:ac733b4d05317493f8fef7a3f8ddc775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e01c087965b875ff55d3c7b2b4f4b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a> ()</td></tr>
 <tr class="memdesc:a7e01c087965b875ff55d3c7b2b4f4b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if an error has occurred on the device.  <a href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">More...</a><br /></td></tr>
 <tr class="separator:a7e01c087965b875ff55d3c7b2b4f4b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2fc7b95daa795b453a32790b6e2f8c"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:aae2fc7b95daa795b453a32790b6e2f8c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aae2fc7b95daa795b453a32790b6e2f8c">cos</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:aae2fc7b95daa795b453a32790b6e2f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec6ee9396425c8a4a8e8bd76501022f"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a4ec6ee9396425c8a4a8e8bd76501022f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a4ec6ee9396425c8a4a8e8bd76501022f">exp</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a4ec6ee9396425c8a4a8e8bd76501022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5debd8fe5fff4f37c06e55648d138e0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a> ()</td></tr>
 <tr class="memdesc:a5debd8fe5fff4f37c06e55648d138e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the host code until all device code has completed.  <a href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">More...</a><br /></td></tr>
 <tr class="separator:a5debd8fe5fff4f37c06e55648d138e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,9 +204,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ab42370df4914644cfd129ff6037c5c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">finalize</a> ()</td></tr>
 <tr class="memdesc:ab42370df4914644cfd129ff6037c5c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the YAKL runtime.  <a href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f">More...</a><br /></td></tr>
 <tr class="separator:ab42370df4914644cfd129ff6037c5c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a020ab23a6238cdc6317312346e96c88f"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a020ab23a6238cdc6317312346e96c88f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a020ab23a6238cdc6317312346e96c88f">floor</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a020ab23a6238cdc6317312346e96c88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8afa807b3b1f4e331ece7954c94134fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a8afa807b3b1f4e331ece7954c94134fc">free_device</a> (void *ptr, char const *label)</td></tr>
 <tr class="memdesc:a8afa807b3b1f4e331ece7954c94134fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free on the device using YAKL's device deallocator.  <a href="namespaceyakl.html#a8afa807b3b1f4e331ece7954c94134fc">More...</a><br /></td></tr>
 <tr class="separator:a8afa807b3b1f4e331ece7954c94134fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,16 +216,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a110195fb8259c05f75506e71aa5a792c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">isInitialized</a> ()</td></tr>
 <tr class="memdesc:a110195fb8259c05f75506e71aa5a792c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the YAKL runtime has been initialized. I.e., <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> has been called without a corresponding call to <a class="el" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f" title="Finalize the YAKL runtime.">yakl::finalize()</a>.  <a href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">More...</a><br /></td></tr>
 <tr class="separator:a110195fb8259c05f75506e71aa5a792c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27535cdea6b17bbbdc6ccfe17808abb5"><td class="memTemplParams" colspan="2">template&lt;class F , unsigned int N, bool SIMD = false&gt; </td></tr>
-<tr class="memitem:a27535cdea6b17bbbdc6ccfe17808abb5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a27535cdea6b17bbbdc6ccfe17808abb5">iterate_over_pack</a> (F const &amp;f, <a class="el" href="structyakl_1_1PackIterConfig.html">PackIterConfig</a>&lt; N, SIMD &gt; config)</td></tr>
-<tr class="memdesc:a27535cdea6b17bbbdc6ccfe17808abb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a loop over the number of elements specified by the <a class="el" href="structyakl_1_1PackIterConfig.html" title="Informs iterate_over_pack of the Pack size and whether to apply a SIMD pragma.">PackIterConfig</a> object.  <a href="namespaceyakl.html#a27535cdea6b17bbbdc6ccfe17808abb5">More...</a><br /></td></tr>
-<tr class="separator:a27535cdea6b17bbbdc6ccfe17808abb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff56b080c243b62138c30f42b5cd6dbc"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:aff56b080c243b62138c30f42b5cd6dbc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aff56b080c243b62138c30f42b5cd6dbc">log</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:aff56b080c243b62138c30f42b5cd6dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4cf567e6117a9c263f450e68615f2cb"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:ae4cf567e6117a9c263f450e68615f2cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ae4cf567e6117a9c263f450e68615f2cb">log10</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:ae4cf567e6117a9c263f450e68615f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
 <tr class="memitem:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aa3cd629fc27eb6cd1e237c1172e5c291">memcpy_device_to_device</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems)</td></tr>
 <tr class="memdesc:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the device  <a href="namespaceyakl.html#aa3cd629fc27eb6cd1e237c1172e5c291">More...</a><br /></td></tr>
@@ -275,45 +238,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a6dd2574081a93f391e588cab890f232f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a6dd2574081a93f391e588cab890f232f">memcpy_host_to_host_void</a> (void *dst, void *src, size_t bytes)</td></tr>
 <tr class="memdesc:a6dd2574081a93f391e588cab890f232f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>bytes</b> on the host  <a href="namespaceyakl.html#a6dd2574081a93f391e588cab890f232f">More...</a><br /></td></tr>
 <tr class="separator:a6dd2574081a93f391e588cab890f232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5c671aa3b3eb8886ea87472d53f563"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a2a5c671aa3b3eb8886ea87472d53f563"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a2a5c671aa3b3eb8886ea87472d53f563">operator*</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; b)</td></tr>
-<tr class="separator:a2a5c671aa3b3eb8886ea87472d53f563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4a9a4a743921d734f3f1f024a15479"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a6b4a9a4a743921d734f3f1f024a15479"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a6b4a9a4a743921d734f3f1f024a15479">operator*</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; lhs, TLOC val)</td></tr>
-<tr class="separator:a6b4a9a4a743921d734f3f1f024a15479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1bfc97cd16c2230cafea34a964b072a"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:ab1bfc97cd16c2230cafea34a964b072a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ab1bfc97cd16c2230cafea34a964b072a">operator*</a> (TLOC val, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; rhs)</td></tr>
-<tr class="separator:ab1bfc97cd16c2230cafea34a964b072a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48557316c62486158406292e053ea2d5"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a48557316c62486158406292e053ea2d5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a48557316c62486158406292e053ea2d5">operator+</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; b)</td></tr>
-<tr class="separator:a48557316c62486158406292e053ea2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac11b06b59b7775329b01bea078bd1999"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:ac11b06b59b7775329b01bea078bd1999"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ac11b06b59b7775329b01bea078bd1999">operator+</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; lhs, TLOC val)</td></tr>
-<tr class="separator:ac11b06b59b7775329b01bea078bd1999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3791e8eabfc1d99f38d62a6f4ba60604"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a3791e8eabfc1d99f38d62a6f4ba60604"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a3791e8eabfc1d99f38d62a6f4ba60604">operator+</a> (TLOC val, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; rhs)</td></tr>
-<tr class="separator:a3791e8eabfc1d99f38d62a6f4ba60604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d2f9ecc45bafabc6f6595949c9d4fa6"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a0d2f9ecc45bafabc6f6595949c9d4fa6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a0d2f9ecc45bafabc6f6595949c9d4fa6">operator-</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a0d2f9ecc45bafabc6f6595949c9d4fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57013efb52cc2fa310cc7673ac1cc389"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a57013efb52cc2fa310cc7673ac1cc389"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a57013efb52cc2fa310cc7673ac1cc389">operator-</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; b)</td></tr>
-<tr class="separator:a57013efb52cc2fa310cc7673ac1cc389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4392180bc260915d323e21d3f34c73b6"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a4392180bc260915d323e21d3f34c73b6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a4392180bc260915d323e21d3f34c73b6">operator-</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; lhs, TLOC val)</td></tr>
-<tr class="separator:a4392180bc260915d323e21d3f34c73b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26a9477ef49dd6fa2db5845b67e7e2d"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:af26a9477ef49dd6fa2db5845b67e7e2d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#af26a9477ef49dd6fa2db5845b67e7e2d">operator-</a> (TLOC val, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; rhs)</td></tr>
-<tr class="separator:af26a9477ef49dd6fa2db5845b67e7e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae79276c7651f6e0d67da86d7e21ce865"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:ae79276c7651f6e0d67da86d7e21ce865"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ae79276c7651f6e0d67da86d7e21ce865">operator/</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; b)</td></tr>
-<tr class="separator:ae79276c7651f6e0d67da86d7e21ce865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9900fec8b6aaecdcd8e49add00c1e5"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a7b9900fec8b6aaecdcd8e49add00c1e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7b9900fec8b6aaecdcd8e49add00c1e5">operator/</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; lhs, TLOC val)</td></tr>
-<tr class="separator:a7b9900fec8b6aaecdcd8e49add00c1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf8f8889781043be3b92e3e3cfd73a6"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a3bf8f8889781043be3b92e3e3cfd73a6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a3bf8f8889781043be3b92e3e3cfd73a6">operator/</a> (TLOC val, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; rhs)</td></tr>
-<tr class="separator:a3bf8f8889781043be3b92e3e3cfd73a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0636ffa1809f47534bd4f705bae0d857"><td class="memTemplParams" colspan="2">template&lt;unsigned int n, class real &gt; </td></tr>
 <tr class="memitem:a0636ffa1809f47534bd4f705bae0d857"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a0636ffa1809f47534bd4f705bae0d857">pentadiagonal</a> (<a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;a, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;b, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;c, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;d, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;e, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;f, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; &amp;u)</td></tr>
 <tr class="memdesc:a0636ffa1809f47534bd4f705bae0d857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a non-periodic pentadiagonal solve. Click for more details.  <a href="namespaceyakl.html#a0636ffa1809f47534bd4f705bae0d857">More...</a><br /></td></tr>
@@ -322,15 +246,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ad98637dc95c0af6d4860349ada34e262"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ad98637dc95c0af6d4860349ada34e262">pentadiagonal_periodic</a> (<a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;a, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;b, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;c, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;d, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;e, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;f, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; &amp;x)</td></tr>
 <tr class="memdesc:ad98637dc95c0af6d4860349ada34e262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a periodic pentadiagonal solve. Click for more details.  <a href="namespaceyakl.html#ad98637dc95c0af6d4860349ada34e262">More...</a><br /></td></tr>
 <tr class="separator:ad98637dc95c0af6d4860349ada34e262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c11133710aa7fa34382d68bcaf9f96"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a65c11133710aa7fa34382d68bcaf9f96"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a65c11133710aa7fa34382d68bcaf9f96">pow</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a, <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; b)</td></tr>
-<tr class="separator:a65c11133710aa7fa34382d68bcaf9f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a793d39d1cf02a94a6762cb17ba989060"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </td></tr>
-<tr class="memitem:a793d39d1cf02a94a6762cb17ba989060"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a793d39d1cf02a94a6762cb17ba989060">pow</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; lhs, TLOC val)</td></tr>
-<tr class="separator:a793d39d1cf02a94a6762cb17ba989060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f38931b23ab5b1c107992b509b75b60"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a2f38931b23ab5b1c107992b509b75b60"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a2f38931b23ab5b1c107992b509b75b60">round</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a2f38931b23ab5b1c107992b509b75b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca055f3e17da1b57c8966dfb9537b1ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aca055f3e17da1b57c8966dfb9537b1ab">set_device_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
 <tr class="memdesc:aca055f3e17da1b57c8966dfb9537b1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's device allocator with the passed function (No Label).  <a href="namespaceyakl.html#aca055f3e17da1b57c8966dfb9537b1ab">More...</a><br /></td></tr>
 <tr class="separator:aca055f3e17da1b57c8966dfb9537b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,15 +285,6 @@ Functions</h2></td></tr>
 <tr class="memitem:abf58795a80dd0c09827a1a0a4ab6c2f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0">set_yakl_allocators_to_default</a> ()</td></tr>
 <tr class="memdesc:abf58795a80dd0c09827a1a0a4ab6c2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all YAKL allocators to their defaults.  <a href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0">More...</a><br /></td></tr>
 <tr class="separator:abf58795a80dd0c09827a1a0a4ab6c2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef4d194a56da2f17208a0b7d521ac7fe"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:aef4d194a56da2f17208a0b7d521ac7fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aef4d194a56da2f17208a0b7d521ac7fe">sin</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:aef4d194a56da2f17208a0b7d521ac7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a860d4dcab9d5e50931418a9a1586bb06"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a860d4dcab9d5e50931418a9a1586bb06"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a860d4dcab9d5e50931418a9a1586bb06">sqrt</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a860d4dcab9d5e50931418a9a1586bb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52a50fe47024438c63a8a6da14d130eb"><td class="memTemplParams" colspan="2">template&lt;class T , unsigned int N&gt; </td></tr>
-<tr class="memitem:a52a50fe47024438c63a8a6da14d130eb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a52a50fe47024438c63a8a6da14d130eb">tan</a> (<a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt; a)</td></tr>
-<tr class="separator:a52a50fe47024438c63a8a6da14d130eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757af9a71189e007f6afa0c8df1380cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a757af9a71189e007f6afa0c8df1380cf">timer_finalize</a> ()</td></tr>
 <tr class="memdesc:a757af9a71189e007f6afa0c8df1380cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the YAKL timers.  <a href="namespaceyakl.html#a757af9a71189e007f6afa0c8df1380cf">More...</a><br /></td></tr>
 <tr class="separator:a757af9a71189e007f6afa0c8df1380cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -548,46 +454,6 @@ template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, u
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a367630d5bb3c6167f1fa68b55ed4f91b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a367630d5bb3c6167f1fa68b55ed4f91b">&#9670;&nbsp;</a></span>abs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::abs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8dfe6a6ff9d5b2f16b1195767ad2c1b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dfe6a6ff9d5b2f16b1195767ad2c1b2">&#9670;&nbsp;</a></span>acos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::acos </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a744db414fb0ff8dbc17bcd08e05474da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a744db414fb0ff8dbc17bcd08e05474da">&#9670;&nbsp;</a></span>alloc_device()</h2>
 
@@ -661,46 +527,6 @@ template&lt;class T , unsigned int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Allocate on the host using YAKL's host allocator. </p>
-
-</div>
-</div>
-<a id="a3906e1b172670ec659b86a9913f1aef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3906e1b172670ec659b86a9913f1aef8">&#9670;&nbsp;</a></span>asign()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::asign </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0a3e703fbd4b6e4176c575a8ef81e58b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a3e703fbd4b6e4176c575a8ef81e58b">&#9670;&nbsp;</a></span>atan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::atan </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -800,26 +626,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ac733b4d05317493f8fef7a3f8ddc775c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac733b4d05317493f8fef7a3f8ddc775c">&#9670;&nbsp;</a></span>ceil()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::ceil </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7e01c087965b875ff55d3c7b2b4f4b00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e01c087965b875ff55d3c7b2b4f4b00">&#9670;&nbsp;</a></span>check_last_error()</h2>
 
@@ -845,46 +651,6 @@ template&lt;class T , unsigned int N&gt; </div>
 
 <p>Checks to see if an error has occurred on the device. </p>
 <p>This is a no-op unless the <code>YAKL_DEBUG</code> CPP macro is defined </p>
-
-</div>
-</div>
-<a id="aae2fc7b95daa795b453a32790b6e2f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae2fc7b95daa795b453a32790b6e2f8c">&#9670;&nbsp;</a></span>cos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::cos </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4ec6ee9396425c8a4a8e8bd76501022f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec6ee9396425c8a4a8e8bd76501022f">&#9670;&nbsp;</a></span>exp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::exp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -966,26 +732,6 @@ template&lt;class T , unsigned int N&gt; </div>
 
 <p>Finalize the YAKL runtime. </p>
 <p>Best practice is to call <a class="el" href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c" title="Determine if the YAKL runtime has been initialized. I.e., yakl::init() has been called without a corr...">yakl::isInitialized()</a> to ensure the YAKL runtime is initialized before calling this routine. That said, this routine <em>does</em> check to ensure the runtime is initialized for you. THREAD SAFE! </p>
-
-</div>
-</div>
-<a id="a020ab23a6238cdc6317312346e96c88f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a020ab23a6238cdc6317312346e96c88f">&#9670;&nbsp;</a></span>floor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::floor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1132,85 +878,6 @@ template&lt;class T , unsigned int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Determine if the YAKL runtime has been initialized. I.e., <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> has been called without a corresponding call to <a class="el" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f" title="Finalize the YAKL runtime.">yakl::finalize()</a>. </p>
-
-</div>
-</div>
-<a id="a27535cdea6b17bbbdc6ccfe17808abb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27535cdea6b17bbbdc6ccfe17808abb5">&#9670;&nbsp;</a></span>iterate_over_pack()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class F , unsigned int N, bool SIMD = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void yakl::iterate_over_pack </td>
-          <td>(</td>
-          <td class="paramtype">F const &amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structyakl_1_1PackIterConfig.html">PackIterConfig</a>&lt; N, SIMD &gt;&#160;</td>
-          <td class="paramname"><em>config</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Perform a loop over the number of elements specified by the <a class="el" href="structyakl_1_1PackIterConfig.html" title="Informs iterate_over_pack of the Pack size and whether to apply a SIMD pragma.">PackIterConfig</a> object. </p>
-<p>If the config parameter also specifies that the SIMD template parameter is true, then apply SIMD pragmas. IMPORTANT: For the functor passed to this routine, please use <b>[&amp;]</b> syntax, not YAKL_LAMBDA </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>The functor object to execute inside the loop. </td></tr>
-    <tr><td class="paramname">config</td><td><a class="el" href="structyakl_1_1PackIterConfig.html" title="Informs iterate_over_pack of the Pack size and whether to apply a SIMD pragma.">yakl::PackIterConfig</a> object with two template parameters: (1) the vector length (number of elements to loop over; and (2) a bool SIMD parameter to tell this routine whether or not it should apply a SIMD pragma. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aff56b080c243b62138c30f42b5cd6dbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff56b080c243b62138c30f42b5cd6dbc">&#9670;&nbsp;</a></span>log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::log </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4cf567e6117a9c263f450e68615f2cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4cf567e6117a9c263f450e68615f2cb">&#9670;&nbsp;</a></span>log10()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::log10 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1486,386 +1153,6 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
 
 </div>
 </div>
-<a id="a2a5c671aa3b3eb8886ea87472d53f563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a5c671aa3b3eb8886ea87472d53f563">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator* </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b4a9a4a743921d734f3f1f024a15479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4a9a4a743921d734f3f1f024a15479">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator* </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab1bfc97cd16c2230cafea34a964b072a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1bfc97cd16c2230cafea34a964b072a">&#9670;&nbsp;</a></span>operator*() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator* </td>
-          <td>(</td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a48557316c62486158406292e053ea2d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48557316c62486158406292e053ea2d5">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator+ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac11b06b59b7775329b01bea078bd1999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac11b06b59b7775329b01bea078bd1999">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator+ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3791e8eabfc1d99f38d62a6f4ba60604"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3791e8eabfc1d99f38d62a6f4ba60604">&#9670;&nbsp;</a></span>operator+() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0d2f9ecc45bafabc6f6595949c9d4fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d2f9ecc45bafabc6f6595949c9d4fa6">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator- </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57013efb52cc2fa310cc7673ac1cc389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57013efb52cc2fa310cc7673ac1cc389">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator- </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4392180bc260915d323e21d3f34c73b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4392180bc260915d323e21d3f34c73b6">&#9670;&nbsp;</a></span>operator-() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator- </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af26a9477ef49dd6fa2db5845b67e7e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af26a9477ef49dd6fa2db5845b67e7e2d">&#9670;&nbsp;</a></span>operator-() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator- </td>
-          <td>(</td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae79276c7651f6e0d67da86d7e21ce865"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae79276c7651f6e0d67da86d7e21ce865">&#9670;&nbsp;</a></span>operator/() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator/ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b9900fec8b6aaecdcd8e49add00c1e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b9900fec8b6aaecdcd8e49add00c1e5">&#9670;&nbsp;</a></span>operator/() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator/ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3bf8f8889781043be3b92e3e3cfd73a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf8f8889781043be3b92e3e3cfd73a6">&#9670;&nbsp;</a></span>operator/() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::operator/ </td>
-          <td>(</td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0636ffa1809f47534bd4f705bae0d857"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0636ffa1809f47534bd4f705bae0d857">&#9670;&nbsp;</a></span>pentadiagonal()</h2>
 
@@ -1991,86 +1278,6 @@ template&lt;unsigned int n, class real &gt; </div>
 <p>Performs a periodic pentadiagonal solve. Click for more details. </p>
 <p>Solves for a vector u of length n in the pentadiagonal linear system </p><div class="fragment"><div class="line">a_i u_(i-2) + b_i u_(i-1) + c_i u_i + d_i u_(i+1) + e_i u_(i+2) = f_i</div>
 </div><!-- fragment --><p>input are the a, b, c, d, e, and f and they are not modified </p>
-
-</div>
-</div>
-<a id="a65c11133710aa7fa34382d68bcaf9f96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65c11133710aa7fa34382d68bcaf9f96">&#9670;&nbsp;</a></span>pow() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::pow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a793d39d1cf02a94a6762cb17ba989060"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a793d39d1cf02a94a6762cb17ba989060">&#9670;&nbsp;</a></span>pow() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N, class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC &gt;::value, bool &gt;::type  = false&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::pow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TLOC&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f38931b23ab5b1c107992b509b75b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f38931b23ab5b1c107992b509b75b60">&#9670;&nbsp;</a></span>round()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::round </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -2443,66 +1650,6 @@ template&lt;class T , unsigned int N&gt; </div>
 
 <p>Return all YAKL allocators to their defaults. </p>
 <p>If the user has not overridden YAKL's default allocators, then this has no effect. </p>
-
-</div>
-</div>
-<a id="aef4d194a56da2f17208a0b7d521ac7fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef4d194a56da2f17208a0b7d521ac7fe">&#9670;&nbsp;</a></span>sin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::sin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a860d4dcab9d5e50931418a9a1586bb06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a860d4dcab9d5e50931418a9a1586bb06">&#9670;&nbsp;</a></span>sqrt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::sqrt </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a52a50fe47024438c63a8a6da14d130eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52a50fe47024438c63a8a6da14d130eb">&#9670;&nbsp;</a></span>tan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , unsigned int N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt;T,N&gt; yakl::tan </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classyakl_1_1Pack.html">Pack</a>&lt; T, N &gt;&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

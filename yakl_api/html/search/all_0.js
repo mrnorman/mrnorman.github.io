@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['abs_0',['abs',['../namespaceyakl.html#a367630d5bb3c6167f1fa68b55ed4f91b',1,'yakl::abs()'],['../namespaceyakl_1_1intrinsics.html#abc3a3deace633f5580b6a78eae35aef9',1,'yakl::intrinsics::abs(Array&lt; T, rank, memHost, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#ac65095d1920dd2880ed0539c006bbd3f',1,'yakl::intrinsics::abs(Array&lt; T, rank, memDevice, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#ad298f85d0296331c5a50dc9a191428f9',1,'yakl::intrinsics::abs(SArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#a060fc43b45f9dea3c3744375f6a7137f',1,'yakl::intrinsics::abs(FSArray&lt; T, rank, B0, B1, B2, B3 &gt; const &amp;arr)']]],
-  ['acos_1',['acos',['../namespaceyakl.html#a8dfe6a6ff9d5b2f16b1195767ad2c1b2',1,'yakl']]],
+  ['abs_0',['abs',['../namespaceyakl_1_1simd.html#ac56720817904b139e80a92813dbbb0bd',1,'yakl::simd::abs()'],['../namespaceyakl_1_1intrinsics.html#abc3a3deace633f5580b6a78eae35aef9',1,'yakl::intrinsics::abs(Array&lt; T, rank, memHost, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#ac65095d1920dd2880ed0539c006bbd3f',1,'yakl::intrinsics::abs(Array&lt; T, rank, memDevice, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#ad298f85d0296331c5a50dc9a191428f9',1,'yakl::intrinsics::abs(SArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#a060fc43b45f9dea3c3744375f6a7137f',1,'yakl::intrinsics::abs(FSArray&lt; T, rank, B0, B1, B2, B3 &gt; const &amp;arr)']]],
+  ['acos_1',['acos',['../namespaceyakl_1_1simd.html#a34cb042013b442201ad1edcfb5c5294c',1,'yakl::simd']]],
   ['add_5farray_5fscalar_2',['add_array_scalar',['../namespaceyakl_1_1componentwise.html#a3f7aa0eb81029f7a8cbe5f4c6dac6169',1,'yakl::componentwise']]],
   ['add_5fscalar_5farray_3',['add_scalar_array',['../namespaceyakl_1_1componentwise.html#a6ac0b033799d1a68d005be8230f61ace',1,'yakl::componentwise']]],
   ['all_4',['all',['../namespaceyakl_1_1intrinsics.html#a77d053326046b054f6518cb2b6e86c20',1,'yakl::intrinsics::all(Array&lt; T, rank, memHost, myStyle &gt; arr)'],['../namespaceyakl_1_1intrinsics.html#a922ca414ce2816b21d3ab821a4f732f8',1,'yakl::intrinsics::all(Array&lt; T, rank, memDevice, myStyle &gt; arr)'],['../namespaceyakl_1_1intrinsics.html#a84b2c62656d1a1dd3224e50746af26b4',1,'yakl::intrinsics::all(SArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#aa2f8b635a97ba805c7b639c410eaed4f',1,'yakl::intrinsics::all(FSArray&lt; T, rank, B0, B1, B2, B3 &gt; const &amp;arr)']]],
@@ -19,9 +19,9 @@ var searchData=
   ['arraybase_16',['ArrayBase',['../classyakl_1_1ArrayBase.html',1,'yakl']]],
   ['arraybase_3c_20t_2c_20rank_2c_20mymem_2c_20stylec_20_3e_17',['ArrayBase&lt; T, rank, myMem, styleC &gt;',['../classyakl_1_1ArrayBase.html',1,'yakl']]],
   ['arraybase_3c_20t_2c_20rank_2c_20mymem_2c_20stylefortran_20_3e_18',['ArrayBase&lt; T, rank, myMem, styleFortran &gt;',['../classyakl_1_1ArrayBase.html',1,'yakl']]],
-  ['asign_19',['asign',['../namespaceyakl.html#a3906e1b172670ec659b86a9913f1aef8',1,'yakl']]],
+  ['asign_19',['asign',['../namespaceyakl_1_1simd.html#a1b864d0daadb4f40bb94747f8b937caf',1,'yakl::simd']]],
   ['associated_20',['associated',['../namespaceyakl_1_1intrinsics.html#a743fa5c0d13052b3f6520beb4402c620',1,'yakl::intrinsics']]],
-  ['atan_21',['atan',['../namespaceyakl.html#a0a3e703fbd4b6e4176c575a8ef81e58b',1,'yakl']]],
+  ['atan_21',['atan',['../namespaceyakl_1_1simd.html#a559f0d6e2f6d5b3644c4f31c0af2fc04',1,'yakl::simd']]],
   ['atomicadd_22',['atomicAdd',['../namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69',1,'yakl']]],
   ['atomicmax_23',['atomicMax',['../namespaceyakl.html#a41cb894576efe9797212d7befde66c74',1,'yakl']]],
   ['atomicmin_24',['atomicMin',['../namespaceyakl.html#a00f63fe7be70100d62b0e572967abea7',1,'yakl']]]

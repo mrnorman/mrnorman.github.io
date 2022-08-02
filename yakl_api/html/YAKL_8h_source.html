@@ -76,12 +76,12 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="YAKL__defines_8h.html">YAKL_defines.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceyakl.html">yakl</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl.html#aae2fc7b95daa795b453a32790b6e2f8c">std::cos</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl.html#aef4d194a56da2f17208a0b7d521ac7fe">std::sin</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl.html#a793d39d1cf02a94a6762cb17ba989060">std::pow</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl_1_1simd.html#aa10b83f7e702f5780481ee8c5b2cf1c4">std::cos</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl_1_1simd.html#ae226df36c89a8c2fe875c6eff852a4a1">std::sin</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl_1_1simd.html#abe388381a83954cfbe9fe7fd92d38e40">std::pow</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> std::min;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">using</span> std::max;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl.html#a367630d5bb3c6167f1fa68b55ed4f91b">std::abs</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespaceyakl_1_1simd.html#ac56720817904b139e80a92813dbbb0bd">std::abs</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">// functorBuffer holds large functors in CUDA and all functors in SYCL</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span>  <span class="keywordtype">int</span> constexpr functorBufSize = 1024*128;</div>
@@ -122,9 +122,9 @@ $(function() {
 <div class="ttc" id="aYAKL__atomics_8h_html"><div class="ttname"><a href="YAKL__atomics_8h.html">YAKL_atomics.h</a></div></div>
 <div class="ttc" id="aYAKL__timers_8h_html"><div class="ttname"><a href="YAKL__timers_8h.html">YAKL_timers.h</a></div></div>
 <div class="ttc" id="aYAKL__componentwise_8h_html"><div class="ttname"><a href="YAKL__componentwise_8h.html">YAKL_componentwise.h</a></div></div>
-<div class="ttc" id="anamespaceyakl_html_a367630d5bb3c6167f1fa68b55ed4f91b"><div class="ttname"><a href="namespaceyakl.html#a367630d5bb3c6167f1fa68b55ed4f91b">yakl::abs</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; abs(Pack&lt; T, N &gt; a)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:264</div></div>
+<div class="ttc" id="anamespaceyakl_1_1simd_html_ae226df36c89a8c2fe875c6eff852a4a1"><div class="ttname"><a href="namespaceyakl_1_1simd.html#ae226df36c89a8c2fe875c6eff852a4a1">yakl::simd::sin</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; sin(Pack&lt; T, N &gt; a)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:307</div></div>
+<div class="ttc" id="anamespaceyakl_1_1simd_html_aa10b83f7e702f5780481ee8c5b2cf1c4"><div class="ttname"><a href="namespaceyakl_1_1simd.html#aa10b83f7e702f5780481ee8c5b2cf1c4">yakl::simd::cos</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; cos(Pack&lt; T, N &gt; a)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:299</div></div>
 <div class="ttc" id="aYAKL__Gator_8h_html"><div class="ttname"><a href="YAKL__Gator_8h.html">YAKL_Gator.h</a></div></div>
-<div class="ttc" id="anamespaceyakl_html_aae2fc7b95daa795b453a32790b6e2f8c"><div class="ttname"><a href="namespaceyakl.html#aae2fc7b95daa795b453a32790b6e2f8c">yakl::cos</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; cos(Pack&lt; T, N &gt; a)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:296</div></div>
 <div class="ttc" id="anamespaceyakl_html_a0437bce10dc5e3816ab24a75e3976a4f"><div class="ttname"><a href="namespaceyakl.html#a0437bce10dc5e3816ab24a75e3976a4f">yakl::INDEX_MAX</a></div><div class="ttdeci">constexpr index_t INDEX_MAX</div><div class="ttdef"><b>Definition:</b> YAKL.h:28</div></div>
 <div class="ttc" id="aYAKL__mem__transfers_8h_html"><div class="ttname"><a href="YAKL__mem__transfers_8h.html">YAKL_mem_transfers.h</a></div></div>
 <div class="ttc" id="aYAKL__LaunchConfig_8h_html"><div class="ttname"><a href="YAKL__LaunchConfig_8h.html">YAKL_LaunchConfig.h</a></div></div>
@@ -132,7 +132,6 @@ $(function() {
 <div class="ttc" id="aYAKL__allocators_8h_html"><div class="ttname"><a href="YAKL__allocators_8h.html">YAKL_allocators.h</a></div></div>
 <div class="ttc" id="aYAKL__finalize_8h_html"><div class="ttname"><a href="YAKL__finalize_8h.html">YAKL_finalize.h</a></div></div>
 <div class="ttc" id="aYAKL__random_8h_html"><div class="ttname"><a href="YAKL__random_8h.html">YAKL_random.h</a></div></div>
-<div class="ttc" id="anamespaceyakl_html_aef4d194a56da2f17208a0b7d521ac7fe"><div class="ttname"><a href="namespaceyakl.html#aef4d194a56da2f17208a0b7d521ac7fe">yakl::sin</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; sin(Pack&lt; T, N &gt; a)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:304</div></div>
 <div class="ttc" id="aYAKL__fence_8h_html"><div class="ttname"><a href="YAKL__fence_8h.html">YAKL_fence.h</a></div></div>
 <div class="ttc" id="aYAKL__intrinsics_8h_html"><div class="ttname"><a href="YAKL__intrinsics_8h.html">YAKL_intrinsics.h</a></div></div>
 <div class="ttc" id="anamespaceyakl_html_a172abcdd2d33fa36e969d80e6907173c"><div class="ttname"><a href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">yakl::index_t</a></div><div class="ttdeci">unsigned int index_t</div><div class="ttdef"><b>Definition:</b> YAKL.h:27</div></div>
@@ -140,14 +139,15 @@ $(function() {
 <div class="ttc" id="aYAKL__Array_8h_html"><div class="ttname"><a href="YAKL__Array_8h.html">YAKL_Array.h</a></div></div>
 <div class="ttc" id="aYAKL__InitConfig_8h_html"><div class="ttname"><a href="YAKL__InitConfig_8h.html">YAKL_InitConfig.h</a></div></div>
 <div class="ttc" id="aYAKL__parallel__for_8h_html"><div class="ttname"><a href="YAKL__parallel__for_8h.html">YAKL_parallel_for.h</a></div></div>
-<div class="ttc" id="anamespaceyakl_html_a793d39d1cf02a94a6762cb17ba989060"><div class="ttname"><a href="namespaceyakl.html#a793d39d1cf02a94a6762cb17ba989060">yakl::pow</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; pow(Pack&lt; T, N &gt; lhs, TLOC val)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:236</div></div>
 <div class="ttc" id="aYAKL__ScalarLiveOut_8h_html"><div class="ttname"><a href="YAKL__ScalarLiveOut_8h.html">YAKL_ScalarLiveOut.h</a></div></div>
 <div class="ttc" id="aYAKL__memory__spaces_8h_html"><div class="ttname"><a href="YAKL__memory__spaces_8h.html">YAKL_memory_spaces.h</a></div></div>
 <div class="ttc" id="aYAKL__defines_8h_html"><div class="ttname"><a href="YAKL__defines_8h.html">YAKL_defines.h</a></div></div>
 <div class="ttc" id="aYAKL__header_8h_html"><div class="ttname"><a href="YAKL__header_8h.html">YAKL_header.h</a></div></div>
 <div class="ttc" id="anamespaceyakl_html"><div class="ttname"><a href="namespaceyakl.html">yakl</a></div><div class="ttdef"><b>Definition:</b> YAKL.cpp:8</div></div>
 <div class="ttc" id="aYAKL__simd_8h_html"><div class="ttname"><a href="YAKL__simd_8h.html">YAKL_simd.h</a></div></div>
+<div class="ttc" id="anamespaceyakl_1_1simd_html_ac56720817904b139e80a92813dbbb0bd"><div class="ttname"><a href="namespaceyakl_1_1simd.html#ac56720817904b139e80a92813dbbb0bd">yakl::simd::abs</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; abs(Pack&lt; T, N &gt; a)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:267</div></div>
 <div class="ttc" id="aYAKL__mutex_8h_html"><div class="ttname"><a href="YAKL__mutex_8h.html">YAKL_mutex.h</a></div></div>
+<div class="ttc" id="anamespaceyakl_1_1simd_html_abe388381a83954cfbe9fe7fd92d38e40"><div class="ttname"><a href="namespaceyakl_1_1simd.html#abe388381a83954cfbe9fe7fd92d38e40">yakl::simd::pow</a></div><div class="ttdeci">YAKL_INLINE Pack&lt; T, N &gt; pow(Pack&lt; T, N &gt; lhs, TLOC val)</div><div class="ttdef"><b>Definition:</b> YAKL_simd.h:239</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
