@@ -66,8 +66,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classyakl_1_1ArrayBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -79,6 +81,15 @@ $(function() {
  <a href="classyakl_1_1ArrayBase.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="YAKL__ArrayBase_8h_source.html">YAKL_ArrayBase.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for yakl::ArrayBase&lt; T, rank, myMem, myStyle &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classyakl_1_1ArrayBase__coll__graph.png" border="0" usemap="#yakl_1_1ArrayBase_3_01T_00_01rank_00_01myMem_00_01myStyle_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="yakl_1_1ArrayBase_3_01T_00_01rank_00_01myMem_00_01myStyle_01_4_coll__map" id="yakl_1_1ArrayBase_3_01T_00_01rank_00_01myMem_00_01myStyle_01_4_coll__map">
+<area shape="rect" title="This class implements functionality common to both yakl::styleC and yakl::styleFortran Array objects." alt="" coords="5,124,200,165"/>
+<area shape="rect" title=" " alt="" coords="13,5,192,61"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -97,6 +108,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a04b6387ea5d7a49812a37a1398df9a33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a04b6387ea5d7a49812a37a1398df9a33">add_stream_dependencies</a> (std::vector&lt; <a class="el" href="structyakl_1_1Stream.html">Stream</a> &gt; streams)</td></tr>
+<tr class="memdesc:a04b6387ea5d7a49812a37a1398df9a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a dependencies on the multiple streams at one time.  <a href="classyakl_1_1ArrayBase.html#a04b6387ea5d7a49812a37a1398df9a33">More...</a><br /></td></tr>
+<tr class="separator:a04b6387ea5d7a49812a37a1398df9a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063c0eb1c0523ebd00abad99f5a9bf85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a063c0eb1c0523ebd00abad99f5a9bf85">add_stream_dependency</a> (<a class="el" href="structyakl_1_1Stream.html">Stream</a> stream)</td></tr>
+<tr class="memdesc:a063c0eb1c0523ebd00abad99f5a9bf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a dependency on the passed stream.  <a href="classyakl_1_1ArrayBase.html#a063c0eb1c0523ebd00abad99f5a9bf85">More...</a><br /></td></tr>
+<tr class="separator:a063c0eb1c0523ebd00abad99f5a9bf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a143863763b2e52aa5f9e9817ce9d5320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a143863763b2e52aa5f9e9817ce9d5320">data</a> () const</td></tr>
 <tr class="memdesc:a143863763b2e52aa5f9e9817ce9d5320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw data pointer of this array object.  <a href="classyakl_1_1ArrayBase.html#a143863763b2e52aa5f9e9817ce9d5320">More...</a><br /></td></tr>
 <tr class="separator:a143863763b2e52aa5f9e9817ce9d5320"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,20 +125,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34a647ff5f5afc6abf9210e72171590c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a34a647ff5f5afc6abf9210e72171590c">deallocate</a> ()</td></tr>
 <tr class="memdesc:a34a647ff5f5afc6abf9210e72171590c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If owned, decrement the reference counter; if ref counter reaches zero, deallocate memory; If non-owned, does nothing.  <a href="classyakl_1_1ArrayBase.html#a34a647ff5f5afc6abf9210e72171590c">More...</a><br /></td></tr>
 <tr class="separator:a34a647ff5f5afc6abf9210e72171590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39bad525cf7d5c5e68fb2cbd76765a7"><td class="memTemplParams" colspan="2">template&lt;int theirRank, int theirStyle&gt; </td></tr>
-<tr class="memitem:aa39bad525cf7d5c5e68fb2cbd76765a7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#aa39bad525cf7d5c5e68fb2cbd76765a7">deep_copy_to</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; typename std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71">type</a>, theirRank, <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce">memDevice</a>, theirStyle &gt; const &amp;lhs) const</td></tr>
-<tr class="memdesc:aa39bad525cf7d5c5e68fb2cbd76765a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] [DEEP_COPY] Copy this array's contents to a <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce" title="Specifies a device memory address space for a yakl::Array object.">yakl::memDevice</a> array.  <a href="classyakl_1_1ArrayBase.html#aa39bad525cf7d5c5e68fb2cbd76765a7">More...</a><br /></td></tr>
-<tr class="separator:aa39bad525cf7d5c5e68fb2cbd76765a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3987baec655624d638396567c9967d2"><td class="memTemplParams" colspan="2">template&lt;int theirRank, int theirStyle&gt; </td></tr>
-<tr class="memitem:ac3987baec655624d638396567c9967d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#ac3987baec655624d638396567c9967d2">deep_copy_to</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; typename std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71">type</a>, theirRank, <a class="el" href="namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98">memHost</a>, theirStyle &gt; const &amp;lhs) const</td></tr>
-<tr class="memdesc:ac3987baec655624d638396567c9967d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] [DEEP_COPY] Copy this array's contents to a <a class="el" href="namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98" title="Specifies a device memory address space for a yakl::Array object.">yakl::memHost</a> array.  <a href="classyakl_1_1ArrayBase.html#ac3987baec655624d638396567c9967d2">More...</a><br /></td></tr>
-<tr class="separator:ac3987baec655624d638396567c9967d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3168cca3017d7c20a25d2efec4492c05"><td class="memTemplParams" colspan="2">template&lt;int theirRank, int theirStyle&gt; </td></tr>
+<tr class="memitem:a3168cca3017d7c20a25d2efec4492c05"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a3168cca3017d7c20a25d2efec4492c05">deep_copy_to</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; typename std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71">type</a>, theirRank, <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce">memDevice</a>, theirStyle &gt; const &amp;lhs, <a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>()) const</td></tr>
+<tr class="memdesc:a3168cca3017d7c20a25d2efec4492c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] [DEEP_COPY] Copy this array's contents to a <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce" title="Specifies a device memory address space for a yakl::Array object.">yakl::memDevice</a> array.  <a href="classyakl_1_1ArrayBase.html#a3168cca3017d7c20a25d2efec4492c05">More...</a><br /></td></tr>
+<tr class="separator:a3168cca3017d7c20a25d2efec4492c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fbcec907225403b20366ee57d7a63a"><td class="memTemplParams" colspan="2">template&lt;int theirRank, int theirStyle&gt; </td></tr>
+<tr class="memitem:a55fbcec907225403b20366ee57d7a63a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a55fbcec907225403b20366ee57d7a63a">deep_copy_to</a> (<a class="el" href="classyakl_1_1Array.html">Array</a>&lt; typename std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71">type</a>, theirRank, <a class="el" href="namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98">memHost</a>, theirStyle &gt; const &amp;lhs, <a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>()) const</td></tr>
+<tr class="memdesc:a55fbcec907225403b20366ee57d7a63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] [DEEP_COPY] Copy this array's contents to a <a class="el" href="namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98" title="Specifies a device memory address space for a yakl::Array object.">yakl::memHost</a> array.  <a href="classyakl_1_1ArrayBase.html#a55fbcec907225403b20366ee57d7a63a">More...</a><br /></td></tr>
+<tr class="separator:a55fbcec907225403b20366ee57d7a63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30952cae3c858f3cc186f9b2b75436e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a30952cae3c858f3cc186f9b2b75436e5">get_data</a> () const</td></tr>
 <tr class="memdesc:a30952cae3c858f3cc186f9b2b75436e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw data pointer of this array object.  <a href="classyakl_1_1ArrayBase.html#a30952cae3c858f3cc186f9b2b75436e5">More...</a><br /></td></tr>
 <tr class="separator:a30952cae3c858f3cc186f9b2b75436e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c9c53c39898d244feb979ab56bbb91f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a4c9c53c39898d244feb979ab56bbb91f">get_elem_count</a> () const</td></tr>
 <tr class="memdesc:a4c9c53c39898d244feb979ab56bbb91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of elements in this array object.  <a href="classyakl_1_1ArrayBase.html#a4c9c53c39898d244feb979ab56bbb91f">More...</a><br /></td></tr>
 <tr class="separator:a4c9c53c39898d244feb979ab56bbb91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8764f2655febc99a9fb051e22a71d990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a8764f2655febc99a9fb051e22a71d990">get_memory_space</a> () const</td></tr>
+<tr class="memdesc:a8764f2655febc99a9fb051e22a71d990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this array object's string label if the <code>YAKL_DEBUG</code> CPP macro is defined. Otherwise, returns an empty string.  <a href="classyakl_1_1ArrayBase.html#a8764f2655febc99a9fb051e22a71d990">More...</a><br /></td></tr>
+<tr class="separator:a8764f2655febc99a9fb051e22a71d990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5069cb724512bc32277dee3454dae0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#ae5069cb724512bc32277dee3454dae0c">get_rank</a> () const</td></tr>
 <tr class="memdesc:ae5069cb724512bc32277dee3454dae0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of dimensions in this array object.  <a href="classyakl_1_1ArrayBase.html#ae5069cb724512bc32277dee3454dae0c">More...</a><br /></td></tr>
 <tr class="separator:ae5069cb724512bc32277dee3454dae0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,8 +152,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2c013a8fd5591b535efc58ddd9f9e34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this array object has is in an initialized / allocated state.  <a href="classyakl_1_1ArrayBase.html#a2c013a8fd5591b535efc58ddd9f9e34a">More...</a><br /></td></tr>
 <tr class="separator:a2c013a8fd5591b535efc58ddd9f9e34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e355c36b4752b538379580a463b3155"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a8e355c36b4752b538379580a463b3155">label</a> () const</td></tr>
-<tr class="memdesc:a8e355c36b4752b538379580a463b3155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this array object's string label if the <code>YAKL_DEBUG</code> CPP macro is defined. Otherwise, returns an empty string.  <a href="classyakl_1_1ArrayBase.html#a8e355c36b4752b538379580a463b3155">More...</a><br /></td></tr>
 <tr class="separator:a8e355c36b4752b538379580a463b3155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f54c3467ec5c047273b7d722c06a58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a30f54c3467ec5c047273b7d722c06a58">size</a> () const</td></tr>
+<tr class="memdesc:a30f54c3467ec5c047273b7d722c06a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of elements in this array object.  <a href="classyakl_1_1ArrayBase.html#a30f54c3467ec5c047273b7d722c06a58">More...</a><br /></td></tr>
+<tr class="separator:a30f54c3467ec5c047273b7d722c06a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7f82d7a960950a9f3586c763c2c0f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a8d7f82d7a960950a9f3586c763c2c0f1">span_is_contiguous</a> () const</td></tr>
 <tr class="memdesc:a8d7f82d7a960950a9f3586c763c2c0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects are always contiguous in memory with no padding.  <a href="classyakl_1_1ArrayBase.html#a8d7f82d7a960950a9f3586c763c2c0f1">More...</a><br /></td></tr>
 <tr class="separator:a8d7f82d7a960950a9f3586c763c2c0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +165,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9c1fe00357c035543b73300839f9d75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#ad9c1fe00357c035543b73300839f9d75">use_count</a> () const</td></tr>
 <tr class="memdesc:ad9c1fe00357c035543b73300839f9d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many array objects share this pointer if owned; or <code>0</code> if unowned.  <a href="classyakl_1_1ArrayBase.html#ad9c1fe00357c035543b73300839f9d75">More...</a><br /></td></tr>
 <tr class="separator:ad9c1fe00357c035543b73300839f9d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0de8c0886a240a193dcde1160e90a3a2"><td class="memItemLeft" align="right" valign="top">StreamListDummy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1ArrayBase.html#a0de8c0886a240a193dcde1160e90a3a2">stream_dependencies</a></td></tr>
+<tr class="separator:a0de8c0886a240a193dcde1160e90a3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -238,6 +265,68 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a04b6387ea5d7a49812a37a1398df9a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04b6387ea5d7a49812a37a1398df9a33">&#9670;&nbsp;</a></span>add_stream_dependencies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::add_stream_dependencies </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structyakl_1_1Stream.html">Stream</a> &gt;&#160;</td>
+          <td class="paramname"><em>streams</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declare a dependencies on the multiple streams at one time. </p>
+<p>Upon deallocation, an event is placed in each stream this array depends on. The data pointer is not released from the pool until all dependent events complete. This avoids potential pointer aliasing of Arrays potentially being used simultaneous in different parallel streams. The pool allocator is non-blocking, so erroneous aliasing can occur if the user uses multiple streams, deallocates and allocates during runtime, and does not use this function. </p>
+
+</div>
+</div>
+<a id="a063c0eb1c0523ebd00abad99f5a9bf85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063c0eb1c0523ebd00abad99f5a9bf85">&#9670;&nbsp;</a></span>add_stream_dependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::add_stream_dependency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declare a dependency on the passed stream. </p>
+<p>Upon deallocation, an event is placed in each stream this array depends on. The data pointer is not released from the pool until all dependent events complete. This avoids potential pointer aliasing of Arrays potentially being used simultaneous in different parallel streams. The pool allocator is non-blocking, so erroneous aliasing can occur if the user uses multiple streams, deallocates and allocates during runtime, and does not use this function. </p>
+
+</div>
+</div>
 <a id="a143863763b2e52aa5f9e9817ce9d5320"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a143863763b2e52aa5f9e9817ce9d5320">&#9670;&nbsp;</a></span>data()</h2>
 
@@ -331,8 +420,8 @@ template&lt;class TLOC  = T, typename std::enable_if&lt; ! std::is_const&lt; TLO
 
 </div>
 </div>
-<a id="aa39bad525cf7d5c5e68fb2cbd76765a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39bad525cf7d5c5e68fb2cbd76765a7">&#9670;&nbsp;</a></span>deep_copy_to() <span class="overload">[1/2]</span></h2>
+<a id="a3168cca3017d7c20a25d2efec4492c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3168cca3017d7c20a25d2efec4492c05">&#9670;&nbsp;</a></span>deep_copy_to() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,8 +437,18 @@ template&lt;int theirRank, int theirStyle&gt; </div>
           <td class="memname">void <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::deep_copy_to </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classyakl_1_1Array.html">Array</a>&lt; typename std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71">type</a>, theirRank, <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce">memDevice</a>, theirStyle &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -364,8 +463,8 @@ template&lt;int theirRank, int theirStyle&gt; </div>
 
 </div>
 </div>
-<a id="ac3987baec655624d638396567c9967d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3987baec655624d638396567c9967d2">&#9670;&nbsp;</a></span>deep_copy_to() <span class="overload">[2/2]</span></h2>
+<a id="a55fbcec907225403b20366ee57d7a63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fbcec907225403b20366ee57d7a63a">&#9670;&nbsp;</a></span>deep_copy_to() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,8 +480,18 @@ template&lt;int theirRank, int theirStyle&gt; </div>
           <td class="memname">void <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::deep_copy_to </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classyakl_1_1Array.html">Array</a>&lt; typename std::remove_cv&lt; T &gt;::<a class="el" href="classyakl_1_1ArrayBase.html#a99c8aec2f010ccfe2a8db0c760b7bb71">type</a>, theirRank, <a class="el" href="namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98">memHost</a>, theirStyle &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -452,6 +561,35 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the total number of elements in this array object. </p>
+
+</div>
+</div>
+<a id="a8764f2655febc99a9fb051e22a71d990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8764f2655febc99a9fb051e22a71d990">&#9670;&nbsp;</a></span>get_memory_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> int <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::get_memory_space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns this array object's string label if the <code>YAKL_DEBUG</code> CPP macro is defined. Otherwise, returns an empty string. </p>
 
 </div>
 </div>
@@ -567,7 +705,34 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns this array object's string label if the <code>YAKL_DEBUG</code> CPP macro is defined. Otherwise, returns an empty string. </p>
+</div>
+</div>
+<a id="a30f54c3467ec5c047273b7d722c06a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f54c3467ec5c047273b7d722c06a58">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the total number of elements in this array object. </p>
 
 </div>
 </div>
@@ -697,6 +862,23 @@ template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
 </div><div class="memdoc">
 
 <p>Allows the user to <code>std::cout &lt;&lt; this_array_object;</code>. This works even for <a class="el" href="namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce" title="Specifies a device memory address space for a yakl::Array object.">yakl::memDevice</a> array objects. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0de8c0886a240a193dcde1160e90a3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de8c0886a240a193dcde1160e90a3a2">&#9670;&nbsp;</a></span>stream_dependencies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, int myMem, int myStyle&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">StreamListDummy <a class="el" href="classyakl_1_1ArrayBase.html">yakl::ArrayBase</a>&lt; T, rank, myMem, myStyle &gt;::stream_dependencies</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

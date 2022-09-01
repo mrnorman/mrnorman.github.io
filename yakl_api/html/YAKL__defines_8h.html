@@ -76,14 +76,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="YAKL__defines_8h__dep__incl.png" border="0" usemap="#YAKL_2src_2YAKL__defines_8hdep" alt=""/></div>
 <map name="YAKL_2src_2YAKL__defines_8hdep" id="YAKL_2src_2YAKL__defines_8hdep">
-<area shape="rect" title=" " alt="" coords="428,5,611,32"/>
-<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="456,80,583,107"/>
+<area shape="rect" title=" " alt="" coords="344,5,527,32"/>
+<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="372,80,499,107"/>
 <area shape="rect" href="YAKL_8cpp.html" title=" " alt="" coords="5,162,148,189"/>
-<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="172,155,325,196"/>
-<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="349,155,503,196"/>
-<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="527,155,698,196"/>
-<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="723,155,876,196"/>
-<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="900,155,1053,196"/>
+<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="172,155,325,196"/>
+<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="350,155,521,196"/>
+<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="545,155,699,196"/>
+<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="723,155,876,196"/>
+<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="900,155,1053,196"/>
 </map>
 </div>
 </div>
@@ -93,6 +93,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a6866ac6d2015376d26d1c188e0078530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="YAKL__defines_8h.html#a6866ac6d2015376d26d1c188e0078530">YAKL_AUTO_FENCE</a></td></tr>
 <tr class="separator:a6866ac6d2015376d26d1c188e0078530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c606b7069e4d25b82808b638375c53d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="YAKL__defines_8h.html#a3c606b7069e4d25b82808b638375c53d">YAKL_AUTO_LABEL</a>()&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="memdesc:a3c606b7069e4d25b82808b638375c53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This CPP Macro function will automatically create a label for you in the for of "filename: lineno".  <a href="YAKL__defines_8h.html#a3c606b7069e4d25b82808b638375c53d">More...</a><br /></td></tr>
+<tr class="separator:a3c606b7069e4d25b82808b638375c53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb903f1a168372d2b4c7bf92765a515b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="YAKL__defines_8h.html#abb903f1a168372d2b4c7bf92765a515b">YAKL_CLASS_LAMBDA</a>&#160;&#160;&#160;[=, *this]</td></tr>
 <tr class="memdesc:abb903f1a168372d2b4c7bf92765a515b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to create C++ lambda expression that also pass <code>*this</code> by value in classes.  <a href="YAKL__defines_8h.html#abb903f1a168372d2b4c7bf92765a515b">More...</a><br /></td></tr>
 <tr class="separator:abb903f1a168372d2b4c7bf92765a515b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +135,26 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c606b7069e4d25b82808b638375c53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c606b7069e4d25b82808b638375c53d">&#9670;&nbsp;</a></span>YAKL_AUTO_LABEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define YAKL_AUTO_LABEL</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This CPP Macro function will automatically create a label for you in the for of "filename: lineno". </p>
+<p>Note that unless you have YAKL_AUTO_PROFILE or YAKL_VERBOSE defined, this returns an empty string for efficiency, since a label is not needed </p>
 
 </div>
 </div>

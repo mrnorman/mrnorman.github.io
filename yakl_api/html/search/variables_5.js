@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['netcdf_5fmode_5fnew_689',['NETCDF_MODE_NEW',['../namespaceyakl.html#ab5a358faf3cb27d0a14a15b5c6b83022',1,'yakl']]],
-  ['netcdf_5fmode_5fread_690',['NETCDF_MODE_READ',['../namespaceyakl.html#aa12f0312227bfbba1756585d41a5d87f',1,'yakl']]],
-  ['netcdf_5fmode_5freplace_691',['NETCDF_MODE_REPLACE',['../namespaceyakl.html#a4ad851f7ac4bf63a9e912514b4fab4cd',1,'yakl']]],
-  ['netcdf_5fmode_5fwrite_692',['NETCDF_MODE_WRITE',['../namespaceyakl.html#a695e075dc48e0c511320c467d347fd5e',1,'yakl']]]
+  ['memdefault_784',['memDefault',['../namespaceyakl.html#ae455b4ba62ca80c5e0ada5f0d230f3a9',1,'yakl']]],
+  ['memdevice_785',['memDevice',['../namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce',1,'yakl']]],
+  ['memhost_786',['memHost',['../namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98',1,'yakl']]],
+  ['mtx2_787',['mtx2',['../classyakl_1_1Gator.html#ae818776d896e0b08da983f2fa15b35cb',1,'yakl::Gator']]]
 ];

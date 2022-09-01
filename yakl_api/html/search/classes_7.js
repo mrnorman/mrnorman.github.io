@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['launchconfig_372',['LaunchConfig',['../structyakl_1_1LaunchConfig.html',1,'yakl']]],
-  ['lbnd_373',['LBnd',['../classyakl_1_1c_1_1LBnd.html',1,'yakl::c::LBnd'],['../classyakl_1_1fortran_1_1LBnd.html',1,'yakl::fortran::LBnd']]]
+  ['initconfig_422',['InitConfig',['../classyakl_1_1InitConfig.html',1,'yakl']]],
+  ['innerhandlerempty_423',['InnerHandlerEmpty',['../structyakl_1_1InnerHandlerEmpty.html',1,'yakl']]]
 ];

@@ -66,8 +66,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">YAKL_parallel_for_fortran.h File Reference</div>  </div>
 </div><!--header-->
@@ -89,15 +88,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="YAKL__parallel__for__fortran_8h__dep__incl.png" border="0" usemap="#YAKL_2src_2YAKL__parallel__for__fortran_8hdep" alt=""/></div>
 <map name="YAKL_2src_2YAKL__parallel__for__fortran_8hdep" id="YAKL_2src_2YAKL__parallel__for__fortran_8hdep">
-<area shape="rect" title=" " alt="" coords="434,5,605,47"/>
-<area shape="rect" href="YAKL__parallel__for_8h.html" title=" " alt="" coords="434,95,605,136"/>
-<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="456,184,583,211"/>
+<area shape="rect" title=" " alt="" coords="350,5,521,47"/>
+<area shape="rect" href="YAKL__parallel__for_8h.html" title=" " alt="" coords="350,95,521,136"/>
+<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="372,184,499,211"/>
 <area shape="rect" href="YAKL_8cpp.html" title=" " alt="" coords="5,266,148,293"/>
-<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="172,259,325,300"/>
-<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="349,259,503,300"/>
-<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="527,259,698,300"/>
-<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="723,259,876,300"/>
-<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="900,259,1053,300"/>
+<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="172,259,325,300"/>
+<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="350,259,521,300"/>
+<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="545,259,699,300"/>
+<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="723,259,876,300"/>
+<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="900,259,1053,300"/>
 </map>
 </div>
 </div>
@@ -110,33 +109,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceyakl_1_1fortran"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html">yakl::fortran</a></td></tr>
 <tr class="memdesc:namespaceyakl_1_1fortran"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains <code><a class="el" href="classyakl_1_1fortran_1_1Bounds.html" title="Describes a set of Fortran-style tightly-nested loops.">Bounds</a></code> class, and <code><a class="el" href="namespaceyakl_1_1fortran.html#a2a63e3b0057ff99c787ac655a287a53a" title="[ASYNCHRONOUS] Launch the passed functor in parallel.">parallel_for()</a></code> routines using Fortran-style indexing and ordering. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a7d323e5330fa4c223d0125577bff6ebe"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:a7d323e5330fa4c223d0125577bff6ebe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#a7d323e5330fa4c223d0125577bff6ebe">yakl::fortran::parallel_for</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="memdesc:a7d323e5330fa4c223d0125577bff6ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] Launch the passed functor in parallel.  <a href="namespaceyakl_1_1fortran.html#a7d323e5330fa4c223d0125577bff6ebe">More...</a><br /></td></tr>
-<tr class="separator:a7d323e5330fa4c223d0125577bff6ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a63e3b0057ff99c787ac655a287a53a"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:a2a63e3b0057ff99c787ac655a287a53a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#a2a63e3b0057ff99c787ac655a287a53a">yakl::fortran::parallel_for</a> (char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="memdesc:a2a63e3b0057ff99c787ac655a287a53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] Launch the passed functor in parallel.  <a href="namespaceyakl_1_1fortran.html#a2a63e3b0057ff99c787ac655a287a53a">More...</a><br /></td></tr>
-<tr class="separator:a2a63e3b0057ff99c787ac655a287a53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2060a52c4c876d1e8f2cc23bd6d6e0"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple&gt; </td></tr>
-<tr class="memitem:a3f2060a52c4c876d1e8f2cc23bd6d6e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#a3f2060a52c4c876d1e8f2cc23bd6d6e0">yakl::fortran::parallel_inner</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, InnerHandler handler)</td></tr>
-<tr class="memdesc:a3f2060a52c4c876d1e8f2cc23bd6d6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch the passed functor in parallel in the finenst-level parallelism on the device.  <a href="namespaceyakl_1_1fortran.html#a3f2060a52c4c876d1e8f2cc23bd6d6e0">More...</a><br /></td></tr>
-<tr class="separator:a3f2060a52c4c876d1e8f2cc23bd6d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeedbe7d439570d4d1c98c3c612da22e4"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:aeedbe7d439570d4d1c98c3c612da22e4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#aeedbe7d439570d4d1c98c3c612da22e4">yakl::fortran::parallel_outer</a> (Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="memdesc:aeedbe7d439570d4d1c98c3c612da22e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] Launch the passed functor in parallel in the coarsest-level parallelism on the device  <a href="namespaceyakl_1_1fortran.html#aeedbe7d439570d4d1c98c3c612da22e4">More...</a><br /></td></tr>
-<tr class="separator:aeedbe7d439570d4d1c98c3c612da22e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a955a43bc48dc85f48b51a0dc1e55f8"><td class="memTemplParams" colspan="2">template&lt;class F , int N, bool simple, int VecLen = YAKL_DEFAULT_VECTOR_LEN, bool B4B = false&gt; </td></tr>
-<tr class="memitem:a1a955a43bc48dc85f48b51a0dc1e55f8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#a1a955a43bc48dc85f48b51a0dc1e55f8">yakl::fortran::parallel_outer</a> (char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</td></tr>
-<tr class="memdesc:a1a955a43bc48dc85f48b51a0dc1e55f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[ASYNCHRONOUS] Launch the passed functor in parallel in the coarsest-level parallelism on the device  <a href="namespaceyakl_1_1fortran.html#a1a955a43bc48dc85f48b51a0dc1e55f8">More...</a><br /></td></tr>
-<tr class="separator:a1a955a43bc48dc85f48b51a0dc1e55f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b7664eb5df628c72869d03bdb521446"><td class="memTemplParams" colspan="2">template&lt;class F &gt; </td></tr>
-<tr class="memitem:a0b7664eb5df628c72869d03bdb521446"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl_1_1fortran.html#a0b7664eb5df628c72869d03bdb521446">yakl::fortran::single_inner</a> (F const &amp;f, InnerHandler handler)</td></tr>
-<tr class="memdesc:a0b7664eb5df628c72869d03bdb521446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch the passed functor to only use one of the inner threads (still parallel over outer threads).  <a href="namespaceyakl_1_1fortran.html#a0b7664eb5df628c72869d03bdb521446">More...</a><br /></td></tr>
-<tr class="separator:a0b7664eb5df628c72869d03bdb521446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

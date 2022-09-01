@@ -119,6 +119,7 @@ Public Member Functions</h2></td></tr>
 <p>Based on the algorithm here: <a href="https://burtleburtle.net/bob/rand/smallprng.html">https://burtleburtle.net/bob/rand/smallprng.html</a> The author wrote the following statement on the website (Accessed Aug 1 2022): </p><blockquote class="doxtable">
 <p>I wrote this PRNG. I place it in the public domain. Same goes for at least the implementation of all those tests linked to above. </p>
 </blockquote>
+<p><b>IMPORTANT</b>: When creating a <a class="el" href="classyakl_1_1Random.html" title="Non-cryptographic pseudo-random number generator with a very small internal state.">Random</a> object inside a <code>parallel_for</code> kernel, please ensure each thread's object has a <b>different and unique</b> initial seed. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af11f0f2e90a9317538a390a1fb847f62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af11f0f2e90a9317538a390a1fb847f62">&#9670;&nbsp;</a></span>Random() <span class="overload">[1/4]</span></h2>

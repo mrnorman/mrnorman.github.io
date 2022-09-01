@@ -77,14 +77,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="YAKL__allocators_8h__dep__incl.png" border="0" usemap="#YAKL_2src_2YAKL__allocators_8hdep" alt=""/></div>
 <map name="YAKL_2src_2YAKL__allocators_8hdep" id="YAKL_2src_2YAKL__allocators_8hdep">
-<area shape="rect" title=" " alt="" coords="420,5,619,32"/>
-<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="456,80,583,107"/>
+<area shape="rect" title=" " alt="" coords="336,5,535,32"/>
+<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="372,80,499,107"/>
 <area shape="rect" href="YAKL_8cpp.html" title=" " alt="" coords="5,162,148,189"/>
-<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="172,155,325,196"/>
-<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="349,155,503,196"/>
-<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="527,155,698,196"/>
-<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="723,155,876,196"/>
-<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="900,155,1053,196"/>
+<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="172,155,325,196"/>
+<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="350,155,521,196"/>
+<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="545,155,699,196"/>
+<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="723,155,876,196"/>
+<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="900,155,1053,196"/>
 </map>
 </div>
 </div>
@@ -100,15 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a744db414fb0ff8dbc17bcd08e05474da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a744db414fb0ff8dbc17bcd08e05474da">yakl::alloc_device</a> (size_t bytes, char const *label)</td></tr>
 <tr class="memdesc:a744db414fb0ff8dbc17bcd08e05474da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate on the device using YAKL's device allocator.  <a href="namespaceyakl.html#a744db414fb0ff8dbc17bcd08e05474da">More...</a><br /></td></tr>
 <tr class="separator:a744db414fb0ff8dbc17bcd08e05474da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7600b075989fdf55ea167ed069ee12ca"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7600b075989fdf55ea167ed069ee12ca">yakl::alloc_host</a> (size_t bytes, char const *label)</td></tr>
-<tr class="memdesc:a7600b075989fdf55ea167ed069ee12ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate on the host using YAKL's host allocator.  <a href="namespaceyakl.html#a7600b075989fdf55ea167ed069ee12ca">More...</a><br /></td></tr>
-<tr class="separator:a7600b075989fdf55ea167ed069ee12ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8afa807b3b1f4e331ece7954c94134fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a8afa807b3b1f4e331ece7954c94134fc">yakl::free_device</a> (void *ptr, char const *label)</td></tr>
 <tr class="memdesc:a8afa807b3b1f4e331ece7954c94134fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free on the device using YAKL's device deallocator.  <a href="namespaceyakl.html#a8afa807b3b1f4e331ece7954c94134fc">More...</a><br /></td></tr>
 <tr class="separator:a8afa807b3b1f4e331ece7954c94134fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88daf745314e26415a09208c772c68a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a88daf745314e26415a09208c772c68a8">yakl::free_host</a> (void *ptr, char const *label)</td></tr>
-<tr class="memdesc:a88daf745314e26415a09208c772c68a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free on the host using YAKL's host deallocator.  <a href="namespaceyakl.html#a88daf745314e26415a09208c772c68a8">More...</a><br /></td></tr>
-<tr class="separator:a88daf745314e26415a09208c772c68a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca055f3e17da1b57c8966dfb9537b1ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aca055f3e17da1b57c8966dfb9537b1ab">yakl::set_device_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
 <tr class="memdesc:aca055f3e17da1b57c8966dfb9537b1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's device allocator with the passed function (No Label).  <a href="namespaceyakl.html#aca055f3e17da1b57c8966dfb9537b1ab">More...</a><br /></td></tr>
 <tr class="separator:aca055f3e17da1b57c8966dfb9537b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,18 +115,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0ebe9f97f4b39d1e4e9a1284435984d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a0ebe9f97f4b39d1e4e9a1284435984d6">yakl::set_device_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
 <tr class="memdesc:a0ebe9f97f4b39d1e4e9a1284435984d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's device deallocator with the passed function (WITH Label).  <a href="namespaceyakl.html#a0ebe9f97f4b39d1e4e9a1284435984d6">More...</a><br /></td></tr>
 <tr class="separator:a0ebe9f97f4b39d1e4e9a1284435984d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa47d0678c8772a89e8f37bba484814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#acfa47d0678c8772a89e8f37bba484814">yakl::set_host_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
-<tr class="memdesc:acfa47d0678c8772a89e8f37bba484814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host allocator with the passed function (No Label).  <a href="namespaceyakl.html#acfa47d0678c8772a89e8f37bba484814">More...</a><br /></td></tr>
-<tr class="separator:acfa47d0678c8772a89e8f37bba484814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457a1f8b0af529710be9fd890682dfcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a457a1f8b0af529710be9fd890682dfcd">yakl::set_host_allocator</a> (std::function&lt; void *(size_t, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a457a1f8b0af529710be9fd890682dfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host allocator with the passed function (WITH Label).  <a href="namespaceyakl.html#a457a1f8b0af529710be9fd890682dfcd">More...</a><br /></td></tr>
-<tr class="separator:a457a1f8b0af529710be9fd890682dfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5b2f2f9068a7f1d81422b0920e7995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a4d5b2f2f9068a7f1d81422b0920e7995">yakl::set_host_deallocator</a> (std::function&lt; void(void *)&gt; func)</td></tr>
-<tr class="memdesc:a4d5b2f2f9068a7f1d81422b0920e7995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host deallocator with the passed function (No Label).  <a href="namespaceyakl.html#a4d5b2f2f9068a7f1d81422b0920e7995">More...</a><br /></td></tr>
-<tr class="separator:a4d5b2f2f9068a7f1d81422b0920e7995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b0e98e23e4b273339d90de69b1659ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a3b0e98e23e4b273339d90de69b1659ca">yakl::set_host_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a3b0e98e23e4b273339d90de69b1659ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host deallocator with the passed function (WITH Label).  <a href="namespaceyakl.html#a3b0e98e23e4b273339d90de69b1659ca">More...</a><br /></td></tr>
-<tr class="separator:a3b0e98e23e4b273339d90de69b1659ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf58795a80dd0c09827a1a0a4ab6c2f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0">yakl::set_yakl_allocators_to_default</a> ()</td></tr>
 <tr class="memdesc:abf58795a80dd0c09827a1a0a4ab6c2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all YAKL allocators to their defaults.  <a href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0">More...</a><br /></td></tr>
 <tr class="separator:abf58795a80dd0c09827a1a0a4ab6c2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>

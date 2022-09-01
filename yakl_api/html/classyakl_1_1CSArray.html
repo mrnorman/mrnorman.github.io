@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbb38f7ac6e7d8b81e512d64beedb508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#adbb38f7ac6e7d8b81e512d64beedb508">CSArray</a> (<a class="el" href="classyakl_1_1CSArray.html">CSArray</a> const &amp;in)</td></tr>
 <tr class="memdesc:adbb38f7ac6e7d8b81e512d64beedb508"><td class="mdescLeft">&#160;</td><td class="mdescRight">[DEEP_COPY] Copy and move constructors deep copy all data.  <a href="classyakl_1_1CSArray.html#adbb38f7ac6e7d8b81e512d64beedb508">More...</a><br /></td></tr>
 <tr class="separator:adbb38f7ac6e7d8b81e512d64beedb508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5748a8fc84011f8c718ee418e350e224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#a5748a8fc84011f8c718ee418e350e224">CSArray</a> (T init_fill)</td></tr>
+<tr class="separator:a5748a8fc84011f8c718ee418e350e224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376fc54b2d1fabcc3261a13717d15300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#a376fc54b2d1fabcc3261a13717d15300">~CSArray</a> ()</td></tr>
 <tr class="separator:a376fc54b2d1fabcc3261a13717d15300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf577c5946b57b89f1501a99a7ba451"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#adaf577c5946b57b89f1501a99a7ba451">data</a> () const</td></tr>
@@ -161,6 +163,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4947442bd558c10620f703d9a79e9d4b"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#a4947442bd558c10620f703d9a79e9d4b">initialized</a> ()</td></tr>
 <tr class="memdesc:a4947442bd558c10620f703d9a79e9d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2" title="Most often, codes use the type define yakl::SArray rather than yakl::CSArray.">yakl::SArray</a> objects are by default always initialized / allocated.  <a href="classyakl_1_1CSArray.html#a4947442bd558c10620f703d9a79e9d4b">More...</a><br /></td></tr>
 <tr class="separator:a4947442bd558c10620f703d9a79e9d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a8501ecf074bd905a5dbfab968f671"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#a67a8501ecf074bd905a5dbfab968f671">size</a> ()</td></tr>
+<tr class="memdesc:a67a8501ecf074bd905a5dbfab968f671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1CSArray.html#a67a8501ecf074bd905a5dbfab968f671">More...</a><br /></td></tr>
+<tr class="separator:a67a8501ecf074bd905a5dbfab968f671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b5240504e0b97914a87c0825c69f5e"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1CSArray.html#a59b5240504e0b97914a87c0825c69f5e">span_is_contiguous</a> ()</td></tr>
 <tr class="memdesc:a59b5240504e0b97914a87c0825c69f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. All YAKL arrays are contiguous with no padding.  <a href="classyakl_1_1CSArray.html#a59b5240504e0b97914a87c0825c69f5e">More...</a><br /></td></tr>
 <tr class="separator:a59b5240504e0b97914a87c0825c69f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,7 +269,7 @@ template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, u
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0692ede1e7a64d75f39beb7ae0ebea52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0692ede1e7a64d75f39beb7ae0ebea52">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0692ede1e7a64d75f39beb7ae0ebea52">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,8 +297,36 @@ template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, u
 
 </div>
 </div>
+<a id="a5748a8fc84011f8c718ee418e350e224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5748a8fc84011f8c718ee418e350e224">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, unsigned D3 = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1CSArray.html">yakl::CSArray</a>&lt; T, rank, D0, D1, D2, D3 &gt;::<a class="el" href="classyakl_1_1CSArray.html">CSArray</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>init_fill</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af0804cd18f4d257be1eb8e7684fa7353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0804cd18f4d257be1eb8e7684fa7353">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0804cd18f4d257be1eb8e7684fa7353">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +356,7 @@ template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, u
 </div>
 </div>
 <a id="adbb38f7ac6e7d8b81e512d64beedb508"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbb38f7ac6e7d8b81e512d64beedb508">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb38f7ac6e7d8b81e512d64beedb508">&#9670;&nbsp;</a></span>CSArray() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,6 +938,35 @@ template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC
 </div><div class="memdoc">
 
 <p>Assign a single arithmetic value to the entire array. </p>
+
+</div>
+</div>
+<a id="a67a8501ecf074bd905a5dbfab968f671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a8501ecf074bd905a5dbfab968f671">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, unsigned D3 = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr unsigned <a class="el" href="classyakl_1_1CSArray.html">yakl::CSArray</a>&lt; T, rank, D0, D1, D2, D3 &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the total number of array elements. </p>
 
 </div>
 </div>

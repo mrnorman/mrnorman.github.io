@@ -66,7 +66,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classyakl_1_1Gator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yakl::Gator Class Reference</div>  </div>
@@ -78,10 +80,15 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="YAKL__Gator_8h_source.html">YAKL_Gator.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Gator_1_1WaitEntry.html">WaitEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a74a54c9e952d68a3feb9f3ac87f24cb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a74a54c9e952d68a3feb9f3ac87f24cb8">Gator</a> ()</td></tr>
-<tr class="memdesc:a74a54c9e952d68a3feb9f3ac87f24cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Please use the <a class="el" href="classyakl_1_1Gator.html#a795d5e1f2f8b10ea2e4afbe1b285629e" title="Initialize the pool.">init()</a> function to specify parameters, not the constructor.  <a href="classyakl_1_1Gator.html#a74a54c9e952d68a3feb9f3ac87f24cb8">More...</a><br /></td></tr>
+<tr class="memdesc:a74a54c9e952d68a3feb9f3ac87f24cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Please use the <a class="el" href="classyakl_1_1Gator.html#a1a49cefe55594fd3667ece915d9e0b9a" title="Initialize the pool.">init()</a> function to specify parameters, not the constructor.  <a href="classyakl_1_1Gator.html#a74a54c9e952d68a3feb9f3ac87f24cb8">More...</a><br /></td></tr>
 <tr class="separator:a74a54c9e952d68a3feb9f3ac87f24cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383e25888880698d369a782f144c3c86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a383e25888880698d369a782f144c3c86">Gator</a> (const <a class="el" href="classyakl_1_1Gator.html">Gator</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a383e25888880698d369a782f144c3c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classyakl_1_1Gator.html" title="YAKL Pool allocator class.">Gator</a> object may be moved but not copied.  <a href="classyakl_1_1Gator.html#a383e25888880698d369a782f144c3c86">More...</a><br /></td></tr>
@@ -101,24 +108,54 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a129917d97451251350dac68ea495ebed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a129917d97451251350dac68ea495ebed">free</a> (void *ptr, char const *label=&quot;&quot;)</td></tr>
 <tr class="memdesc:a129917d97451251350dac68ea495ebed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the passed pointer, and return the pointer to allocated space.  <a href="classyakl_1_1Gator.html#a129917d97451251350dac68ea495ebed">More...</a><br /></td></tr>
 <tr class="separator:a129917d97451251350dac68ea495ebed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795d5e1f2f8b10ea2e4afbe1b285629e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a795d5e1f2f8b10ea2e4afbe1b285629e">init</a> (std::function&lt; void *(size_t)&gt; mymalloc=[](size_t bytes) -&gt; void *{ return ::malloc(bytes);}, std::function&lt; void(void *)&gt; myfree=[](void *ptr) { ::<a class="el" href="classyakl_1_1Gator.html#a129917d97451251350dac68ea495ebed">free</a>(ptr);}, std::function&lt; void(void *, size_t)&gt; myzero=[](void *ptr, size_t bytes) {}, size_t initialSize=1024 *1024 *1024, size_t growSize=1024 *1024 *1024, size_t blockSize=sizeof(size_t), std::string pool_name=&quot;Gator&quot;, std::string error_message_out_of_memory=&quot;&quot;, std::string error_message_cannot_grow=&quot;&quot;)</td></tr>
-<tr class="memdesc:a795d5e1f2f8b10ea2e4afbe1b285629e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the pool.  <a href="classyakl_1_1Gator.html#a795d5e1f2f8b10ea2e4afbe1b285629e">More...</a><br /></td></tr>
-<tr class="separator:a795d5e1f2f8b10ea2e4afbe1b285629e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea8b2d0f447f6a1242310bf9a573d2fa"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#aea8b2d0f447f6a1242310bf9a573d2fa">numAllocs</a> () const</td></tr>
-<tr class="memdesc:aea8b2d0f447f6a1242310bf9a573d2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of allocations in all of the pools put together.  <a href="classyakl_1_1Gator.html#aea8b2d0f447f6a1242310bf9a573d2fa">More...</a><br /></td></tr>
-<tr class="separator:aea8b2d0f447f6a1242310bf9a573d2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77663fefd3675366b300a98a0ca24224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a77663fefd3675366b300a98a0ca24224">free_completed_waiting_entries</a> ()</td></tr>
+<tr class="memdesc:a77663fefd3675366b300a98a0ca24224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check all deallcation entries that are waiting on stream events to see if those events have completed. If the events are completed, then free the entry from the pool.  <a href="classyakl_1_1Gator.html#a77663fefd3675366b300a98a0ca24224">More...</a><br /></td></tr>
+<tr class="separator:a77663fefd3675366b300a98a0ca24224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8142ab6d1539d98ea17cd090242e74b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#ae8142ab6d1539d98ea17cd090242e74b">free_with_event_dependencies</a> (void *ptr, std::vector&lt; <a class="el" href="structyakl_1_1Event.html">Event</a> &gt; events_in, char const *label=&quot;&quot;)</td></tr>
+<tr class="memdesc:ae8142ab6d1539d98ea17cd090242e74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the passed pointer, and return the pointer to allocated space.  <a href="classyakl_1_1Gator.html#ae8142ab6d1539d98ea17cd090242e74b">More...</a><br /></td></tr>
+<tr class="separator:ae8142ab6d1539d98ea17cd090242e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ffecc5258be2c655aceb0f95ffab3a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a07ffecc5258be2c655aceb0f95ffab3a">get_bytes_currently_allocated</a> () const</td></tr>
+<tr class="memdesc:a07ffecc5258be2c655aceb0f95ffab3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current memory high water mark in bytes for all allocations passing through the pool.  <a href="classyakl_1_1Gator.html#a07ffecc5258be2c655aceb0f95ffab3a">More...</a><br /></td></tr>
+<tr class="separator:a07ffecc5258be2c655aceb0f95ffab3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83af4ef3780f046958edc64453edd0bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a83af4ef3780f046958edc64453edd0bf">get_high_water_mark</a> () const</td></tr>
+<tr class="memdesc:a83af4ef3780f046958edc64453edd0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current memory high water mark in bytes for all allocations passing through the pool.  <a href="classyakl_1_1Gator.html#a83af4ef3780f046958edc64453edd0bf">More...</a><br /></td></tr>
+<tr class="separator:a83af4ef3780f046958edc64453edd0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9677a332d76dfe99c7c91cf632aa37"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#acb9677a332d76dfe99c7c91cf632aa37">get_num_allocs</a> () const</td></tr>
+<tr class="memdesc:acb9677a332d76dfe99c7c91cf632aa37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of allocations in all of the pools put together.  <a href="classyakl_1_1Gator.html#acb9677a332d76dfe99c7c91cf632aa37">More...</a><br /></td></tr>
+<tr class="separator:acb9677a332d76dfe99c7c91cf632aa37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360b86241105b1b178879986d26a16d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a360b86241105b1b178879986d26a16d0">get_num_pools</a> () const</td></tr>
+<tr class="memdesc:a360b86241105b1b178879986d26a16d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current memory high water mark in bytes for all allocations passing through the pool.  <a href="classyakl_1_1Gator.html#a360b86241105b1b178879986d26a16d0">More...</a><br /></td></tr>
+<tr class="separator:a360b86241105b1b178879986d26a16d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae558caa1a22f5bf125bc5e8488f9edd0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#ae558caa1a22f5bf125bc5e8488f9edd0">get_pool_capacity</a> () const</td></tr>
+<tr class="memdesc:ae558caa1a22f5bf125bc5e8488f9edd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total capacity of all of the pools put together.  <a href="classyakl_1_1Gator.html#ae558caa1a22f5bf125bc5e8488f9edd0">More...</a><br /></td></tr>
+<tr class="separator:ae558caa1a22f5bf125bc5e8488f9edd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946f077f54c9bffee34f22dc58783dfe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a946f077f54c9bffee34f22dc58783dfe">get_pool_high_water_space_efficiency</a> () const</td></tr>
+<tr class="memdesc:a946f077f54c9bffee34f22dc58783dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current memory high water mark in bytes for all allocations passing through the pool.  <a href="classyakl_1_1Gator.html#a946f077f54c9bffee34f22dc58783dfe">More...</a><br /></td></tr>
+<tr class="separator:a946f077f54c9bffee34f22dc58783dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4747756b5b867222463bb5c8674516ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a4747756b5b867222463bb5c8674516ea">get_pool_space_efficiency</a> () const</td></tr>
+<tr class="memdesc:a4747756b5b867222463bb5c8674516ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current memory high water mark in bytes for all allocations passing through the pool.  <a href="classyakl_1_1Gator.html#a4747756b5b867222463bb5c8674516ea">More...</a><br /></td></tr>
+<tr class="separator:a4747756b5b867222463bb5c8674516ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a49cefe55594fd3667ece915d9e0b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a1a49cefe55594fd3667ece915d9e0b9a">init</a> (std::function&lt; void *(size_t)&gt; mymalloc=[](size_t bytes) -&gt; void *{ return ::malloc(bytes);}, std::function&lt; void(void *)&gt; myfree=[](void *ptr) { ::<a class="el" href="classyakl_1_1Gator.html#a129917d97451251350dac68ea495ebed">free</a>(ptr);}, std::function&lt; void(void *, size_t)&gt; myzero=[](void *ptr, size_t bytes) {}, size_t initialSize=1024 *1024 *1024, size_t growSize=1024 *1024 *1024, size_t blockSize=16 *sizeof(size_t), std::string pool_name=&quot;Gator&quot;, std::string error_message_out_of_memory=&quot;&quot;, std::string error_message_cannot_grow=&quot;&quot;)</td></tr>
+<tr class="memdesc:a1a49cefe55594fd3667ece915d9e0b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the pool.  <a href="classyakl_1_1Gator.html#a1a49cefe55594fd3667ece915d9e0b9a">More...</a><br /></td></tr>
+<tr class="separator:a1a49cefe55594fd3667ece915d9e0b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6853e3caf452ecab45e7e323c887cb73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1Gator.html">Gator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a6853e3caf452ecab45e7e323c887cb73">operator=</a> (const <a class="el" href="classyakl_1_1Gator.html">Gator</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a6853e3caf452ecab45e7e323c887cb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classyakl_1_1Gator.html" title="YAKL Pool allocator class.">Gator</a> object may be moved but not copied.  <a href="classyakl_1_1Gator.html#a6853e3caf452ecab45e7e323c887cb73">More...</a><br /></td></tr>
 <tr class="separator:a6853e3caf452ecab45e7e323c887cb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47308e77a115582395046dc4eb22497b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyakl_1_1Gator.html">Gator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a47308e77a115582395046dc4eb22497b">operator=</a> (<a class="el" href="classyakl_1_1Gator.html">Gator</a> &amp;&amp;)</td></tr>
 <tr class="memdesc:a47308e77a115582395046dc4eb22497b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classyakl_1_1Gator.html" title="YAKL Pool allocator class.">Gator</a> object may be moved but not copied.  <a href="classyakl_1_1Gator.html#a47308e77a115582395046dc4eb22497b">More...</a><br /></td></tr>
 <tr class="separator:a47308e77a115582395046dc4eb22497b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0618249e8907a63377ad643a669fd464"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#a0618249e8907a63377ad643a669fd464">poolSize</a> () const</td></tr>
-<tr class="memdesc:a0618249e8907a63377ad643a669fd464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total size of all of the pools put together.  <a href="classyakl_1_1Gator.html#a0618249e8907a63377ad643a669fd464">More...</a><br /></td></tr>
-<tr class="separator:a0618249e8907a63377ad643a669fd464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd0901f081efbf328b9a282d20466a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#acfd0901f081efbf328b9a282d20466a8">printAllocsLeft</a> ()</td></tr>
 <tr class="memdesc:acfd0901f081efbf328b9a282d20466a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>[USEFUL FOR DEBUGGING]</b> Print all allocations left in this pool object.  <a href="classyakl_1_1Gator.html#acfd0901f081efbf328b9a282d20466a8">More...</a><br /></td></tr>
 <tr class="separator:acfd0901f081efbf328b9a282d20466a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae818776d896e0b08da983f2fa15b35cb"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#ae818776d896e0b08da983f2fa15b35cb">mtx2</a></td></tr>
+<tr class="separator:ae818776d896e0b08da983f2fa15b35cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e3dd35007340385b8ec817396877a9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structyakl_1_1Gator_1_1WaitEntry.html">WaitEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#aa6e3dd35007340385b8ec817396877a9">waiting_entries</a></td></tr>
+<tr class="separator:aa6e3dd35007340385b8ec817396877a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf75f6f98dc2d343d0d88c65fdc26aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structyakl_1_1Event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Gator.html#adaf75f6f98dc2d343d0d88c65fdc26aa">waiting_events</a></td></tr>
+<tr class="separator:adaf75f6f98dc2d343d0d88c65fdc26aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>YAKL Pool allocator class. </p>
@@ -149,7 +186,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Please use the <a class="el" href="classyakl_1_1Gator.html#a795d5e1f2f8b10ea2e4afbe1b285629e" title="Initialize the pool.">init()</a> function to specify parameters, not the constructor. </p>
+<p>Please use the <a class="el" href="classyakl_1_1Gator.html#a1a49cefe55594fd3667ece915d9e0b9a" title="Initialize the pool.">init()</a> function to specify parameters, not the constructor. </p>
 
 </div>
 </div>
@@ -265,7 +302,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Allocate the requested number of bytes using the requested label, and return the pointer to allocated space. </p>
 <p>The pool allocator will search from beginning to end for a slot large enough to fit this allocation request. This minimizes segmentation at the cost of a linear search time. If the current pool(s) do not contain enough room, a new pool is created.</p>
-<p>Attempting to allocate zero bytes will return <code>nullptr</code>. This is a thread safe call. </p>
+<p>Attempting to allocate zero bytes will return <code>nullptr</code>. This is a thread safe call.</p>
+<p>This always checks to see if entries waiting on stream events are able to be deallocated before allocating. </p>
 
 </div>
 </div>
@@ -335,8 +373,269 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a795d5e1f2f8b10ea2e4afbe1b285629e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a795d5e1f2f8b10ea2e4afbe1b285629e">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a77663fefd3675366b300a98a0ca24224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77663fefd3675366b300a98a0ca24224">&#9670;&nbsp;</a></span>free_completed_waiting_entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void yakl::Gator::free_completed_waiting_entries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check all deallcation entries that are waiting on stream events to see if those events have completed. If the events are completed, then free the entry from the pool. </p>
+
+</div>
+</div>
+<a id="ae8142ab6d1539d98ea17cd090242e74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8142ab6d1539d98ea17cd090242e74b">&#9670;&nbsp;</a></span>free_with_event_dependencies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void yakl::Gator::free_with_event_dependencies </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structyakl_1_1Event.html">Event</a> &gt;&#160;</td>
+          <td class="paramname"><em>events_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>label</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Free the passed pointer, and return the pointer to allocated space. </p>
+<p>Attempting to free a pointer not found in the list of pools will result in a thrown exception </p>
+
+</div>
+</div>
+<a id="a07ffecc5258be2c655aceb0f95ffab3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ffecc5258be2c655aceb0f95ffab3a">&#9670;&nbsp;</a></span>get_bytes_currently_allocated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t yakl::Gator::get_bytes_currently_allocated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current memory high water mark in bytes for all allocations passing through the pool. </p>
+
+</div>
+</div>
+<a id="a83af4ef3780f046958edc64453edd0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83af4ef3780f046958edc64453edd0bf">&#9670;&nbsp;</a></span>get_high_water_mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t yakl::Gator::get_high_water_mark </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current memory high water mark in bytes for all allocations passing through the pool. </p>
+
+</div>
+</div>
+<a id="acb9677a332d76dfe99c7c91cf632aa37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9677a332d76dfe99c7c91cf632aa37">&#9670;&nbsp;</a></span>get_num_allocs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t yakl::Gator::get_num_allocs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the total number of allocations in all of the pools put together. </p>
+
+</div>
+</div>
+<a id="a360b86241105b1b178879986d26a16d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360b86241105b1b178879986d26a16d0">&#9670;&nbsp;</a></span>get_num_pools()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int yakl::Gator::get_num_pools </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current memory high water mark in bytes for all allocations passing through the pool. </p>
+
+</div>
+</div>
+<a id="ae558caa1a22f5bf125bc5e8488f9edd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae558caa1a22f5bf125bc5e8488f9edd0">&#9670;&nbsp;</a></span>get_pool_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t yakl::Gator::get_pool_capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the total capacity of all of the pools put together. </p>
+
+</div>
+</div>
+<a id="a946f077f54c9bffee34f22dc58783dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a946f077f54c9bffee34f22dc58783dfe">&#9670;&nbsp;</a></span>get_pool_high_water_space_efficiency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double yakl::Gator::get_pool_high_water_space_efficiency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current memory high water mark in bytes for all allocations passing through the pool. </p>
+
+</div>
+</div>
+<a id="a4747756b5b867222463bb5c8674516ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4747756b5b867222463bb5c8674516ea">&#9670;&nbsp;</a></span>get_pool_space_efficiency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double yakl::Gator::get_pool_space_efficiency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current memory high water mark in bytes for all allocations passing through the pool. </p>
+
+</div>
+</div>
+<a id="a1a49cefe55594fd3667ece915d9e0b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a49cefe55594fd3667ece915d9e0b9a">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +677,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>blockSize</em> = <code>sizeof(size_t)</code>, </td>
+          <td class="paramname"><em>blockSize</em> = <code>16*sizeof(size_t)</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -426,33 +725,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="aea8b2d0f447f6a1242310bf9a573d2fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea8b2d0f447f6a1242310bf9a573d2fa">&#9670;&nbsp;</a></span>numAllocs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t yakl::Gator::numAllocs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the total number of allocations in all of the pools put together. </p>
 
 </div>
 </div>
@@ -504,33 +776,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0618249e8907a63377ad643a669fd464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0618249e8907a63377ad643a669fd464">&#9670;&nbsp;</a></span>poolSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t yakl::Gator::poolSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the total size of all of the pools put together. </p>
-
-</div>
-</div>
 <a id="acfd0901f081efbf328b9a282d20466a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfd0901f081efbf328b9a282d20466a8">&#9670;&nbsp;</a></span>printAllocsLeft()</h2>
 
@@ -556,6 +801,73 @@ Public Member Functions</h2></td></tr>
 
 <p><b>[USEFUL FOR DEBUGGING]</b> Print all allocations left in this pool object. </p>
 <p>If you call this regularly in a loop, you can determine if an object fails to be deallocated properly by looking for repeated entries that grow in number each iteration. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae818776d896e0b08da983f2fa15b35cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae818776d896e0b08da983f2fa15b35cb">&#9670;&nbsp;</a></span>mtx2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex yakl::Gator::mtx2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6e3dd35007340385b8ec817396877a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e3dd35007340385b8ec817396877a9">&#9670;&nbsp;</a></span>waiting_entries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structyakl_1_1Gator_1_1WaitEntry.html">WaitEntry</a>&gt; yakl::Gator::waiting_entries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaf75f6f98dc2d343d0d88c65fdc26aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf75f6f98dc2d343d0d88c65fdc26aa">&#9670;&nbsp;</a></span>waiting_events</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structyakl_1_1Event.html">Event</a>&gt; yakl::Gator::waiting_events</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

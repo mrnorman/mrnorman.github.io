@@ -116,6 +116,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1Dims.html">Dims</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class holds C-style dimensions for using in <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects.  <a href="classyakl_1_1Dims.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Event.html">Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the functionality of an event within a stream. The event is not created until the <code><a class="el" href="structyakl_1_1Event.html#abae2d4b090d6a6873b98c2a73c203fd8" title="Create the event.">Event::create()</a></code> function is called.  <a href="structyakl_1_1Event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html">FSArray</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fortran-style array on the stack similar in nature to, e.g., <code>float arr[ny][nx];</code>  <a href="classyakl_1_1FSArray.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +126,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">YAKL Pool allocator class.  <a href="classyakl_1_1Gator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object of this class can optionally be passed to <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> to configure the initialization.  <a href="classyakl_1_1InitConfig.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object of this class can optionally be passed to <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> to configure the initialization. <b>IMPORTANT</b>: Creating an <a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization....">InitConfig</a> object pings environment variables, making it quite expensive to create. Please do not create a lot of these.  <a href="classyakl_1_1InitConfig.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1InnerHandlerEmpty.html">InnerHandlerEmpty</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is necessary for coordination of two-level parallelism.  <a href="structyakl_1_1InnerHandlerEmpty.html#details">More...</a><br /></td></tr>
@@ -148,6 +151,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1SimplePNetCDF.html">SimplePNetCDF</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple way to write <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> objects to NetCDF files in parallel.  <a href="classyakl_1_1SimplePNetCDF.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1Stream.html">Stream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the functionality of a stream for parallel kernel execution. If the <code><a class="el" href="structyakl_1_1Stream.html#a162f95e332c4b578800426f6e8b6480a" title="Create the stream.">Stream::create()</a></code> method is not called on this object, then it is the default stream.  <a href="structyakl_1_1Stream.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyakl_1_1StreamList.html">StreamList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a list of <a class="el" href="structyakl_1_1Stream.html" title="Implements the functionality of a stream for parallel kernel execution. If the Stream::create() metho...">Stream</a> objects. Needs to store a pointer to avoid construction on the device since <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">Array</a> objects need to store a list of streams on which they depend.  <a href="structyakl_1_1StreamList.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -177,9 +186,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a744db414fb0ff8dbc17bcd08e05474da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a744db414fb0ff8dbc17bcd08e05474da">alloc_device</a> (size_t bytes, char const *label)</td></tr>
 <tr class="memdesc:a744db414fb0ff8dbc17bcd08e05474da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate on the device using YAKL's device allocator.  <a href="namespaceyakl.html#a744db414fb0ff8dbc17bcd08e05474da">More...</a><br /></td></tr>
 <tr class="separator:a744db414fb0ff8dbc17bcd08e05474da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7600b075989fdf55ea167ed069ee12ca"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7600b075989fdf55ea167ed069ee12ca">alloc_host</a> (size_t bytes, char const *label)</td></tr>
-<tr class="memdesc:a7600b075989fdf55ea167ed069ee12ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate on the host using YAKL's host allocator.  <a href="namespaceyakl.html#a7600b075989fdf55ea167ed069ee12ca">More...</a><br /></td></tr>
-<tr class="separator:a7600b075989fdf55ea167ed069ee12ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cda355f1f737b5b613b6463232f3e69"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a9cda355f1f737b5b613b6463232f3e69"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">atomicAdd</a> (T &amp;update, T value)</td></tr>
 <tr class="memdesc:a9cda355f1f737b5b613b6463232f3e69"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[NON_B4B] yakl::atomicAdd(update,value)</code> atomically performs <code>update += value)</code>  <a href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">More...</a><br /></td></tr>
@@ -195,6 +201,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7e01c087965b875ff55d3c7b2b4f4b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">check_last_error</a> ()</td></tr>
 <tr class="memdesc:a7e01c087965b875ff55d3c7b2b4f4b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if an error has occurred on the device.  <a href="namespaceyakl.html#a7e01c087965b875ff55d3c7b2b4f4b00">More...</a><br /></td></tr>
 <tr class="separator:a7e01c087965b875ff55d3c7b2b4f4b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e84c30ee165a8fa826468d357c959df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a2e84c30ee165a8fa826468d357c959df">create_stream</a> ()</td></tr>
+<tr class="memdesc:a2e84c30ee165a8fa826468d357c959df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and return a <a class="el" href="structyakl_1_1Stream.html" title="Implements the functionality of a stream for parallel kernel execution. If the Stream::create() metho...">Stream</a> object. It is guaranteed to not be the default stream.  <a href="namespaceyakl.html#a2e84c30ee165a8fa826468d357c959df">More...</a><br /></td></tr>
+<tr class="separator:a2e84c30ee165a8fa826468d357c959df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5debd8fe5fff4f37c06e55648d138e0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">fence</a> ()</td></tr>
 <tr class="memdesc:a5debd8fe5fff4f37c06e55648d138e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block the host code until all device code has completed.  <a href="namespaceyakl.html#a5debd8fe5fff4f37c06e55648d138e0c">More...</a><br /></td></tr>
 <tr class="separator:a5debd8fe5fff4f37c06e55648d138e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,30 +216,27 @@ Functions</h2></td></tr>
 <tr class="memitem:a8afa807b3b1f4e331ece7954c94134fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a8afa807b3b1f4e331ece7954c94134fc">free_device</a> (void *ptr, char const *label)</td></tr>
 <tr class="memdesc:a8afa807b3b1f4e331ece7954c94134fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free on the device using YAKL's device deallocator.  <a href="namespaceyakl.html#a8afa807b3b1f4e331ece7954c94134fc">More...</a><br /></td></tr>
 <tr class="separator:a8afa807b3b1f4e331ece7954c94134fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88daf745314e26415a09208c772c68a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a88daf745314e26415a09208c772c68a8">free_host</a> (void *ptr, char const *label)</td></tr>
-<tr class="memdesc:a88daf745314e26415a09208c772c68a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free on the host using YAKL's host deallocator.  <a href="namespaceyakl.html#a88daf745314e26415a09208c772c68a8">More...</a><br /></td></tr>
-<tr class="separator:a88daf745314e26415a09208c772c68a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe78b03b672a31b597b0b1e4cd97af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7">init</a> (<a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a> config=<a class="el" href="classyakl_1_1InitConfig.html">InitConfig</a>())</td></tr>
 <tr class="memdesc:aafe78b03b672a31b597b0b1e4cd97af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the YAKL runtime.  <a href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7">More...</a><br /></td></tr>
 <tr class="separator:aafe78b03b672a31b597b0b1e4cd97af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a110195fb8259c05f75506e71aa5a792c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">isInitialized</a> ()</td></tr>
 <tr class="memdesc:a110195fb8259c05f75506e71aa5a792c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the YAKL runtime has been initialized. I.e., <a class="el" href="namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7" title="Initialize the YAKL runtime.">yakl::init()</a> has been called without a corresponding call to <a class="el" href="namespaceyakl.html#ab42370df4914644cfd129ff6037c5c9f" title="Finalize the YAKL runtime.">yakl::finalize()</a>.  <a href="namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c">More...</a><br /></td></tr>
 <tr class="separator:a110195fb8259c05f75506e71aa5a792c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aa3cd629fc27eb6cd1e237c1172e5c291">memcpy_device_to_device</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems)</td></tr>
-<tr class="memdesc:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the device  <a href="namespaceyakl.html#aa3cd629fc27eb6cd1e237c1172e5c291">More...</a><br /></td></tr>
-<tr class="separator:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67a0305587b9e57dc519098a1e82eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#af67a0305587b9e57dc519098a1e82eac">memcpy_device_to_device_void</a> (void *dst, void *src, size_t bytes)</td></tr>
-<tr class="memdesc:af67a0305587b9e57dc519098a1e82eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>bytes</b> on the device  <a href="namespaceyakl.html#af67a0305587b9e57dc519098a1e82eac">More...</a><br /></td></tr>
-<tr class="separator:af67a0305587b9e57dc519098a1e82eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c164d629474f143bb61e540e59f34c7"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:a7c164d629474f143bb61e540e59f34c7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7c164d629474f143bb61e540e59f34c7">memcpy_device_to_host</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems)</td></tr>
-<tr class="memdesc:a7c164d629474f143bb61e540e59f34c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from device to host  <a href="namespaceyakl.html#a7c164d629474f143bb61e540e59f34c7">More...</a><br /></td></tr>
-<tr class="separator:a7c164d629474f143bb61e540e59f34c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae986e2511210cf25cfee6701d65003c4"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:ae986e2511210cf25cfee6701d65003c4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ae986e2511210cf25cfee6701d65003c4">memcpy_host_to_device</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems)</td></tr>
-<tr class="memdesc:ae986e2511210cf25cfee6701d65003c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from host to device  <a href="namespaceyakl.html#ae986e2511210cf25cfee6701d65003c4">More...</a><br /></td></tr>
-<tr class="separator:ae986e2511210cf25cfee6701d65003c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026f32705165108c6df7a07c502159d3"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a026f32705165108c6df7a07c502159d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a026f32705165108c6df7a07c502159d3">memcpy_device_to_device</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems, <a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>())</td></tr>
+<tr class="memdesc:a026f32705165108c6df7a07c502159d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the device  <a href="namespaceyakl.html#a026f32705165108c6df7a07c502159d3">More...</a><br /></td></tr>
+<tr class="separator:a026f32705165108c6df7a07c502159d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19e1e161899936f71ec3f025a5f8c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ab19e1e161899936f71ec3f025a5f8c9b">memcpy_device_to_device_void</a> (void *dst, void *src, size_t bytes, <a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>())</td></tr>
+<tr class="memdesc:ab19e1e161899936f71ec3f025a5f8c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>bytes</b> on the device  <a href="namespaceyakl.html#ab19e1e161899936f71ec3f025a5f8c9b">More...</a><br /></td></tr>
+<tr class="separator:ab19e1e161899936f71ec3f025a5f8c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a975062053c2a7335efd7203471e232"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a2a975062053c2a7335efd7203471e232"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a2a975062053c2a7335efd7203471e232">memcpy_device_to_host</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems, <a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>())</td></tr>
+<tr class="memdesc:a2a975062053c2a7335efd7203471e232"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from device to host  <a href="namespaceyakl.html#a2a975062053c2a7335efd7203471e232">More...</a><br /></td></tr>
+<tr class="separator:a2a975062053c2a7335efd7203471e232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7231acaa29ce8f8419a1ef69a36dd679"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a7231acaa29ce8f8419a1ef69a36dd679"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7231acaa29ce8f8419a1ef69a36dd679">memcpy_host_to_device</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems, <a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>())</td></tr>
+<tr class="memdesc:a7231acaa29ce8f8419a1ef69a36dd679"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from host to device  <a href="namespaceyakl.html#a7231acaa29ce8f8419a1ef69a36dd679">More...</a><br /></td></tr>
+<tr class="separator:a7231acaa29ce8f8419a1ef69a36dd679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3ccf876c613d1091413c21151aeeca"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
 <tr class="memitem:a7e3ccf876c613d1091413c21151aeeca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7e3ccf876c613d1091413c21151aeeca">memcpy_host_to_host</a> (T1 *dst, T2 *src, <a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a> elems)</td></tr>
 <tr class="memdesc:a7e3ccf876c613d1091413c21151aeeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the host  <a href="namespaceyakl.html#a7e3ccf876c613d1091413c21151aeeca">More...</a><br /></td></tr>
@@ -246,6 +252,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad98637dc95c0af6d4860349ada34e262"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ad98637dc95c0af6d4860349ada34e262">pentadiagonal_periodic</a> (<a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;a, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;b, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;c, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;d, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;e, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; const &amp;f, <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2">SArray</a>&lt; real, 1, n &gt; &amp;x)</td></tr>
 <tr class="memdesc:ad98637dc95c0af6d4860349ada34e262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a <b>small</b> periodic pentadiagonal solve. Click for more details.  <a href="namespaceyakl.html#ad98637dc95c0af6d4860349ada34e262">More...</a><br /></td></tr>
 <tr class="separator:ad98637dc95c0af6d4860349ada34e262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78754cc7984e3fde7592cf9a50faf53d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structyakl_1_1Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a78754cc7984e3fde7592cf9a50faf53d">record_event</a> (<a class="el" href="structyakl_1_1Stream.html">Stream</a> stream=<a class="el" href="structyakl_1_1Stream.html">Stream</a>())</td></tr>
+<tr class="memdesc:a78754cc7984e3fde7592cf9a50faf53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create, record, and return an event using the given stream.  <a href="namespaceyakl.html#a78754cc7984e3fde7592cf9a50faf53d">More...</a><br /></td></tr>
+<tr class="separator:a78754cc7984e3fde7592cf9a50faf53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca055f3e17da1b57c8966dfb9537b1ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aca055f3e17da1b57c8966dfb9537b1ab">set_device_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
 <tr class="memdesc:aca055f3e17da1b57c8966dfb9537b1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's device allocator with the passed function (No Label).  <a href="namespaceyakl.html#aca055f3e17da1b57c8966dfb9537b1ab">More...</a><br /></td></tr>
 <tr class="separator:aca055f3e17da1b57c8966dfb9537b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,18 +267,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0ebe9f97f4b39d1e4e9a1284435984d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a0ebe9f97f4b39d1e4e9a1284435984d6">set_device_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
 <tr class="memdesc:a0ebe9f97f4b39d1e4e9a1284435984d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's device deallocator with the passed function (WITH Label).  <a href="namespaceyakl.html#a0ebe9f97f4b39d1e4e9a1284435984d6">More...</a><br /></td></tr>
 <tr class="separator:a0ebe9f97f4b39d1e4e9a1284435984d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa47d0678c8772a89e8f37bba484814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#acfa47d0678c8772a89e8f37bba484814">set_host_allocator</a> (std::function&lt; void *(size_t)&gt; func)</td></tr>
-<tr class="memdesc:acfa47d0678c8772a89e8f37bba484814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host allocator with the passed function (No Label).  <a href="namespaceyakl.html#acfa47d0678c8772a89e8f37bba484814">More...</a><br /></td></tr>
-<tr class="separator:acfa47d0678c8772a89e8f37bba484814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457a1f8b0af529710be9fd890682dfcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a457a1f8b0af529710be9fd890682dfcd">set_host_allocator</a> (std::function&lt; void *(size_t, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a457a1f8b0af529710be9fd890682dfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host allocator with the passed function (WITH Label).  <a href="namespaceyakl.html#a457a1f8b0af529710be9fd890682dfcd">More...</a><br /></td></tr>
-<tr class="separator:a457a1f8b0af529710be9fd890682dfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5b2f2f9068a7f1d81422b0920e7995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a4d5b2f2f9068a7f1d81422b0920e7995">set_host_deallocator</a> (std::function&lt; void(void *)&gt; func)</td></tr>
-<tr class="memdesc:a4d5b2f2f9068a7f1d81422b0920e7995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host deallocator with the passed function (No Label).  <a href="namespaceyakl.html#a4d5b2f2f9068a7f1d81422b0920e7995">More...</a><br /></td></tr>
-<tr class="separator:a4d5b2f2f9068a7f1d81422b0920e7995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b0e98e23e4b273339d90de69b1659ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a3b0e98e23e4b273339d90de69b1659ca">set_host_deallocator</a> (std::function&lt; void(void *, char const *)&gt; func)</td></tr>
-<tr class="memdesc:a3b0e98e23e4b273339d90de69b1659ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's host deallocator with the passed function (WITH Label).  <a href="namespaceyakl.html#a3b0e98e23e4b273339d90de69b1659ca">More...</a><br /></td></tr>
-<tr class="separator:a3b0e98e23e4b273339d90de69b1659ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec3d7bb59cc9da9d19c0668034e7a68c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aec3d7bb59cc9da9d19c0668034e7a68c">set_timer_finalize</a> (std::function&lt; void()&gt; func)</td></tr>
 <tr class="memdesc:aec3d7bb59cc9da9d19c0668034e7a68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override YAKL's default timer finalization routine.  <a href="namespaceyakl.html#aec3d7bb59cc9da9d19c0668034e7a68c">More...</a><br /></td></tr>
 <tr class="separator:aec3d7bb59cc9da9d19c0668034e7a68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,6 +340,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a695e075dc48e0c511320c467d347fd5e"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a695e075dc48e0c511320c467d347fd5e">NETCDF_MODE_WRITE</a> = NC_WRITE</td></tr>
 <tr class="memdesc:a695e075dc48e0c511320c467d347fd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells NetCDF the opened file should be opened for reading and writing.  <a href="namespaceyakl.html#a695e075dc48e0c511320c467d347fd5e">More...</a><br /></td></tr>
 <tr class="separator:a695e075dc48e0c511320c467d347fd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ec74c97e929ed10226bb461c7a606f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a00ec74c97e929ed10226bb461c7a606f">streams_enabled</a> = false</td></tr>
+<tr class="memdesc:a00ec74c97e929ed10226bb461c7a606f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the CPP Macro YAKL_ENABLE_STREAMS is defined, then this bool is set to <code>true</code>  <a href="namespaceyakl.html#a00ec74c97e929ed10226bb461c7a606f">More...</a><br /></td></tr>
+<tr class="separator:a00ec74c97e929ed10226bb461c7a606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59a958dd81c018c1859580dcb453d31d"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a59a958dd81c018c1859580dcb453d31d">styleC</a> = 1</td></tr>
 <tr class="memdesc:a59a958dd81c018c1859580dcb453d31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template parameter for <a class="el" href="classyakl_1_1Array.html" title="This declares the yakl::Array class. Please see the yakl::styleC and yakl::styleFortran template spec...">yakl::Array</a> that specifies it should follow C-style behavior.  <a href="namespaceyakl.html#a59a958dd81c018c1859580dcb453d31d">More...</a><br /></td></tr>
 <tr class="separator:a59a958dd81c018c1859580dcb453d31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,44 +492,6 @@ template&lt;class T , int rank, unsigned D0, unsigned D1 = 1, unsigned D2 = 1, u
 
 </div>
 </div>
-<a id="a7600b075989fdf55ea167ed069ee12ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7600b075989fdf55ea167ed069ee12ca">&#9670;&nbsp;</a></span>alloc_host()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* yakl::alloc_host </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bytes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>label</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocate on the host using YAKL's host allocator. </p>
-
-</div>
-</div>
 <a id="a9cda355f1f737b5b613b6463232f3e69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cda355f1f737b5b613b6463232f3e69">&#9670;&nbsp;</a></span>atomicAdd()</h2>
 
@@ -669,6 +631,33 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a2e84c30ee165a8fa826468d357c959df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e84c30ee165a8fa826468d357c959df">&#9670;&nbsp;</a></span>create_stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structyakl_1_1Stream.html">Stream</a> yakl::create_stream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create and return a <a class="el" href="structyakl_1_1Stream.html" title="Implements the functionality of a stream for parallel kernel execution. If the Stream::create() metho...">Stream</a> object. It is guaranteed to not be the default stream. </p>
+
+</div>
+</div>
 <a id="a5debd8fe5fff4f37c06e55648d138e0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5debd8fe5fff4f37c06e55648d138e0c">&#9670;&nbsp;</a></span>fence()</h2>
 
@@ -788,44 +777,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a88daf745314e26415a09208c772c68a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88daf745314e26415a09208c772c68a8">&#9670;&nbsp;</a></span>free_host()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void yakl::free_host </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>label</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Free on the host using YAKL's host deallocator. </p>
-
-</div>
-</div>
 <a id="aafe78b03b672a31b597b0b1e4cd97af7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafe78b03b672a31b597b0b1e4cd97af7">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -856,11 +807,10 @@ template&lt;class T &gt; </div>
 <li>Initialize the pool if used.</li>
 <li>Set the YAKL allocators and deallocators to default.</li>
 <li>Initialize YAKL's timer calls to defaults.</li>
-<li>Inspect the optional <a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization.">yakl::InitConfig</a> parameter to override default allocator, deallocator, and timer calls if requested.</li>
-<li>Allocate YAKL's functor buffer for appropriate backends.</li>
+<li>Inspect the optional <a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization....">yakl::InitConfig</a> parameter to override default allocator, deallocator, and timer calls if requested.</li>
 <li>Inform the user with device information. THREAD SAFE! <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>This <a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization.">yakl::InitConfig</a> object allows the user to override YAKL's default allocator, deallocator and timer calls from the start of the runtime. </td></tr>
+    <tr><td class="paramname">config</td><td>This <a class="el" href="classyakl_1_1InitConfig.html" title="An object of this class can optionally be passed to yakl::init() to configure the initialization....">yakl::InitConfig</a> object allows the user to override YAKL's default allocator, deallocator and timer calls from the start of the runtime. </td></tr>
   </table>
   </dd>
 </dl>
@@ -896,8 +846,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="aa3cd629fc27eb6cd1e237c1172e5c291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3cd629fc27eb6cd1e237c1172e5c291">&#9670;&nbsp;</a></span>memcpy_device_to_device()</h2>
+<a id="a026f32705165108c6df7a07c502159d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026f32705165108c6df7a07c502159d3">&#9670;&nbsp;</a></span>memcpy_device_to_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -923,7 +873,13 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td>
-          <td class="paramname"><em>elems</em>&#160;</td>
+          <td class="paramname"><em>elems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -942,8 +898,8 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
 
 </div>
 </div>
-<a id="af67a0305587b9e57dc519098a1e82eac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af67a0305587b9e57dc519098a1e82eac">&#9670;&nbsp;</a></span>memcpy_device_to_device_void()</h2>
+<a id="ab19e1e161899936f71ec3f025a5f8c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19e1e161899936f71ec3f025a5f8c9b">&#9670;&nbsp;</a></span>memcpy_device_to_device_void()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -967,7 +923,13 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bytes</em>&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -986,8 +948,8 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
 
 </div>
 </div>
-<a id="a7c164d629474f143bb61e540e59f34c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c164d629474f143bb61e540e59f34c7">&#9670;&nbsp;</a></span>memcpy_device_to_host()</h2>
+<a id="a2a975062053c2a7335efd7203471e232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a975062053c2a7335efd7203471e232">&#9670;&nbsp;</a></span>memcpy_device_to_host()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1013,7 +975,13 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td>
-          <td class="paramname"><em>elems</em>&#160;</td>
+          <td class="paramname"><em>elems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1032,8 +1000,8 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
 
 </div>
 </div>
-<a id="ae986e2511210cf25cfee6701d65003c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae986e2511210cf25cfee6701d65003c4">&#9670;&nbsp;</a></span>memcpy_host_to_device()</h2>
+<a id="a7231acaa29ce8f8419a1ef69a36dd679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7231acaa29ce8f8419a1ef69a36dd679">&#9670;&nbsp;</a></span>memcpy_host_to_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1059,7 +1027,13 @@ template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; t
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c">index_t</a>&#160;</td>
-          <td class="paramname"><em>elems</em>&#160;</td>
+          <td class="paramname"><em>elems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1298,6 +1272,34 @@ template&lt;unsigned int n, class real &gt; </div>
 
 </div>
 </div>
+<a id="a78754cc7984e3fde7592cf9a50faf53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78754cc7984e3fde7592cf9a50faf53d">&#9670;&nbsp;</a></span>record_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structyakl_1_1Event.html">Event</a> yakl::record_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structyakl_1_1Stream.html">Stream</a>&#160;</td>
+          <td class="paramname"><em>stream</em> = <code><a class="el" href="structyakl_1_1Stream.html">Stream</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create, record, and return an event using the given stream. </p>
+
+</div>
+</div>
 <a id="aca055f3e17da1b57c8966dfb9537b1ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca055f3e17da1b57c8966dfb9537b1ab">&#9670;&nbsp;</a></span>set_device_allocator() <span class="overload">[1/2]</span></h2>
 
@@ -1410,122 +1412,6 @@ template&lt;unsigned int n, class real &gt; </div>
 </div><div class="memdoc">
 
 <p>Override YAKL's device deallocator with the passed function (WITH Label). </p>
-<p>After overriding one of YAKL's allocators or deallocators, the passed function will be used until the user overrides it again or calls <a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0" title="Return all YAKL allocators to their defaults.">yakl::set_yakl_allocators_to_default()</a>. There are overriding functions that accept labels for bookkeeping and debugging, and there are functions that do not use labels. </p>
-
-</div>
-</div>
-<a id="acfa47d0678c8772a89e8f37bba484814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfa47d0678c8772a89e8f37bba484814">&#9670;&nbsp;</a></span>set_host_allocator() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void yakl::set_host_allocator </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void *(size_t)&gt;&#160;</td>
-          <td class="paramname"><em>func</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override YAKL's host allocator with the passed function (No Label). </p>
-<p>After overriding one of YAKL's allocators or deallocators, the passed function will be used until the user overrides it again or calls <a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0" title="Return all YAKL allocators to their defaults.">yakl::set_yakl_allocators_to_default()</a>. There are overriding functions that accept labels for bookkeeping and debugging, and there are functions that do not use labels. </p>
-
-</div>
-</div>
-<a id="a457a1f8b0af529710be9fd890682dfcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a457a1f8b0af529710be9fd890682dfcd">&#9670;&nbsp;</a></span>set_host_allocator() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void yakl::set_host_allocator </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void *(size_t, char const *)&gt;&#160;</td>
-          <td class="paramname"><em>func</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override YAKL's host allocator with the passed function (WITH Label). </p>
-<p>After overriding one of YAKL's allocators or deallocators, the passed function will be used until the user overrides it again or calls <a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0" title="Return all YAKL allocators to their defaults.">yakl::set_yakl_allocators_to_default()</a>. There are overriding functions that accept labels for bookkeeping and debugging, and there are functions that do not use labels. </p>
-
-</div>
-</div>
-<a id="a4d5b2f2f9068a7f1d81422b0920e7995"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5b2f2f9068a7f1d81422b0920e7995">&#9670;&nbsp;</a></span>set_host_deallocator() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void yakl::set_host_deallocator </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void(void *)&gt;&#160;</td>
-          <td class="paramname"><em>func</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override YAKL's host deallocator with the passed function (No Label). </p>
-<p>After overriding one of YAKL's allocators or deallocators, the passed function will be used until the user overrides it again or calls <a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0" title="Return all YAKL allocators to their defaults.">yakl::set_yakl_allocators_to_default()</a>. There are overriding functions that accept labels for bookkeeping and debugging, and there are functions that do not use labels. </p>
-
-</div>
-</div>
-<a id="a3b0e98e23e4b273339d90de69b1659ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b0e98e23e4b273339d90de69b1659ca">&#9670;&nbsp;</a></span>set_host_deallocator() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void yakl::set_host_deallocator </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void(void *, char const *)&gt;&#160;</td>
-          <td class="paramname"><em>func</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override YAKL's host deallocator with the passed function (WITH Label). </p>
 <p>After overriding one of YAKL's allocators or deallocators, the passed function will be used until the user overrides it again or calls <a class="el" href="namespaceyakl.html#abf58795a80dd0c09827a1a0a4ab6c2f0" title="Return all YAKL allocators to their defaults.">yakl::set_yakl_allocators_to_default()</a>. There are overriding functions that accept labels for bookkeeping and debugging, and there are functions that do not use labels. </p>
 
 </div>
@@ -2186,6 +2072,30 @@ template&lt;class real , unsigned int n&gt; </div>
 
 </div>
 </div>
+<a id="a00ec74c97e929ed10226bb461c7a606f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ec74c97e929ed10226bb461c7a606f">&#9670;&nbsp;</a></span>streams_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool yakl::streams_enabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the CPP Macro YAKL_ENABLE_STREAMS is defined, then this bool is set to <code>true</code> </p>
+
+</div>
+</div>
 <a id="a59a958dd81c018c1859580dcb453d31d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59a958dd81c018c1859580dcb453d31d">&#9670;&nbsp;</a></span>styleC</h2>
 
@@ -2261,7 +2171,7 @@ template&lt;class real , unsigned int n&gt; </div>
 </div><!-- contents -->
 <div class="ttc" id="anamespaceyakl_1_1c_html_a81973df01907f317999d46b3d030a26f"><div class="ttname"><a href="namespaceyakl_1_1c.html#a81973df01907f317999d46b3d030a26f">yakl::c::parallel_for</a></div><div class="ttdeci">void parallel_for(char const *str, Bounds&lt; N, simple &gt; const &amp;bounds, F const &amp;f, LaunchConfig&lt; VecLen, B4B &gt; config=LaunchConfig&lt;&gt;())</div><div class="ttdoc">[ASYNCHRONOUS] Launch the passed functor in parallel.</div></div>
 <div class="ttc" id="anamespaceyakl_html_a9cda355f1f737b5b613b6463232f3e69"><div class="ttname"><a href="namespaceyakl.html#a9cda355f1f737b5b613b6463232f3e69">yakl::atomicAdd</a></div><div class="ttdeci">YAKL_INLINE void atomicAdd(T &amp;update, T value)</div><div class="ttdoc">[NON_B4B] yakl::atomicAdd(update,value) atomically performs update += value)</div><div class="ttdef"><b>Definition:</b> YAKL_atomics.h:332</div></div>
-<div class="ttc" id="aYAKL__defines_8h_html_af085ba3fa0c920e495675e86a53f7bbb"><div class="ttname"><a href="YAKL__defines_8h.html#af085ba3fa0c920e495675e86a53f7bbb">YAKL_LAMBDA</a></div><div class="ttdeci">#define YAKL_LAMBDA</div><div class="ttdoc">Used to create C++ lambda expressions passed to parallel_for and parallel_outer</div><div class="ttdef"><b>Definition:</b> YAKL_defines.h:89</div></div>
+<div class="ttc" id="aYAKL__defines_8h_html_af085ba3fa0c920e495675e86a53f7bbb"><div class="ttname"><a href="YAKL__defines_8h.html#af085ba3fa0c920e495675e86a53f7bbb">YAKL_LAMBDA</a></div><div class="ttdeci">#define YAKL_LAMBDA</div><div class="ttdoc">Used to create C++ lambda expressions passed to parallel_for and parallel_outer</div><div class="ttdef"><b>Definition:</b> YAKL_defines.h:104</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

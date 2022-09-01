@@ -77,14 +77,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="YAKL__mem__transfers_8h__dep__incl.png" border="0" usemap="#YAKL_2src_2YAKL__mem__transfers_8hdep" alt=""/></div>
 <map name="YAKL_2src_2YAKL__mem__transfers_8hdep" id="YAKL_2src_2YAKL__mem__transfers_8hdep">
-<area shape="rect" title=" " alt="" coords="403,5,636,32"/>
-<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="456,80,583,107"/>
+<area shape="rect" title=" " alt="" coords="319,5,552,32"/>
+<area shape="rect" href="YAKL_8h.html" title=" " alt="" coords="372,80,499,107"/>
 <area shape="rect" href="YAKL_8cpp.html" title=" " alt="" coords="5,162,148,189"/>
-<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="172,155,325,196"/>
-<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="349,155,503,196"/>
-<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="527,155,698,196"/>
-<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="723,155,876,196"/>
-<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="900,155,1053,196"/>
+<area shape="rect" href="YAKL__tridiagonal_8h.html" title=" " alt="" coords="172,155,325,196"/>
+<area shape="rect" href="YAKL__pentadiagonal_8h.html" title=" " alt="" coords="350,155,521,196"/>
+<area shape="rect" href="YAKL__fft_8h.html" title=" " alt="" coords="545,155,699,196"/>
+<area shape="rect" href="YAKL__netcdf_8h.html" title=" " alt="" coords="723,155,876,196"/>
+<area shape="rect" href="YAKL__pnetcdf_8h.html" title=" " alt="" coords="900,155,1053,196"/>
 </map>
 </div>
 </div>
@@ -97,21 +97,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#aa3cd629fc27eb6cd1e237c1172e5c291">yakl::memcpy_device_to_device</a> (T1 *dst, T2 *src, index_t elems)</td></tr>
-<tr class="memdesc:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the device  <a href="namespaceyakl.html#aa3cd629fc27eb6cd1e237c1172e5c291">More...</a><br /></td></tr>
-<tr class="separator:aa3cd629fc27eb6cd1e237c1172e5c291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67a0305587b9e57dc519098a1e82eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#af67a0305587b9e57dc519098a1e82eac">yakl::memcpy_device_to_device_void</a> (void *dst, void *src, size_t bytes)</td></tr>
-<tr class="memdesc:af67a0305587b9e57dc519098a1e82eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>bytes</b> on the device  <a href="namespaceyakl.html#af67a0305587b9e57dc519098a1e82eac">More...</a><br /></td></tr>
-<tr class="separator:af67a0305587b9e57dc519098a1e82eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c164d629474f143bb61e540e59f34c7"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:a7c164d629474f143bb61e540e59f34c7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7c164d629474f143bb61e540e59f34c7">yakl::memcpy_device_to_host</a> (T1 *dst, T2 *src, index_t elems)</td></tr>
-<tr class="memdesc:a7c164d629474f143bb61e540e59f34c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from device to host  <a href="namespaceyakl.html#a7c164d629474f143bb61e540e59f34c7">More...</a><br /></td></tr>
-<tr class="separator:a7c164d629474f143bb61e540e59f34c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae986e2511210cf25cfee6701d65003c4"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:ae986e2511210cf25cfee6701d65003c4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ae986e2511210cf25cfee6701d65003c4">yakl::memcpy_host_to_device</a> (T1 *dst, T2 *src, index_t elems)</td></tr>
-<tr class="memdesc:ae986e2511210cf25cfee6701d65003c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from host to device  <a href="namespaceyakl.html#ae986e2511210cf25cfee6701d65003c4">More...</a><br /></td></tr>
-<tr class="separator:ae986e2511210cf25cfee6701d65003c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026f32705165108c6df7a07c502159d3"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a026f32705165108c6df7a07c502159d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a026f32705165108c6df7a07c502159d3">yakl::memcpy_device_to_device</a> (T1 *dst, T2 *src, index_t elems, Stream stream=Stream())</td></tr>
+<tr class="memdesc:a026f32705165108c6df7a07c502159d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the device  <a href="namespaceyakl.html#a026f32705165108c6df7a07c502159d3">More...</a><br /></td></tr>
+<tr class="separator:a026f32705165108c6df7a07c502159d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19e1e161899936f71ec3f025a5f8c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#ab19e1e161899936f71ec3f025a5f8c9b">yakl::memcpy_device_to_device_void</a> (void *dst, void *src, size_t bytes, Stream stream=Stream())</td></tr>
+<tr class="memdesc:ab19e1e161899936f71ec3f025a5f8c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>bytes</b> on the device  <a href="namespaceyakl.html#ab19e1e161899936f71ec3f025a5f8c9b">More...</a><br /></td></tr>
+<tr class="separator:ab19e1e161899936f71ec3f025a5f8c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a975062053c2a7335efd7203471e232"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a2a975062053c2a7335efd7203471e232"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a2a975062053c2a7335efd7203471e232">yakl::memcpy_device_to_host</a> (T1 *dst, T2 *src, index_t elems, Stream stream=Stream())</td></tr>
+<tr class="memdesc:a2a975062053c2a7335efd7203471e232"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from device to host  <a href="namespaceyakl.html#a2a975062053c2a7335efd7203471e232">More...</a><br /></td></tr>
+<tr class="separator:a2a975062053c2a7335efd7203471e232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7231acaa29ce8f8419a1ef69a36dd679"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a7231acaa29ce8f8419a1ef69a36dd679"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7231acaa29ce8f8419a1ef69a36dd679">yakl::memcpy_host_to_device</a> (T1 *dst, T2 *src, index_t elems, Stream stream=Stream())</td></tr>
+<tr class="memdesc:a7231acaa29ce8f8419a1ef69a36dd679"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> from host to device  <a href="namespaceyakl.html#a7231acaa29ce8f8419a1ef69a36dd679">More...</a><br /></td></tr>
+<tr class="separator:a7231acaa29ce8f8419a1ef69a36dd679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3ccf876c613d1091413c21151aeeca"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename std::enable_if&lt; std::is_same&lt; typename std::remove_cv&lt; T1 &gt;::type, typename std::remove_cv&lt; T2 &gt;::type &gt;::value, int &gt;::type  = 0&gt; </td></tr>
 <tr class="memitem:a7e3ccf876c613d1091413c21151aeeca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceyakl.html#a7e3ccf876c613d1091413c21151aeeca">yakl::memcpy_host_to_host</a> (T1 *dst, T2 *src, index_t elems)</td></tr>
 <tr class="memdesc:a7e3ccf876c613d1091413c21151aeeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">[USE AT YOUR OWN RISK]: memcpy the specified number of <b>elements</b> on the host  <a href="namespaceyakl.html#a7e3ccf876c613d1091413c21151aeeca">More...</a><br /></td></tr>

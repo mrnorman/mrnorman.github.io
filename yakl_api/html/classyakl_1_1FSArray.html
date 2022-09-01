@@ -69,6 +69,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classyakl_1_1FSArray-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,6 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af03d1bbf11a61f5fd227c186c952e5e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#af03d1bbf11a61f5fd227c186c952e5e8">FSArray</a> (<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> const &amp;in)</td></tr>
 <tr class="memdesc:af03d1bbf11a61f5fd227c186c952e5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[DEEP_COPY] Copy and move constructors deep copy all data.  <a href="classyakl_1_1FSArray.html#af03d1bbf11a61f5fd227c186c952e5e8">More...</a><br /></td></tr>
 <tr class="separator:af03d1bbf11a61f5fd227c186c952e5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eab2ca83f5e9319642108b04cd4d633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a5eab2ca83f5e9319642108b04cd4d633">FSArray</a> (T init_fill)</td></tr>
+<tr class="separator:a5eab2ca83f5e9319642108b04cd4d633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4501988d0f061474216442336718f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ae4501988d0f061474216442336718f4a">~FSArray</a> ()</td></tr>
 <tr class="separator:ae4501988d0f061474216442336718f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7b738ead16bc47db692b840e6663a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a3a7b738ead16bc47db692b840e6663a8">data</a> () const</td></tr>
@@ -161,12 +164,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a13ec80b9e40d7fc78e76a28b881947df"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a13ec80b9e40d7fc78e76a28b881947df">initialized</a> ()</td></tr>
 <tr class="memdesc:a13ec80b9e40d7fc78e76a28b881947df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. <a class="el" href="namespaceyakl.html#adabbe6df1f315d5e2c1874cf1be0acf2" title="Most often, codes use the type define yakl::SArray rather than yakl::CSArray.">yakl::SArray</a> objects are by default always initialized / allocated.  <a href="classyakl_1_1FSArray.html#a13ec80b9e40d7fc78e76a28b881947df">More...</a><br /></td></tr>
 <tr class="separator:a13ec80b9e40d7fc78e76a28b881947df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb860e3223c4de41d431d14075fd57f3"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#aeb860e3223c4de41d431d14075fd57f3">size</a> ()</td></tr>
+<tr class="memdesc:aeb860e3223c4de41d431d14075fd57f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#aeb860e3223c4de41d431d14075fd57f3">More...</a><br /></td></tr>
+<tr class="separator:aeb860e3223c4de41d431d14075fd57f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38e58570e742d7eb768bc4ecf648dd6b"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#a38e58570e742d7eb768bc4ecf648dd6b">span_is_contiguous</a> ()</td></tr>
 <tr class="memdesc:a38e58570e742d7eb768bc4ecf648dd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true. All YAKL arrays are contiguous with no padding.  <a href="classyakl_1_1FSArray.html#a38e58570e742d7eb768bc4ecf648dd6b">More...</a><br /></td></tr>
 <tr class="separator:a38e58570e742d7eb768bc4ecf648dd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab705c0c48e855a23e3c5ba0e46b28560"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#ab705c0c48e855a23e3c5ba0e46b28560">totElems</a> ()</td></tr>
 <tr class="memdesc:ab705c0c48e855a23e3c5ba0e46b28560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of array elements.  <a href="classyakl_1_1FSArray.html#ab705c0c48e855a23e3c5ba0e46b28560">More...</a><br /></td></tr>
 <tr class="separator:ab705c0c48e855a23e3c5ba0e46b28560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa0351a9fde42bfdeab96c32901aca775"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyakl_1_1FSArray.html#aa0351a9fde42bfdeab96c32901aca775">OFF3</a> = D0*D1*D2</td></tr>
+<tr class="separator:aa0351a9fde42bfdeab96c32901aca775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -263,7 +274,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab3814a874ee4797dca289d70b235aad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3814a874ee4797dca289d70b235aad5">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3814a874ee4797dca289d70b235aad5">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,8 +302,36 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 
 </div>
 </div>
+<a id="a5eab2ca83f5e9319642108b04cd4d633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eab2ca83f5e9319642108b04cd4d633">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = SB&lt;1&gt;, class B3  = SB&lt;1&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="YAKL__defines_8h.html#aa0dd629ffce6d564b19e9313fb91a5ad">YAKL_INLINE</a> <a class="el" href="classyakl_1_1FSArray.html">yakl::FSArray</a>&lt; T, rank, B0, B1, B2, B3 &gt;::<a class="el" href="classyakl_1_1FSArray.html">FSArray</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>init_fill</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af471894811eca8c1b18363c6faa53562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af471894811eca8c1b18363c6faa53562">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af471894811eca8c1b18363c6faa53562">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +361,7 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </div>
 </div>
 <a id="af03d1bbf11a61f5fd227c186c952e5e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af03d1bbf11a61f5fd227c186c952e5e8">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af03d1bbf11a61f5fd227c186c952e5e8">&#9670;&nbsp;</a></span>FSArray() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -907,6 +946,35 @@ template&lt;class TLOC , typename std::enable_if&lt; std::is_arithmetic&lt; TLOC
 
 </div>
 </div>
+<a id="aeb860e3223c4de41d431d14075fd57f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb860e3223c4de41d431d14075fd57f3">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = SB&lt;1&gt;, class B3  = SB&lt;1&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr unsigned <a class="el" href="classyakl_1_1FSArray.html">yakl::FSArray</a>&lt; T, rank, B0, B1, B2, B3 &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the total number of array elements. </p>
+
+</div>
+</div>
 <a id="a38e58570e742d7eb768bc4ecf648dd6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38e58570e742d7eb768bc4ecf648dd6b">&#9670;&nbsp;</a></span>span_is_contiguous()</h2>
 
@@ -1003,6 +1071,31 @@ template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = 
 </div><div class="memdoc">
 
 <p>Print out the contents of this array. This should be called only from the host. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa0351a9fde42bfdeab96c32901aca775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0351a9fde42bfdeab96c32901aca775">&#9670;&nbsp;</a></span>OFF3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , int rank, class B0 , class B1  = SB&lt;1&gt;, class B2  = SB&lt;1&gt;, class B3  = SB&lt;1&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned <a class="el" href="classyakl_1_1FSArray.html">yakl::FSArray</a>&lt; T, rank, B0, B1, B2, B3 &gt;::OFF3 = D0*D1*D2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['s_693',['s',['../classyakl_1_1c_1_1LBnd.html#a3e9aafd707e3d98843931c8990ff327c',1,'yakl::c::LBnd::s()'],['../classyakl_1_1fortran_1_1LBnd.html#a0c2b4125d3cb285fcfa7851ee19f8041',1,'yakl::fortran::LBnd::s()']]],
-  ['stylec_694',['styleC',['../namespaceyakl.html#a59a958dd81c018c1859580dcb453d31d',1,'yakl']]],
-  ['styledefault_695',['styleDefault',['../namespaceyakl.html#a0792e33ef74bcb90e3ed4b847415543d',1,'yakl']]],
-  ['stylefortran_696',['styleFortran',['../namespaceyakl.html#a48029004bb42b7cc63974ca0433af63a',1,'yakl']]]
+  ['netcdf_5fmode_5fnew_788',['NETCDF_MODE_NEW',['../namespaceyakl.html#ab5a358faf3cb27d0a14a15b5c6b83022',1,'yakl']]],
+  ['netcdf_5fmode_5fread_789',['NETCDF_MODE_READ',['../namespaceyakl.html#aa12f0312227bfbba1756585d41a5d87f',1,'yakl']]],
+  ['netcdf_5fmode_5freplace_790',['NETCDF_MODE_REPLACE',['../namespaceyakl.html#a4ad851f7ac4bf63a9e912514b4fab4cd',1,'yakl']]],
+  ['netcdf_5fmode_5fwrite_791',['NETCDF_MODE_WRITE',['../namespaceyakl.html#a695e075dc48e0c511320c467d347fd5e',1,'yakl']]]
 ];
