@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hostread_628',['hostRead',['../classyakl_1_1ScalarLiveOut.html#a36bc5c49d3b70a76f2dbedd3baac6c96',1,'yakl::ScalarLiveOut']]],
-  ['hostwrite_629',['hostWrite',['../classyakl_1_1ScalarLiveOut.html#ada7482e2423cbb3163ffeabe5b973868',1,'yakl::ScalarLiveOut']]],
-  ['huge_630',['huge',['../namespaceyakl_1_1intrinsics.html#a543949a02284f7fff63ab1d16d5429be',1,'yakl::intrinsics::huge(T)'],['../namespaceyakl_1_1intrinsics.html#a708d84ad0334faf9b6b4050f55b5e5cd',1,'yakl::intrinsics::huge(Array&lt; T, rank, myMem, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#acd70733ad5d753d44dcaae6936977001',1,'yakl::intrinsics::huge(FSArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#a645a00fe006bd9b899858e949936c9b6',1,'yakl::intrinsics::huge(SArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)']]]
+  ['hostread',['hostRead',['../classyakl_1_1ScalarLiveOut.html#a36bc5c49d3b70a76f2dbedd3baac6c96',1,'yakl::ScalarLiveOut']]],
+  ['hostwrite',['hostWrite',['../classyakl_1_1ScalarLiveOut.html#ada7482e2423cbb3163ffeabe5b973868',1,'yakl::ScalarLiveOut']]],
+  ['huge',['huge',['../namespaceyakl_1_1intrinsics.html#a7d91435e9e800fe5ca92c7616aa8be50',1,'yakl::intrinsics::huge(T)'],['../namespaceyakl_1_1intrinsics.html#aa95ec8c1e2af6f42bb732d0c1c3bd8a4',1,'yakl::intrinsics::huge(Array&lt; T, rank, myMem, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#a1e3128c605dda1ea43700f6372bc1493',1,'yakl::intrinsics::huge(FSArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#a6b15b4fce87b9c9c2e85b7372407029b',1,'yakl::intrinsics::huge(SArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)']]]
 ];

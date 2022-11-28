@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['initconfig_422',['InitConfig',['../classyakl_1_1InitConfig.html',1,'yakl']]],
-  ['innerhandlerempty_423',['InnerHandlerEmpty',['../structyakl_1_1InnerHandlerEmpty.html',1,'yakl']]]
+  ['initconfig',['InitConfig',['../classyakl_1_1InitConfig.html',1,'yakl']]],
+  ['innerhandlerempty',['InnerHandlerEmpty',['../structyakl_1_1InnerHandlerEmpty.html',1,'yakl']]]
 ];

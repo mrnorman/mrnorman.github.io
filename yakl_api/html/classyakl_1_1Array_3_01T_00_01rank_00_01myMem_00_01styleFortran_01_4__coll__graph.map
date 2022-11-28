@@ -1,5 +1,3 @@
 <map id="yakl::Array&lt; T, rank, myMem, styleFortran &gt;" name="yakl::Array&lt; T, rank, myMem, styleFortran &gt;">
-<area shape="rect" id="node1" title="This implements the yakl:Array class with yakl::styleFortran behavior." alt="" coords="24,215,205,256"/>
-<area shape="rect" id="node2" href="$classyakl_1_1ArrayBase.html" title=" " alt="" coords="5,124,224,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="25,5,204,61"/>
+<area shape="rect" id="node2" href="$classyakl_1_1ArrayBase.html" title="yakl::ArrayBase\&lt; T,\l rank, myMem, styleFortran \&gt;" alt="" coords="5,124,200,165"/>
 </map>
