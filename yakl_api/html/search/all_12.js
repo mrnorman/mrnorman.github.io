@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['valid',['valid',['../classyakl_1_1c_1_1LBnd.html#ad272ca5367ef2e6dd2b921c39f4be049',1,'yakl::c::LBnd::valid()'],['../classyakl_1_1fortran_1_1LBnd.html#a4440e687be02a99c5dcb9d34b8cda806',1,'yakl::fortran::LBnd::valid()'],['../classArrayIR_1_1ArrayIR.html#a52f80b1771851a1bca181c4f3b52611d',1,'ArrayIR::ArrayIR::valid()']]],
-  ['value_5ftype',['value_type',['../classyakl_1_1ArrayBase.html#a16dd11d776c327372882831924e08461',1,'yakl::ArrayBase::value_type()'],['../classyakl_1_1Array_3_01T_00_01rank_00_01myMem_00_01styleC_01_4.html#a4b855430663e628219f5dedcdad5acde',1,'yakl::Array&lt; T, rank, myMem, styleC &gt;::value_type()'],['../classyakl_1_1CSArray.html#a4705fd9739091619c8ab39a4c2a8fdae',1,'yakl::CSArray::value_type()'],['../classyakl_1_1Array_3_01T_00_01rank_00_01myMem_00_01styleFortran_01_4.html#a031e0149651a028d7260d90d5da3ade7',1,'yakl::Array&lt; T, rank, myMem, styleFortran &gt;::value_type()'],['../classyakl_1_1FSArray.html#a37253b605db9c62e1fbdc0084978df7b',1,'yakl::FSArray::value_type()']]],
-  ['var_5fexists',['var_exists',['../classyakl_1_1SimplePNetCDF.html#afe4017f96b79ba5e46f255b1ff5e11c4',1,'yakl::SimplePNetCDF']]],
-  ['varexists',['varExists',['../classyakl_1_1SimpleNetCDF.html#ac05f76c0009d0d627d8435db74982932',1,'yakl::SimpleNetCDF']]]
+  ['u_311',['u',['../classyakl_1_1c_1_1LBnd.html#a40065392848385bfc5e18bbd1af19121',1,'yakl::c::LBnd::u()'],['../classyakl_1_1fortran_1_1LBnd.html#ae6cf72fdd312c2db28e4f7dd4bc53c7c',1,'yakl::fortran::LBnd::u()']]],
+  ['ubound_312',['ubound',['../namespaceyakl_1_1intrinsics.html#a0510338405172f2e56aeefa0ebdc843f',1,'yakl::intrinsics::ubound(T const &amp;arr, int dim)'],['../namespaceyakl_1_1intrinsics.html#a6e2e12a96d7b31a0e109a87863a093f4',1,'yakl::intrinsics::ubound(T const &amp;arr)']]],
+  ['uint_313',['uint',['../namespaceyakl.html#ad77ef6d92b742f4415930d8a33321ac7',1,'yakl']]],
+  ['unpackindices_314',['unpackIndices',['../classyakl_1_1c_1_1Bounds_3_01N_00_01true_01_4.html#a04e732a30d7425c4d88d8698d1091647',1,'yakl::c::Bounds&lt; N, true &gt;::unpackIndices()'],['../classyakl_1_1c_1_1Bounds_3_01N_00_01false_01_4.html#adb80ec7dc80eeb6292beb292b7373e64',1,'yakl::c::Bounds&lt; N, false &gt;::unpackIndices()'],['../classyakl_1_1fortran_1_1Bounds_3_01N_00_01true_01_4.html#a136cc5a946f3c41637c6e259e25cbe77',1,'yakl::fortran::Bounds&lt; N, true &gt;::unpackIndices()'],['../classyakl_1_1fortran_1_1Bounds_3_01N_00_01false_01_4.html#ace161e9e7e20c267b30e259ee3fc18c6',1,'yakl::fortran::Bounds&lt; N, false &gt;::unpackIndices()']]],
+  ['upper_315',['upper',['../classyakl_1_1SB.html#abdde4972564fd016c4afd05dc1bd0a03',1,'yakl::SB']]],
+  ['use_5fcount_316',['use_count',['../classyakl_1_1ArrayBase.html#ad9c1fe00357c035543b73300839f9d75',1,'yakl::ArrayBase']]],
+  ['use_5fpool_317',['use_pool',['../namespaceyakl.html#ad595f0e5644733d5a1099347da7ce097',1,'yakl']]]
 ];

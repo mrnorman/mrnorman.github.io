@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pocketfft_5fcache_5fsize',['POCKETFFT_CACHE_SIZE',['../YAKL__fft_8h.html#a9e604bcf20603d70b62b233d3f306714',1,'YAKL_fft.h']]],
-  ['pocketfft_5fno_5fmultithreading',['POCKETFFT_NO_MULTITHREADING',['../YAKL__fft_8h.html#a009fa96251bd320ca4d2e9c49a4f968d',1,'YAKL_fft.h']]]
+  ['get_5fsimd_5fpragma_866',['GET_SIMD_PRAGMA',['../YAKL__simd_8h.html#a6905c3cff6888060ef5f6a4ea7f5edb3',1,'YAKL_simd.h']]]
 ];

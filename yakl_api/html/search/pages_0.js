@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yet_20another_20kernel_20launcher_20_28yakl_29_20api_20documentation',['Yet Another Kernel Launcher (YAKL) API Documentation',['../index.html',1,'']]]
+  ['yet_20another_20kernel_20launcher_20_28yakl_29_20api_20documentation_880',['Yet Another Kernel Launcher (YAKL) API Documentation',['../index.html',1,'']]]
 ];

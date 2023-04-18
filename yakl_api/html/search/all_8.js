@@ -1,16 +1,6 @@
 var searchData=
 [
-  ['index_5fmax',['INDEX_MAX',['../namespaceyakl.html#aab91278a820c2cc4b9134ff6a3ca49aa',1,'yakl']]],
-  ['index_5ft',['index_t',['../namespaceyakl.html#a172abcdd2d33fa36e969d80e6907173c',1,'yakl']]],
-  ['init',['init',['../classyakl_1_1Gator.html#a1a49cefe55594fd3667ece915d9e0b9a',1,'yakl::Gator::init()'],['../classyakl_1_1RealFFT1D.html#a22f8ea12a0aeafbe6733b13f7e2cd2fd',1,'yakl::RealFFT1D::init()'],['../namespaceyakl.html#aafe78b03b672a31b597b0b1e4cd97af7',1,'yakl::init()']]],
-  ['initconfig',['InitConfig',['../classyakl_1_1InitConfig.html',1,'yakl::InitConfig'],['../classyakl_1_1InitConfig.html#a4cc206c38f7d0d65709fe15a15d5f8af',1,'yakl::InitConfig::InitConfig()']]],
-  ['initialized',['initialized',['../classyakl_1_1ArrayBase.html#a2c013a8fd5591b535efc58ddd9f9e34a',1,'yakl::ArrayBase::initialized()'],['../classyakl_1_1CSArray.html#ae131e118b877e107efd2d60f6d2e655c',1,'yakl::CSArray::initialized()'],['../classyakl_1_1FSArray.html#aa53f6e75cd6053487569842f6d8e3031',1,'yakl::FSArray::initialized()']]],
-  ['innerhandler',['InnerHandler',['../namespaceyakl.html#a60ef5b6a07452eabddb6533b3091cef1',1,'yakl']]],
-  ['innerhandlerempty',['InnerHandlerEmpty',['../structyakl_1_1InnerHandlerEmpty.html',1,'yakl']]],
-  ['inverse_5freal',['inverse_real',['../classyakl_1_1RealFFT1D.html#a09a7f5b6ec9fee5c2a5410b4f84b93ca',1,'yakl::RealFFT1D']]],
-  ['is_5fdefault_5fstream',['is_default_stream',['../structyakl_1_1Stream.html#a661e71da72ac5ed14d95230437c5490b',1,'yakl::Stream']]],
-  ['is_5fempty',['is_empty',['../classArrayIR_1_1ArrayIR.html#a3bc9bb133f899ec3ce9d97f81296b5be',1,'ArrayIR::ArrayIR']]],
-  ['is_5fvalid',['is_valid',['../classArrayIR_1_1ArrayIR.html#afcdf24225de15e4cbfd7a59c0d59fb12',1,'ArrayIR::ArrayIR']]],
-  ['isinitialized',['isInitialized',['../namespaceyakl.html#a110195fb8259c05f75506e71aa5a792c',1,'yakl']]],
-  ['iterate_5fover_5fpack',['iterate_over_pack',['../namespaceyakl_1_1simd.html#a2731cabea51972e23a7a3ac49d3360d3',1,'yakl::simd']]]
+  ['hostread_144',['hostRead',['../classyakl_1_1ScalarLiveOut.html#a36bc5c49d3b70a76f2dbedd3baac6c96',1,'yakl::ScalarLiveOut']]],
+  ['hostwrite_145',['hostWrite',['../classyakl_1_1ScalarLiveOut.html#ada7482e2423cbb3163ffeabe5b973868',1,'yakl::ScalarLiveOut']]],
+  ['huge_146',['huge',['../namespaceyakl_1_1intrinsics.html#a543949a02284f7fff63ab1d16d5429be',1,'yakl::intrinsics::huge(T)'],['../namespaceyakl_1_1intrinsics.html#a708d84ad0334faf9b6b4050f55b5e5cd',1,'yakl::intrinsics::huge(Array&lt; T, rank, myMem, myStyle &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#acd70733ad5d753d44dcaae6936977001',1,'yakl::intrinsics::huge(FSArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)'],['../namespaceyakl_1_1intrinsics.html#a645a00fe006bd9b899858e949936c9b6',1,'yakl::intrinsics::huge(SArray&lt; T, rank, D0, D1, D2, D3 &gt; const &amp;arr)']]]
 ];

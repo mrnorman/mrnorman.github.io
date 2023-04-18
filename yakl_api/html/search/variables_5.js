@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['memdefault',['memDefault',['../namespaceyakl.html#a2cfc7ca766420600e601da4ebf569715',1,'yakl']]],
-  ['memdevice',['memDevice',['../namespaceyakl.html#ac3c32aec58c61e7f870081477ceee883',1,'yakl']]],
-  ['memhost',['memHost',['../namespaceyakl.html#aae8a8c910fec7cef7db68c9658c16405',1,'yakl']]],
-  ['memory_5fdevice',['MEMORY_DEVICE',['../namespaceArrayIR.html#aa1b0b7aa9eaec374cc0cf7c7d0ed03bd',1,'ArrayIR']]],
-  ['memory_5fhost',['MEMORY_HOST',['../namespaceArrayIR.html#aab6e2e211003576c25f68be675f3c5a0',1,'ArrayIR']]],
-  ['memory_5fshared',['MEMORY_SHARED',['../namespaceArrayIR.html#a5451faa5edbbc3d2f0d4e6b727c6c856',1,'ArrayIR']]],
-  ['mtx2',['mtx2',['../classyakl_1_1Gator.html#ae818776d896e0b08da983f2fa15b35cb',1,'yakl::Gator']]]
+  ['memdefault_826',['memDefault',['../namespaceyakl.html#ae455b4ba62ca80c5e0ada5f0d230f3a9',1,'yakl']]],
+  ['memdevice_827',['memDevice',['../namespaceyakl.html#ad0690b4d7056faf74747ce4eafd3a0ce',1,'yakl']]],
+  ['memhost_828',['memHost',['../namespaceyakl.html#a8c782101ad6c48bd8c317f61e77abf98',1,'yakl']]],
+  ['memory_5fdevice_829',['MEMORY_DEVICE',['../namespacearray__ir.html#a981fef1fb9d0b090e1b646a9b76202bb',1,'array_ir']]],
+  ['memory_5fhost_830',['MEMORY_HOST',['../namespacearray__ir.html#a203d1f575abc751fcdcb6088d49613b7',1,'array_ir']]],
+  ['memory_5fshared_831',['MEMORY_SHARED',['../namespacearray__ir.html#a63d992311063ca37619635d7f914f308',1,'array_ir']]],
+  ['mtx2_832',['mtx2',['../classyakl_1_1Gator.html#ae818776d896e0b08da983f2fa15b35cb',1,'yakl::Gator']]],
+  ['mtx_5floc_833',['mtx_loc',['../structyakl_1_1StreamList.html#a9c7eb5a2725aff20a76a74b45084b8ec',1,'yakl::StreamList']]]
 ];
